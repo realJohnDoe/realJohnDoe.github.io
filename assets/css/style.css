@@ -120,6 +120,7 @@
 
 a {
   text-decoration: none;
+  color: var(--orange-yellow-crayola);
 }
 
 li {
@@ -128,7 +129,6 @@ li {
 
 img,
 ion-icon,
-a,
 button,
 time,
 span {
