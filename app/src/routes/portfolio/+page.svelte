@@ -26,7 +26,7 @@
 								<ion-icon name="eye-outline"></ion-icon>
 							</div>
 
-							<img src="./assets/images/kenpo-notes.png" alt="kenpo" loading="lazy" />
+							<img src={kenpoImg} alt="kenpo" loading="lazy" />
 						</figure>
 
 						<h3 class="project-title">Kenpo Notes</h3>
@@ -42,7 +42,7 @@
 								<ion-icon name="eye-outline"></ion-icon>
 							</div>
 
-							<img src="./assets/images/feelback-summary.png" alt="feelback" loading="lazy" />
+							<img src={feelbackImg} alt="feelback" loading="lazy" />
 						</figure>
 
 						<h3 class="project-title">Feelback</h3>
