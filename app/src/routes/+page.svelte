@@ -126,6 +126,8 @@
 	</article>
 </section>
 
+<button class="btn">Hello daisyui</button>
+
 <!-- <style>
 	:global(html) {
 		--ff-poppins: 'Poppins', sans-serif;
