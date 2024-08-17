@@ -4,10 +4,12 @@
 </script>
 
 <div class="flex flex-col gap-5">
-	<div class="card lg:card-side bg-base-100 shadow-xl">
-		<figure class="w-60">
-			<img src={img} alt="Johannes Döllinger" width="80" />
-		</figure>
+	<div class="card sm:card-side bg-base-100 shadow-xl">
+		<div class="rounded-full">
+			<figure class="w-64">
+				<img src={img} alt="Johannes Döllinger" />
+			</figure>
+		</div>
 		<div class="card-body">
 			<h2 class="text-2xl">Johannes Döllinger</h2>
 			<div class="flex gap-2">
@@ -16,7 +18,7 @@
 				<div class="badge badge-primary h-6 rounded-md">Agile Coach</div>
 			</div>
 			<div class="divider"></div>
-			<div class="flex">
+			<div class="flex flex-col lg:flex-row gap-5">
 				<div class="grow">
 					<div>
 						<ion-icon name="mail-outline"></ion-icon>
@@ -48,7 +50,7 @@
 	<div class="card lg:card-side bg-base-100 shadow-xl">
 		<div class="flex flex-col">
 			<div class="grid justify-items-center">
-				<div class="join grid grid-cols-3 w-1/2 shadow-md rounded-t-none">
+				<div class="join grid grid-cols-3 lg:w-1/3 shadow-md rounded-t-none">
 					<button class="join-item btn" on:click={() => goto('./')}>About</button>
 					<button class="join-item btn" on:click={() => goto('./resume')}
 						><a href="/resume">Resume</a></button

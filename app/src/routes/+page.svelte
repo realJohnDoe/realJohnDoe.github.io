@@ -25,7 +25,7 @@
 
 		<h2 class="text-xl">What i'm doing</h2>
 
-		<div class="grid grid-cols-2 grid-cols-2 gap-2">
+		<div class="grid md:grid-cols-2 gap-2">
 			<div class="card shadow-md">
 				<div class="card-body">
 					<h3 class="text-lg font-semibold">Software Engineering</h3>
