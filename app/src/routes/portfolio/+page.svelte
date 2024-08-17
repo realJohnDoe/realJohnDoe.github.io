@@ -1,5 +1,5 @@
 <script>
-	import TopPart from '$lib/TopPart.svelte';
+	import MainLayout from '$lib/MainLayout.svelte';
 	import kenpoImg from '$lib/images/kenpo-notes.png';
 	import feelbackImg from '$lib/images/feelback-summary.png';
 </script>
@@ -9,9 +9,7 @@
 	<meta name="description" content="About this app" />
 </svelte:head>
 
-<section class="text-column">
-	<TopPart />
-
+<MainLayout>
 	<article class="portfolio" data-page="portfolio">
 		<header>
 			<h2 class="h2 article-title">Portfolio</h2>
@@ -53,4 +51,4 @@
 			</ul>
 		</section>
 	</article>
-</section>
+</MainLayout>

@@ -1,5 +1,5 @@
 <script>
-	import TopPart from '$lib/TopPart.svelte';
+	import MainLayout from '$lib/MainLayout.svelte';
 </script>
 
 <svelte:head>
@@ -7,9 +7,7 @@
 	<meta name="description" content="About this app" />
 </svelte:head>
 
-<section class="text-column">
-	<TopPart />
-
+<MainLayout>
 	<article class="resume" data-page="resume">
 		<header>
 			<h1 class="h2 article-title">Resume</h1>
@@ -149,4 +147,4 @@
 		  </ul>
 		</section> -->
 	</article>
-</section>
+</MainLayout>
