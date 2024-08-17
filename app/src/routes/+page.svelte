@@ -19,7 +19,7 @@
 		</header>
 
 		<section class="about-text">
-			<p>
+			<p class="text-center">
 				I'm Software and DevOps Engineer from Esslingen, Germany, working for <a
 					href="https://www.bosch.com/research/"
 				>
@@ -126,7 +126,7 @@
 	</article>
 </section>
 
-<style>
+<!-- <style>
 	:global(html) {
 		--ff-poppins: 'Poppins', sans-serif;
 		font-family: var(--ff-poppins);
@@ -174,7 +174,6 @@
 	}
 
 	a {
-		/* text-decoration: none; */
 		color: var(--orange-yellow-crayola);
 	}
 
@@ -225,10 +224,8 @@
 	.service-item-text {
 		--light-gray: hsl(0, 0%, 84%);
 		--fs-6: 14px;
-		/* --fw-300: 300; */
 		color: var(--light-gray);
 		font-size: var(--fs-6);
-		/* font-weight: var(--fw-300); */
 		line-height: 1.6;
 	}
 
@@ -261,4 +258,4 @@
 	.service-content-box {
 		text-align: left;
 	}
-</style>
+</style> -->
