@@ -13,7 +13,7 @@
 			<h2 class="text-2xl pb-2">About Me</h2>
 			<p>
 				I'm a Software and DevOps Engineer from Esslingen, Germany, working for <a
-					class="link link-accent"
+					class="link link-secondary"
 					href="https://www.bosch.com/research/"
 				>
 					Bosch Research</a

@@ -8,8 +8,8 @@ export default {
 		themes: [
 			{
 				mytheme: {
-					primary: '#fbbf24',
-					secondary: '#3b82f6',
+					primary: '#fde047',
+					secondary: '#2563eb',
 					accent: '#ea580c',
 					neutral: '#fef3c7',
 					'base-100': 'fcfaf2',
