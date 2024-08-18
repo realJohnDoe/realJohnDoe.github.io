@@ -11,12 +11,8 @@
 	<div class="pb-3">
 		<h2 class="text-2xl pb-2">About Me</h2>
 		<p>
-			I'm a Software and DevOps Engineer from Esslingen, Germany, working for <a
-				class="link link-secondary"
-				href="https://www.bosch.com/research/"
-			>
-				Bosch Research</a
-			>.
+			I'm a Software Engineer, Solution Architect, and Agile Coach from Esslingen, Germany, working
+			for <a class="link link-secondary" href="https://www.bosch.com/research/"> Bosch Research</a>.
 			<br />
 			I enjoy connecting humans, by giving structure to source code, communication, and user interfaces.
 		</p>
