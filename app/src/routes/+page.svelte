@@ -18,7 +18,7 @@
 				Bosch Research</a
 			>.
 			<br />
-			I enjoy connecting humans, by giving structure to source code, communication, and user interfaces.
+			I enjoy connecting humans, by giving structure to source code, user interfaces, and teams.
 		</p>
 	</div>
 
@@ -27,7 +27,7 @@
 	<div class="grid md:grid-cols-2 gap-2">
 		<div class="card shadow-md">
 			<div class="card-body">
-				<h3 class="text-lg font-semibold">Software Engineering</h3>
+				<h3 class="text-lg font-semibold">Full-Stack Software Engineering</h3>
 
 				<p>
 					Modern web development using Python, Clean Code, Clean Architecture, and Continuous
@@ -36,16 +36,16 @@
 			</div>
 		</div>
 
-		<div class="card shadow-md">
+		<li class="card shadow-md">
 			<div class="card-body">
-				<h3 class="text-lg font-semibold">Agile Coaching</h3>
+				<h3 class="text-lg font-semibold">Solution Architecture</h3>
 
 				<p>
-					Figuring out which Agile Methods work well for which team. Making costs of social friction
-					transparent so it can be prioritized accordingly.
+					Learning from our users how they use our software and how we can improve it. Ensuring the
+					software I contribute to is easy and fun to use.
 				</p>
 			</div>
-		</div>
+		</li>
 
 		<li class="card shadow-md">
 			<div class="card-body">
@@ -58,12 +58,15 @@
 			</div>
 		</li>
 
-		<li class="card shadow-md">
+		<div class="card shadow-md">
 			<div class="card-body">
-				<h3 class="text-lg font-semibold">User Experience</h3>
+				<h3 class="text-lg font-semibold">Agile Coaching</h3>
 
-				<p>Ensuring the software I contribute to is easy and fun to use.</p>
+				<p>
+					Figuring out which Agile Methods work well for which team. Making costs of social friction
+					transparent so it can be prioritized accordingly.
+				</p>
 			</div>
-		</li>
+		</div>
 	</div>
 </MainLayout>
