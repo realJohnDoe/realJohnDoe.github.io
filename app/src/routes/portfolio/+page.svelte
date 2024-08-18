@@ -31,7 +31,7 @@
 							<p class="project-category">Privacy-friendly Emotion Tracker for Android</p>
 						</div>
 						<a href="https://gitlab.com/jdcoding/feelback" target="_blank">
-							<button class="btn btn-square btn-primary">
+							<button class="btn btn-square btn-secondary">
 								<img src={gitLabIcon} alt="Location" />
 							</button>
 						</a>
@@ -51,7 +51,7 @@
 							<p class="project-category">Structuring my Dojo's Kenpo Content</p>
 						</div>
 						<a href="https://github.com/realJohnDoe/kenpo-quartz" target="_blank">
-							<button class="btn btn-square btn-primary">
+							<button class="btn btn-square btn-secondary">
 								<img class="w-6" src={gitHubIcon} alt="Location" />
 							</button>
 						</a>

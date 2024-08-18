@@ -20,31 +20,31 @@
 					<div class="flex flex-col">
 						<h2 class="text-2xl pb-2">Johannes Döllinger</h2>
 						<div class="flex flex-col lg:flex-row gap-2">
-							<div class="badge badge-secondary h-6 rounded-md">Web Developer</div>
-							<div class="badge badge-secondary h-6 rounded-md">Solution Architect</div>
-							<div class="badge badge-secondary h-6 rounded-md">Agile Coach</div>
+							<div class="badge badge-primary h-6 rounded-md">Web Developer</div>
+							<div class="badge badge-primary h-6 rounded-md">Solution Architect</div>
+							<div class="badge badge-primary h-6 rounded-md">Agile Coach</div>
 						</div>
 					</div>
 					<div class="divider"></div>
 
 					<div class="flex gap-5">
 						<a href="mailto:johannes.doellinger@gmail.com" target="_blank">
-							<button class="btn btn-square btn-primary">
+							<button class="btn btn-square btn-secondary">
 								<img src={mailIcon} alt="Mail" />
 							</button>
 						</a>
 						<a href="https://www.google.com/maps/place/Esslingen" target="_blank">
-							<button class="btn btn-square btn-primary">
+							<button class="btn btn-square btn-secondary">
 								<img src={locationIcon} alt="Location" />
 							</button>
 						</a>
 						<a href="https://github.com/realJohnDoe" target="_blank">
-							<button class="btn btn-square btn-primary">
+							<button class="btn btn-square btn-secondary">
 								<img class="w-6" src={gitHubIcon} alt="Location" />
 							</button>
 						</a>
 						<a href="https://gitlab.com/jdcoding" target="_blank">
-							<button class="btn btn-square btn-primary">
+							<button class="btn btn-square btn-secondary">
 								<img src={gitLabIcon} alt="Location" />
 							</button>
 						</a>
