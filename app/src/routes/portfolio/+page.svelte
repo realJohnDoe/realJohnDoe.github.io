@@ -1,7 +1,7 @@
 <script>
 	import MainLayout from '$lib/MainLayout.svelte';
-	import kenpoImg from '$lib/images/kenpo-notes.png';
-	import feelbackImg from '$lib/images/feelback-summary.png';
+	import kenpoImg from '$lib/images/kenpo-notes.jpg';
+	import feelbackImg from '$lib/images/feelback-summary.jpg';
 	import openIcon from '$lib/images/open.svg';
 	import gitHubIcon from '$lib/images/github.svg';
 	import gitLabIcon from '$lib/images/gitlab.svg';

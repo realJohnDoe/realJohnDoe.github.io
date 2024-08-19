@@ -8,7 +8,7 @@
 </script>
 
 <!-- <div class="flex flex-col items-center gap-8 bg-base-100"> -->
-<div class="p-2 lg:py-6 flex flex-col gap-4 lg:gap-8">
+<div class="md:p-2 lg:py-6 flex flex-col gap-4 lg:gap-8">
 	<div class="flex flex-col md:flex-row w-full">
 		<figure class="lg:w-64 shadow-xl w-fit rounded-xl">
 			<img src={profilePhoto} alt="Johannes Döllinger" class="rounded-xl" />
@@ -16,13 +16,13 @@
 
 		<div class=" md:pt-0 md:ps-4 lg:ps-8 grow">
 			<div class="card shadow-xl h-full">
-				<div class="card-body grid grid-cols-1 content-center">
+				<div class="card-body p-4 md:p-8 grid grid-cols-1 content-center">
 					<div class="flex flex-col">
 						<h2 class="text-2xl pb-2">Johannes Döllinger</h2>
 						<div class="flex flex-col lg:flex-row gap-2">
-							<div class="badge badge-primary h-6 rounded-md">Full-Stack Software Engineer</div>
-							<div class="badge badge-primary h-6 rounded-md">Solution Architect</div>
-							<div class="badge badge-primary h-6 rounded-md">Agile Coach</div>
+							<div class="badge badge-primary h-6 rounded-md">Full-Stack Software Engineering</div>
+							<div class="badge badge-primary h-6 rounded-md">Solution Architecture</div>
+							<div class="badge badge-primary h-6 rounded-md">Agile Coaching</div>
 						</div>
 					</div>
 					<div class="divider"></div>
@@ -67,7 +67,7 @@
 				</a>
 			</div>
 		</div>
-		<div class="card-body">
+		<div class="card-body p-4 md:p-8">
 			<slot />
 		</div>
 	</div>
