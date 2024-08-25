@@ -25,6 +25,7 @@
 							<div class="badge bg-yellow-300 h-6 rounded-md">Full-Stack Software Engineering</div>
 							<div class="badge bg-yellow-300 h-6 rounded-md">Solution Architecture</div>
 							<div class="badge bg-yellow-300 h-6 rounded-md">Agile Coaching</div>
+							<div class="badge bg-yellow-300 h-6 rounded-md">Mentoring</div>
 						</div>
 					</div>
 					<div class="divider my-2"></div>
