@@ -12,7 +12,7 @@
 		<h2 class="text-2xl pb-2">About Me</h2>
 		<p>
 			I'm a Web Developer, Solution Architect, and Agile Coach from Esslingen, Germany, working for <a
-				class="link link-secondary"
+				class="link text-lime-600 hover:text-lime-800"
 				href="https://www.bosch.com/research/"
 			>
 				Bosch Research</a
@@ -47,17 +47,6 @@
 			</div>
 		</li>
 
-		<li class="card shadow-md">
-			<div class="card-body">
-				<h3 class="text-lg font-semibold">Mentoring</h3>
-
-				<p>
-					Sharing my software development experience so others don't have to repeat many of my own
-					mistakes.
-				</p>
-			</div>
-		</li>
-
 		<div class="card shadow-md">
 			<div class="card-body">
 				<h3 class="text-lg font-semibold">Agile Coaching</h3>
@@ -68,5 +57,16 @@
 				</p>
 			</div>
 		</div>
+
+		<li class="card shadow-md">
+			<div class="card-body">
+				<h3 class="text-lg font-semibold">Mentoring</h3>
+
+				<p>
+					Sharing my software development experience so others don't have to repeat many of my own
+					mistakes.
+				</p>
+			</div>
+		</li>
 	</div>
 </MainLayout>

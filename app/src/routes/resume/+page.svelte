@@ -89,7 +89,10 @@
 				Predicted pedestrian motion inside buildings using deep learning to improve robot navigation<br
 				/>
 				Published of
-				<a class="link link-secondary" href="https://scholar.google.de/citations?user=qbgZXYIAAAAJ">
+				<a
+					class="link text-lime-600 hover:text-lime-800"
+					href="https://scholar.google.de/citations?user=qbgZXYIAAAAJ"
+				>
 					two papers
 				</a>
 				at ICRA and RA-L.

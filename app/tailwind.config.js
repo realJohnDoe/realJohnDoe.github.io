@@ -12,7 +12,7 @@ export default {
 					secondary: '#008208',
 					accent: '#f79c00',
 					neutral: '#fef3c7',
-					'base-100': 'fcfaf2',
+					'base-100': 'fafafa',
 					info: '#0000ff',
 					success: '#84cc16',
 					warning: '#ea580c',

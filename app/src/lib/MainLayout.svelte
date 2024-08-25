@@ -1,5 +1,4 @@
 <script>
-	import { goto } from '$app/navigation';
 	import profilePhoto from '$lib/images/profile-photo.jpg';
 	import mailIcon from '$lib/images/mail.svg';
 	import gitHubIcon from '$lib/images/github.svg';
@@ -16,38 +15,38 @@
 
 		<div class=" md:pt-0 md:ps-4 lg:ps-8 grow">
 			<div class="card shadow-xl h-full">
-				<div class="card-body p-4 ps-8 grid grid-cols-1 content-center">
+				<div class="card-body p-4 px-8 grid grid-cols-1 content-center">
 					<div class="flex flex-col gap-2">
 						<h2 class="text-2xl">Johannes Döllinger</h2>
-						<div class="badge badge-accent h-6 rounded-md">
+						<div class="badge bg-amber-500 h-6 rounded-md">
 							Giving Structure to Sociotechnical Systems
 						</div>
 						<div class="flex flex-col lg:flex-row gap-2">
-							<div class="badge badge-primary h-6 rounded-md">Full-Stack Software Engineering</div>
-							<div class="badge badge-primary h-6 rounded-md">Solution Architecture</div>
-							<div class="badge badge-primary h-6 rounded-md">Agile Coaching</div>
+							<div class="badge bg-yellow-300 h-6 rounded-md">Full-Stack Software Engineering</div>
+							<div class="badge bg-yellow-300 h-6 rounded-md">Solution Architecture</div>
+							<div class="badge bg-yellow-300 h-6 rounded-md">Agile Coaching</div>
 						</div>
 					</div>
 					<div class="divider my-2"></div>
 
 					<div class="flex gap-5">
 						<a href="mailto:johannes.doellinger@gmail.com" target="_blank">
-							<button class="btn btn-square btn-secondary shadow-xl">
+							<button class="btn btn-square bg-lime-600 hover:bg-lime-800 shadow-xl">
 								<img src={mailIcon} alt="Mail" />
 							</button>
 						</a>
 						<a href="https://www.google.com/maps/place/Esslingen" target="_blank">
-							<button class="btn btn-square btn-secondary shadow-xl">
+							<button class="btn btn-square bg-lime-600 hover:bg-lime-800 shadow-xl">
 								<img src={locationIcon} alt="Location" />
 							</button>
 						</a>
 						<a href="https://github.com/realJohnDoe" target="_blank">
-							<button class="btn btn-square btn-secondary shadow-xl">
+							<button class="btn btn-square bg-lime-600 hover:bg-lime-800 shadow-xl">
 								<img class="w-6" src={gitHubIcon} alt="Location" />
 							</button>
 						</a>
 						<a href="https://gitlab.com/jdcoding" target="_blank">
-							<button class="btn btn-square btn-secondary shadow-xl">
+							<button class="btn btn-square bg-lime-600 hover:bg-lime-800 shadow-xl">
 								<img src={gitLabIcon} alt="Location" class="w-7" />
 							</button>
 						</a>
@@ -60,13 +59,19 @@
 		<div class="grid justify-items-center">
 			<div class="join grid grid-cols-3 w-full rounded-b-none shadow-sm">
 				<a href="./" data-sveltekit-noscroll>
-					<button class="join-item btn w-full"> About </button>
+					<button class="join-item btn w-full bg-lime-600 hover:bg-lime-800 text-white">
+						About
+					</button>
 				</a>
 				<a href="/resume" data-sveltekit-noscroll>
-					<button class="join-item btn w-full"> Resume </button>
+					<button class="join-item btn w-full bg-lime-600 hover:bg-lime-800 text-white">
+						Resume
+					</button>
 				</a>
 				<a href="/portfolio" data-sveltekit-noscroll>
-					<button class="join-item btn w-full">Portfolio</button>
+					<button class="join-item btn w-full bg-lime-600 hover:bg-lime-800 text-white"
+						>Portfolio</button
+					>
 				</a>
 			</div>
 		</div>
