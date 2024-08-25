@@ -16,16 +16,19 @@
 
 		<div class=" md:pt-0 md:ps-4 lg:ps-8 grow">
 			<div class="card shadow-xl h-full">
-				<div class="card-body p-4 md:p-8 grid grid-cols-1 content-center">
-					<div class="flex flex-col">
-						<h2 class="text-2xl pb-2">Johannes Döllinger</h2>
+				<div class="card-body p-4 ps-8 grid grid-cols-1 content-center">
+					<div class="flex flex-col gap-2">
+						<h2 class="text-2xl">Johannes Döllinger</h2>
+						<div class="badge badge-accent h-6 rounded-md">
+							Giving Structure to Sociotechnical Systems
+						</div>
 						<div class="flex flex-col lg:flex-row gap-2">
 							<div class="badge badge-primary h-6 rounded-md">Full-Stack Software Engineering</div>
 							<div class="badge badge-primary h-6 rounded-md">Solution Architecture</div>
 							<div class="badge badge-primary h-6 rounded-md">Agile Coaching</div>
 						</div>
 					</div>
-					<div class="divider"></div>
+					<div class="divider my-2"></div>
 
 					<div class="flex gap-5">
 						<a href="mailto:johannes.doellinger@gmail.com" target="_blank">
