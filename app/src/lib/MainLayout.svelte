@@ -19,7 +19,7 @@
 					<div class="flex flex-col gap-2">
 						<h2 class="text-2xl">Johannes Döllinger</h2>
 						<div class="badge bg-amber-500 h-6 rounded-md">
-							Giving Structure to Sociotechnical Systems
+							Giving Structure where Humans and Software Meet
 						</div>
 						<div class="flex flex-col lg:flex-row gap-2">
 							<div class="badge bg-yellow-300 h-6 rounded-md">Full-Stack Software Engineering</div>
