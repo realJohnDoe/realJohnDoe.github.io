@@ -22,7 +22,7 @@
 			skills.
 			<br />
 			More generally, I enjoy connecting humans, by giving structure to source code, user interfaces,
-			and teams.
+			and people.
 		</p>
 	</div>
 
