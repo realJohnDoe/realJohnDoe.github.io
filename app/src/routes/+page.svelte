@@ -18,7 +18,8 @@
 				Bosch Research</a
 			>
 			more digital by building developer tools for common developer tasks, coaching my team so everyone
-			has the right context to be productive, and mentoring researchers to improve their software skills.
+			has the right context to work effectively, and mentoring researchers to improve their software
+			skills.
 			<br />
 			More generally, I enjoy connecting humans, by giving structure to source code, user interfaces,
 			and teams.
