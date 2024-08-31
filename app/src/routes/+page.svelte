@@ -11,14 +11,17 @@
 	<div class="pb-3">
 		<h2 class="text-2xl pb-2">About Me</h2>
 		<p>
-			I'm a Web Developer, Solution Architect, and Agile Coach from Esslingen, Germany, working for <a
+			I'm making <a
 				class="link text-lime-600 hover:text-lime-800"
 				href="https://www.bosch.com/research/"
 			>
 				Bosch Research</a
-			>.
+			>
+			more digital by building developer tools for common developer tasks, coaching my team so everyone
+			has the right context to be productive, and mentoring researchers to improve their software skills.
 			<br />
-			I enjoy connecting humans, by giving structure to source code, user interfaces, and teams.
+			More generally, I enjoy connecting humans, by giving structure to source code, user interfaces,
+			and teams.
 		</p>
 	</div>
 
