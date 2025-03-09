@@ -28,18 +28,7 @@
 
 	<h2 class="text-xl">What I'm Doing</h2>
 
-	<div class="grid md:grid-cols-2 gap-2">
-		<div class="card shadow-md">
-			<div class="card-body">
-				<h3 class="text-lg font-semibold">Full-Stack Software Engineering</h3>
-
-				<p>
-					Modern web development using Python, Clean Code, Clean Architecture, and Continuous
-					Delivery.
-				</p>
-			</div>
-		</div>
-
+	<div class="grid md:grid-cols-2 gap-4">
 		<li class="card shadow-md">
 			<div class="card-body">
 				<h3 class="text-lg font-semibold">Solution Architecture</h3>
@@ -58,6 +47,17 @@
 				<p>
 					Figuring out which Agile Methods work well for which team. Making costs of social friction
 					transparent so it can be prioritized accordingly.
+				</p>
+			</div>
+		</div>
+
+		<div class="card shadow-md">
+			<div class="card-body">
+				<h3 class="text-lg font-semibold">Full-Stack Software Engineering</h3>
+
+				<p>
+					Modern web development using Python, Clean Code, Clean Architecture, and Continuous
+					Delivery.
 				</p>
 			</div>
 		</div>
