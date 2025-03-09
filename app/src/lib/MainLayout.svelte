@@ -4,6 +4,14 @@
 	import gitHubIcon from '$lib/images/github.svg';
 	import gitLabIcon from '$lib/images/gitlab.svg';
 	import locationIcon from '$lib/images/location.svg';
+
+	import { onMount } from 'svelte';
+
+	let currentPath = '';
+
+	onMount(() => {
+		currentPath = window.location.pathname;
+	});
 </script>
 
 <!-- <div class="flex flex-col items-center gap-8 bg-base-100"> -->
@@ -61,21 +69,21 @@
 			<div class="join grid grid-cols-3 w-full rounded-b-none shadow-sm">
 				<a href="./" data-sveltekit-noscroll>
 					<button
-						class={`join-item btn w-full ${window.location.pathname === '/' ? 'bg-lime-800' : 'bg-lime-600'} hover:bg-lime-800 text-white text-lg`}
+						class={`join-item btn w-full ${currentPath === '/' ? 'bg-lime-800' : 'bg-lime-600'} hover:bg-lime-800 text-white text-lg`}
 					>
 						About Me
 					</button>
 				</a>
 				<a href="/resume" data-sveltekit-noscroll>
 					<button
-						class={`join-item btn w-full ${window.location.pathname === '/resume' ? 'bg-lime-800' : 'bg-lime-600'} hover:bg-lime-800 text-white text-lg`}
+						class={`join-item btn w-full ${currentPath === '/resume' ? 'bg-lime-800' : 'bg-lime-600'} hover:bg-lime-800 text-white text-lg`}
 					>
 						Resume
 					</button>
 				</a>
 				<a href="/portfolio" data-sveltekit-noscroll>
 					<button
-						class={`join-item btn w-full ${window.location.pathname === '/portfolio' ? 'bg-lime-800' : 'bg-lime-600'} hover:bg-lime-800 text-white text-lg`}
+						class={`join-item btn w-full ${currentPath === '/portfolio' ? 'bg-lime-800' : 'bg-lime-600'} hover:bg-lime-800 text-white text-lg`}
 					>
 						Portfolio
 					</button>
