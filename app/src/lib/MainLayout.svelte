@@ -60,19 +60,25 @@
 		<div class="grid justify-items-center">
 			<div class="join grid grid-cols-3 w-full rounded-b-none shadow-sm">
 				<a href="./" data-sveltekit-noscroll>
-					<button class="join-item btn w-full bg-lime-600 hover:bg-lime-800 text-white">
-						About
+					<button
+						class={`join-item btn w-full ${window.location.pathname === '/' ? 'bg-lime-800' : 'bg-lime-700'} hover:bg-lime-800 text-white text-xl`}
+					>
+						About Me
 					</button>
 				</a>
 				<a href="/resume" data-sveltekit-noscroll>
-					<button class="join-item btn w-full bg-lime-600 hover:bg-lime-800 text-white">
+					<button
+						class={`join-item btn w-full ${window.location.pathname === '/resume' ? 'bg-lime-800' : 'bg-lime-700'} hover:bg-lime-800 text-white text-xl`}
+					>
 						Resume
 					</button>
 				</a>
 				<a href="/portfolio" data-sveltekit-noscroll>
-					<button class="join-item btn w-full bg-lime-600 hover:bg-lime-800 text-white"
-						>Portfolio</button
+					<button
+						class={`join-item btn w-full ${window.location.pathname === '/portfolio' ? 'bg-lime-800' : 'bg-lime-700'} hover:bg-lime-800 text-white text-xl`}
 					>
+						Portfolio
+					</button>
 				</a>
 			</div>
 		</div>

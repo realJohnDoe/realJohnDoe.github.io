@@ -15,8 +15,6 @@
 </svelte:head>
 
 <MainLayout>
-	<h2 class="text-2xl pb-3">Portfolio</h2>
-
 	<div class="grid sm:grid-cols-2 gap-4">
 		<PortfolioCard
 			image={kenpoImg}

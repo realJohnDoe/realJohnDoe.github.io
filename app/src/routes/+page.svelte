@@ -9,7 +9,6 @@
 
 <MainLayout>
 	<div class="pb-3">
-		<h2 class="text-2xl pb-2">About Me</h2>
 		<p>
 			I'm making <a
 				class="link text-lime-600 hover:text-lime-800"
