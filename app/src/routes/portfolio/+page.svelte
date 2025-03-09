@@ -56,7 +56,7 @@
 						<p class="project-category">Structuring my Dojo's Kenpo Content</p>
 					</div>
 					<div class="flex gap-2 items-end h-full">
-						<a href="https://realjohndoe.github.io/kenpo-quartz/" target="_blank">
+						<a href="https://realjohndoe.github.io/kenpo-notes/" target="_blank">
 							<button class="btn btn-square bg-lime-600 hover:bg-lime-800 shadow-xl">
 								<img class="w-6" src={openIcon} alt="Location" />
 							</button>
