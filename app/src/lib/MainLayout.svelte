@@ -17,13 +17,13 @@
 			<div class="card shadow-xl h-full">
 				<div class="card-body p-4 px-8 grid grid-cols-1 content-center">
 					<div class="flex flex-col gap-2">
-						<h2 class="text-2xl">Johannes Döllinger</h2>
-						<div class="badge bg-amber-500 h-6 rounded-md">
+						<h2 class="text-xl">Johannes Döllinger</h2>
+						<div class="badge bg-amber-300 h-6 rounded-md">
 							Building Bridges and Giving Structure
 						</div>
 						<div class="flex flex-col lg:flex-row gap-2">
-							<div class="badge bg-yellow-300 h-6 rounded-md">Full-Stack Software Engineering</div>
 							<div class="badge bg-yellow-300 h-6 rounded-md">Solution Architecture</div>
+							<div class="badge bg-yellow-300 h-6 rounded-md">Full-Stack Software Engineering</div>
 							<div class="badge bg-yellow-300 h-6 rounded-md">Agile Coaching</div>
 							<div class="badge bg-yellow-300 h-6 rounded-md">Mentoring</div>
 						</div>
@@ -61,21 +61,21 @@
 			<div class="join grid grid-cols-3 w-full rounded-b-none shadow-sm">
 				<a href="./" data-sveltekit-noscroll>
 					<button
-						class={`join-item btn w-full ${window.location.pathname === '/' ? 'bg-lime-800' : 'bg-lime-700'} hover:bg-lime-800 text-white text-xl`}
+						class={`join-item btn w-full ${window.location.pathname === '/' ? 'bg-lime-800' : 'bg-lime-600'} hover:bg-lime-800 text-white text-lg`}
 					>
 						About Me
 					</button>
 				</a>
 				<a href="/resume" data-sveltekit-noscroll>
 					<button
-						class={`join-item btn w-full ${window.location.pathname === '/resume' ? 'bg-lime-800' : 'bg-lime-700'} hover:bg-lime-800 text-white text-xl`}
+						class={`join-item btn w-full ${window.location.pathname === '/resume' ? 'bg-lime-800' : 'bg-lime-600'} hover:bg-lime-800 text-white text-lg`}
 					>
 						Resume
 					</button>
 				</a>
 				<a href="/portfolio" data-sveltekit-noscroll>
 					<button
-						class={`join-item btn w-full ${window.location.pathname === '/portfolio' ? 'bg-lime-800' : 'bg-lime-700'} hover:bg-lime-800 text-white text-xl`}
+						class={`join-item btn w-full ${window.location.pathname === '/portfolio' ? 'bg-lime-800' : 'bg-lime-600'} hover:bg-lime-800 text-white text-lg`}
 					>
 						Portfolio
 					</button>
