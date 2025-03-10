@@ -8,6 +8,7 @@
 	import openIcon from '$lib/images/open.svg';
 	import gitHubIcon from '$lib/images/github.svg';
 	import gitLabIcon from '$lib/images/gitlab.svg';
+	import Header from '$lib/Header.svelte';
 </script>
 
 <svelte:head>
@@ -16,6 +17,7 @@
 </svelte:head>
 
 <MainLayout>
+	<Header />
 	<div class="card shadow-xl flex flex-col">
 		<div class="card-body p-4 md:p-8">
 			<h1 class="text-2xl">About Me</h1>
