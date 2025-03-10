@@ -18,7 +18,7 @@
 			<div class="flex gap-2 items-end h-full">
 				{#each links as link}
 					<a href={link.href} target="_blank">
-						<button class="btn btn-square bg-lime-600 hover:bg-lime-800 shadow-xl">
+						<button class="btn btn-square btn-primary shadow-xl">
 							<img class="w-6" src={link.icon} alt={link.text} />
 						</button>
 					</a>
