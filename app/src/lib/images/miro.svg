@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+
+<svg
+   width="800px"
+   height="800px"
+   viewBox="0 0 48 48"
+   id="a"
+   version="1.1"
+   sodipodi:docname="miro.svg"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview3"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="2.34375"
+     inkscape:cx="399.78667"
+     inkscape:cy="400"
+     inkscape:window-width="3840"
+     inkscape:window-height="2071"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="a" />
+  <defs
+     id="defs1">
+    <style
+       id="style1">.b{fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;}</style>
+  </defs>
+  <polygon
+     class="b"
+     points="5.5 5.5 10.8215 5.5 21.4019 15.7047 11.0719 42.5 5.5 42.5 10.5711 18.1464 5.5 5.5"
+     id="polygon1"
+     style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-opacity:1" />
+  <polygon
+     class="b"
+     points="16.6432 5.5 21.9646 5.5 31.7318 12.2301 22.2151 42.5 16.6432 42.5 21.4019 15.7047 16.6432 5.5"
+     id="polygon2"
+     style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-opacity:1" />
+  <polygon
+     class="b"
+     points="27.7863 5.5 33.1078 5.5 42.5 11.4162 33.3582 42.5 27.7863 42.5 31.7318 12.2301 27.7863 5.5"
+     id="polygon3"
+     style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-opacity:1" />
+</svg>
