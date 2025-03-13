@@ -9,6 +9,8 @@
 	import gitHubIcon from '$lib/images/github.svg';
 	import gitLabIcon from '$lib/images/gitlab.svg';
 	import Header from '$lib/Header.svelte';
+
+	const colored_icons = true;
 </script>
 
 <svelte:head>
@@ -249,6 +251,11 @@
 							href: 'https://play.google.com/store/apps/details?id=com.johndoe_software.feelback',
 							icon: openIcon,
 							text: 'Google Play'
+						},
+						{
+							href: 'https://gitlab.com/jdcoding/feelback',
+							icon: gitLabIcon,
+							text: 'GitLab'
 						}
 					]}
 				/>

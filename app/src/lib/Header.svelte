@@ -3,7 +3,6 @@
 	import mailIcon from '$lib/images/mail.svg';
 	import gitHubIcon from '$lib/images/github.svg';
 	import gitLabIcon from '$lib/images/gitlab.svg';
-	import locationIcon from '$lib/images/location.svg';
 	import obsidianIcon from '$lib/images/obsidian.svg';
 	import pythonIcon from '$lib/images/python.svg';
 	import miroIcon from '$lib/images/miro.svg';
@@ -39,19 +38,14 @@
 							><img src={mailIcon} alt="Mail" class="w-6" />
 						</button>
 					</a>
-					<a href="https://www.google.com/maps/place/Esslingen" target="_blank">
-						<button class="btn btn-square btn-primary">
-							<img src={locationIcon} alt="Location" class="w-6" />
-						</button>
-					</a>
 					<a href="https://github.com/realJohnDoe" target="_blank">
 						<button class="btn btn-square btn-primary">
-							<img class="w-6" src={gitHubIcon} alt="Location" />
+							<img class="w-6" src={gitHubIcon} alt="GitHub" />
 						</button>
 					</a>
 					<a href="https://gitlab.com/jdcoding" target="_blank">
 						<button class="btn btn-square btn-primary">
-							<img src={gitLabIcon} alt="Location" class="w-6" />
+							<img src={gitLabIcon} alt="GitLab" class="w-6" />
 						</button>
 					</a>
 				</div>
