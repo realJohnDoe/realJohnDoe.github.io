@@ -6,11 +6,18 @@
 	import campfireImg from '$lib/images/campfire-game.jpg';
 	import prSizeImg from '$lib/images/pr-labels.jpg';
 	import openIcon from '$lib/images/open.svg';
+	import openIconColored from '$lib/images/open-colored.svg';
 	import gitHubIcon from '$lib/images/github.svg';
+	import githubIconColored from '$lib/images/github-colored.svg';
+	import gitLabIconColored from '$lib/images/gitlab-colored.svg';
 	import gitLabIcon from '$lib/images/gitlab.svg';
 	import Header from '$lib/Header.svelte';
 
 	const colored_icons = true;
+
+	const usedOpenIcon = colored_icons ? openIconColored : openIcon;
+	const usedGitHubIcon = colored_icons ? githubIconColored : gitHubIcon;
+	const usedGitLabIcon = colored_icons ? gitLabIconColored : gitLabIcon;
 </script>
 
 <svelte:head>
@@ -20,7 +27,7 @@
 
 <MainLayout>
 	<Header />
-	<div class="card shadow-xl flex flex-col">
+	<div class="card bg-base-200 shadow-xl flex flex-col">
 		<div class="card-body p-4 md:p-8">
 			<h1 class="text-2xl">About Me</h1>
 
@@ -41,7 +48,7 @@
 			<h2 class="text-xl">What I'm Doing</h2>
 
 			<div class="grid md:grid-cols-2 gap-4">
-				<li class="card shadow-md">
+				<li class="card bg-base-300 shadow-xl">
 					<div class="card-body">
 						<h3 class="text-lg font-semibold">Solution Architecture</h3>
 
@@ -52,7 +59,7 @@
 					</div>
 				</li>
 
-				<div class="card shadow-md">
+				<div class="card bg-base-300 shadow-xl">
 					<div class="card-body">
 						<h3 class="text-lg font-semibold">Agile Coaching</h3>
 
@@ -63,7 +70,7 @@
 					</div>
 				</div>
 
-				<div class="card shadow-md">
+				<div class="card bg-base-300 shadow-xl">
 					<div class="card-body">
 						<h3 class="text-lg font-semibold">Full-Stack Software Engineering</h3>
 
@@ -74,7 +81,7 @@
 					</div>
 				</div>
 
-				<li class="card shadow-md">
+				<li class="card bg-base-300 shadow-xl">
 					<div class="card-body">
 						<h3 class="text-lg font-semibold">Mentoring</h3>
 
@@ -87,7 +94,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="card shadow-xl flex flex-col" id="experience">
+	<div class="card bg-base-200 shadow-xl flex flex-col" id="experience">
 		<div class="card-body p-4 md:p-8">
 			<h1 class="text-2xl">Experience</h1>
 			<div class="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
@@ -212,7 +219,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="card shadow-xl flex flex-col" id="projects">
+	<div class="card bg-base-200 shadow-xl flex flex-col" id="projects">
 		<div class="card-body p-4 md:p-8">
 			<h2 class="text-2xl">Projects</h2>
 			<div class="grid sm:grid-cols-2 gap-4">
@@ -221,10 +228,14 @@
 					title="Kenpo Notes"
 					description="Structuring my Dojo's Kenpo Content"
 					links={[
-						{ href: 'https://realjohndoe.github.io/kenpo-notes/', icon: openIcon, text: 'Open' },
+						{
+							href: 'https://realjohndoe.github.io/kenpo-notes/',
+							icon: usedOpenIcon,
+							text: 'Open'
+						},
 						{
 							href: 'https://github.com/realJohnDoe/kenpo-quartz',
-							icon: gitHubIcon,
+							icon: usedGitHubIcon,
 							text: 'GitHub'
 						}
 					]}
@@ -234,10 +245,14 @@
 					title="Campfire Game"
 					description="A mini game where you control the smoke of a campfired to test current AI tools."
 					links={[
-						{ href: 'https://realjohndoe.github.io/campfire-game/', icon: openIcon, text: 'Open' },
+						{
+							href: 'https://realjohndoe.github.io/campfire-game/',
+							icon: usedOpenIcon,
+							text: 'Open'
+						},
 						{
 							href: 'https://github.com/realJohnDoe/campfire-game',
-							icon: gitHubIcon,
+							icon: usedGitHubIcon,
 							text: 'GitHub'
 						}
 					]}
@@ -249,12 +264,12 @@
 					links={[
 						{
 							href: 'https://play.google.com/store/apps/details?id=com.johndoe_software.feelback',
-							icon: openIcon,
+							icon: usedOpenIcon,
 							text: 'Google Play'
 						},
 						{
 							href: 'https://gitlab.com/jdcoding/feelback',
-							icon: gitLabIcon,
+							icon: usedGitLabIcon,
 							text: 'GitLab'
 						}
 					]}
@@ -266,7 +281,7 @@
 					links={[
 						{
 							href: 'https://github.com/boschresearch/pr-size-labeler',
-							icon: gitHubIcon,
+							icon: usedGitHubIcon,
 							text: 'GitHub'
 						}
 					]}
