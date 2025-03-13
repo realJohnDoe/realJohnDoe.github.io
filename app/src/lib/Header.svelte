@@ -31,12 +31,12 @@
 	const usedDatabricksIcon = colored_icons ? databricksIconColored : databricksIcon;
 </script>
 
-<div class="flex flex-col md:flex-row w-full">
-	<figure class="lg:w-96 shadow-xl w-fit rounded-xl">
+<div class="flex flex-col lg:flex-row w-full">
+	<figure class="lg:w-96 shadow-xl w-fit rounded-xl pb-4 lg:pb-0">
 		<img src={profilePhoto} alt="Johannes Döllinger" class="rounded-xl" />
 	</figure>
 
-	<div class=" md:pt-0 md:ps-4 lg:ps-8 grow">
+	<div class=" md:pt-0 lg:ps-4 lg:ps-8 grow">
 		<div class="card bg-base-200 shadow-xl h-full">
 			<div class="card-body p-4 px-8 grid grid-cols-1 content-center">
 				<div class="flex flex-col gap-2">

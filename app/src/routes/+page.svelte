@@ -28,7 +28,7 @@
 <MainLayout>
 	<Header />
 	<div class="card bg-base-200 shadow-xl flex flex-col">
-		<div class="card-body p-4 md:p-8">
+		<div class="card-body p-4 lg:p-8">
 			<h1 class="text-2xl">About Me</h1>
 
 			<div class="pb-3">
