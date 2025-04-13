@@ -223,7 +223,7 @@
 	</div>
 	<div class="card bg-base-200 shadow-xl flex flex-col" id="projects">
 		<div class="card-body p-4 md:p-8">
-			<h2 class="text-2xl">Projects</h2>
+			<h2 class="text-2xl">Side Projects</h2>
 			<div class="grid sm:grid-cols-2 gap-4">
 				<PortfolioCard
 					image={kenpoImg}
