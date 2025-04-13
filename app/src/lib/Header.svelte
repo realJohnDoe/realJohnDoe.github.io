@@ -17,6 +17,7 @@
 	import miroIconColored from '$lib/images/miro-colored.svg';
 	import databricksIcon from '$lib/images/databricks.svg';
 	import databricksIconColored from '$lib/images/databricks-colored.svg';
+	import TechButton from './TechButton.svelte';
 
 	const colored_icons = true;
 
@@ -74,31 +75,41 @@
 				<div class="pt-2">Technologies I am Mastering:</div>
 
 				<div class="flex gap-3">
-					<a href="https://obsidian.md/" target="_blank">
-						<button class="btn btn-square btn-neutral">
-							<img src={usedObsidianIcon} alt="Obsidian" class="w-7" />
-						</button>
-					</a>
-					<a href="https://docs.python.org/3/" target="_blank">
-						<button class="btn btn-square btn-neutral">
-							<img src={usedPythonIcon} alt="Python" class="w-7" />
-						</button>
-					</a>
-					<a href="https://docs.github.com/actions" target="_blank">
-						<button class="btn btn-square btn-neutral">
-							<img src={usedGitHubActionsIcon} alt="GitHub Actions" class="w-6" />
-						</button>
-					</a>
-					<a href="https://learn.microsoft.com/de-de/azure/databricks/" target="_blank">
-						<button class="btn btn-square btn-neutral">
-							<img src={usedDatabricksIcon} alt="Databricks" class="w-6" />
-						</button>
-					</a>
-					<a href="https://miro.com" target="_blank">
-						<button class="btn btn-square btn-neutral">
-							<img src={usedMiroIcon} alt="Miro" class="w-7" />
-						</button>
-					</a>
+					<TechButton
+						tech="Obsidian"
+						link="https://obsidian.md/"
+						icon={usedObsidianIcon}
+						alt="Obsidian"
+						width="w-7"
+					/>
+					<TechButton
+						tech="Python"
+						link="https://docs.python.org/3/"
+						icon={usedPythonIcon}
+						alt="Python"
+						width="w-7"
+					/>
+					<TechButton
+						tech="GitHub Actions"
+						link="https://docs.github.com/actions"
+						icon={usedGitHubActionsIcon}
+						alt="GitHub Actions"
+						width="w-6"
+					/>
+					<TechButton
+						tech="Databricks"
+						link="https://learn.microsoft.com/de-de/azure/databricks/"
+						icon={usedDatabricksIcon}
+						alt="Databricks"
+						width="w-6"
+					/>
+					<TechButton
+						tech="Miro"
+						link="https://miro.com"
+						icon={usedMiroIcon}
+						alt="Miro"
+						width="w-7"
+					/>
 				</div>
 			</div>
 		</div>
