@@ -1,35 +1,15 @@
 <script>
 	import profilePhoto from '$lib/images/profile.jpg';
-	import mailIcon from '$lib/images/mail.svg';
 	import mailIconColored from '$lib/images/mail-colored.svg';
-	import gitHubIcon from '$lib/images/github.svg';
 	import githubIconColored from '$lib/images/github-colored.svg';
-	import gitLabIcon from '$lib/images/gitlab.svg';
 	import gitLabIconColored from '$lib/images/gitlab-colored.svg';
 
-	import obsidianIcon from '$lib/images/obsidian.svg';
 	import obsidianIconColored from '$lib/images/obsidian-colored.svg';
-	import pythonIcon from '$lib/images/python.svg';
 	import pythonIconColored from '$lib/images/python-colored.svg';
-	import githubActionsIcon from '$lib/images/githubactions.svg';
 	import githubActionsIconColored from '$lib/images/githubactions-colored.svg';
-	import miroIcon from '$lib/images/miro.svg';
 	import miroIconColored from '$lib/images/miro-colored.svg';
-	import databricksIcon from '$lib/images/databricks.svg';
 	import databricksIconColored from '$lib/images/databricks-colored.svg';
 	import TechButton from './TechButton.svelte';
-
-	const colored_icons = true;
-
-	const usedMailIcon = colored_icons ? mailIconColored : mailIcon;
-	const usedGitHubIcon = colored_icons ? githubIconColored : gitHubIcon;
-	const usedGitLabIcon = colored_icons ? gitLabIconColored : gitLabIcon;
-
-	const usedObsidianIcon = colored_icons ? obsidianIconColored : obsidianIcon;
-	const usedPythonIcon = colored_icons ? pythonIconColored : pythonIcon;
-	const usedGitHubActionsIcon = colored_icons ? githubActionsIconColored : githubActionsIcon;
-	const usedMiroIcon = colored_icons ? miroIconColored : miroIcon;
-	const usedDatabricksIcon = colored_icons ? databricksIconColored : databricksIcon;
 </script>
 
 <div class="flex flex-col lg:flex-row w-full">
@@ -58,21 +38,21 @@
 					<TechButton
 						tech="Mail"
 						link="mailto:johannes.doellinger@gmail.com"
-						icon={usedMailIcon}
+						icon={mailIconColored}
 						alt="Mail"
 						width="w-6"
 					/>
 					<TechButton
 						tech="GitHub"
 						link="https://github.com/realJohnDoe"
-						icon={usedGitHubIcon}
+						icon={githubIconColored}
 						alt="GitHub"
 						width="w-6"
 					/>
 					<TechButton
 						tech="GitLab"
 						link="https://gitlab.com/jdcoding"
-						icon={usedGitLabIcon}
+						icon={gitLabIconColored}
 						alt="GitLab"
 						width="w-7"
 					/>
@@ -84,35 +64,35 @@
 					<TechButton
 						tech="Obsidian"
 						link="https://obsidian.md/"
-						icon={usedObsidianIcon}
+						icon={obsidianIconColored}
 						alt="Obsidian"
 						width="w-7"
 					/>
 					<TechButton
 						tech="Python"
 						link="https://docs.python.org/3/"
-						icon={usedPythonIcon}
+						icon={pythonIconColored}
 						alt="Python"
 						width="w-7"
 					/>
 					<TechButton
 						tech="GitHub Actions"
 						link="https://docs.github.com/actions"
-						icon={usedGitHubActionsIcon}
+						icon={githubActionsIconColored}
 						alt="GitHub Actions"
 						width="w-6"
 					/>
 					<TechButton
 						tech="Databricks"
 						link="https://learn.microsoft.com/de-de/azure/databricks/"
-						icon={usedDatabricksIcon}
+						icon={databricksIconColored}
 						alt="Databricks"
 						width="w-6"
 					/>
 					<TechButton
 						tech="Miro"
 						link="https://miro.com"
-						icon={usedMiroIcon}
+						icon={miroIconColored}
 						alt="Miro"
 						width="w-7"
 					/>
