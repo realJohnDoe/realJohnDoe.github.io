@@ -5,6 +5,7 @@
 	import feelbackImg from '$lib/images/feelback-summary.jpg';
 	import campfireImg from '$lib/images/campfire-game.jpg';
 	import prSizeImg from '$lib/images/pr-labels.jpg';
+	import ideaCraftImg from '$lib/images/idea-craft.jpg';
 	import openIcon from '$lib/images/open.svg';
 	import openIconColored from '$lib/images/open-colored.svg';
 	import gitHubIcon from '$lib/images/github.svg';
@@ -235,6 +236,23 @@
 						},
 						{
 							href: 'https://github.com/realJohnDoe/kenpo-quartz',
+							icon: usedGitHubIcon,
+							text: 'GitHub'
+						}
+					]}
+				/>
+				<PortfolioCard
+					image={ideaCraftImg}
+					title="IdeaCraft"
+					description="Playing around with Lovable, Windsurf, and Cursor to build some obsidian-like productivity tool."
+					links={[
+						{
+							href: 'https://realjohndoe.github.io/idea-craft/',
+							icon: usedOpenIcon,
+							text: 'Open'
+						},
+						{
+							href: 'https://github.com/realJohnDoe/idea-craft',
 							icon: usedGitHubIcon,
 							text: 'GitHub'
 						}
