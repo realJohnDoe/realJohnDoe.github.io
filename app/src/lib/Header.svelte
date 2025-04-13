@@ -1,15 +1,7 @@
 <script>
 	import profilePhoto from '$lib/images/profile.jpg';
-	import mailIconColored from '$lib/images/mail-colored.svg';
-	import githubIconColored from '$lib/images/github-colored.svg';
-	import gitLabIconColored from '$lib/images/gitlab-colored.svg';
-
-	import obsidianIconColored from '$lib/images/obsidian-colored.svg';
-	import pythonIconColored from '$lib/images/python-colored.svg';
-	import githubActionsIconColored from '$lib/images/githubactions-colored.svg';
-	import miroIconColored from '$lib/images/miro-colored.svg';
-	import databricksIconColored from '$lib/images/databricks-colored.svg';
 	import TechButton from './TechButton.svelte';
+	import { techButtons } from './techButtons';
 </script>
 
 <div class="flex flex-col lg:flex-row w-full">
@@ -35,67 +27,19 @@
 				<div class="pt-2">Contact me:</div>
 
 				<div class="flex gap-3">
-					<TechButton
-						tech="Mail"
-						link="mailto:johannes.doellinger@gmail.com"
-						icon={mailIconColored}
-						alt="Mail"
-						width="w-6"
-					/>
-					<TechButton
-						tech="GitHub"
-						link="https://github.com/realJohnDoe"
-						icon={githubIconColored}
-						alt="GitHub"
-						width="w-6"
-					/>
-					<TechButton
-						tech="GitLab"
-						link="https://gitlab.com/jdcoding"
-						icon={gitLabIconColored}
-						alt="GitLab"
-						width="w-7"
-					/>
+					<TechButton techButtonProps={techButtons.mail} />
+					<TechButton techButtonProps={techButtons.github} />
+					<TechButton techButtonProps={techButtons.gitlab} />
 				</div>
 
 				<div class="pt-2">Technologies I am Mastering:</div>
 
 				<div class="flex gap-3">
-					<TechButton
-						tech="Obsidian"
-						link="https://obsidian.md/"
-						icon={obsidianIconColored}
-						alt="Obsidian"
-						width="w-7"
-					/>
-					<TechButton
-						tech="Python"
-						link="https://docs.python.org/3/"
-						icon={pythonIconColored}
-						alt="Python"
-						width="w-7"
-					/>
-					<TechButton
-						tech="GitHub Actions"
-						link="https://docs.github.com/actions"
-						icon={githubActionsIconColored}
-						alt="GitHub Actions"
-						width="w-6"
-					/>
-					<TechButton
-						tech="Databricks"
-						link="https://learn.microsoft.com/de-de/azure/databricks/"
-						icon={databricksIconColored}
-						alt="Databricks"
-						width="w-6"
-					/>
-					<TechButton
-						tech="Miro"
-						link="https://miro.com"
-						icon={miroIconColored}
-						alt="Miro"
-						width="w-7"
-					/>
+					<TechButton techButtonProps={techButtons.obsidian} />
+					<TechButton techButtonProps={techButtons.python} />
+					<TechButton techButtonProps={techButtons.githubActions} />
+					<TechButton techButtonProps={techButtons.databricks} />
+					<TechButton techButtonProps={techButtons.miro} />
 				</div>
 			</div>
 		</div>

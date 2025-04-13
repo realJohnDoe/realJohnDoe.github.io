@@ -1,9 +1,10 @@
 <script>
-	export let tech; // Technology name
-	export let link; // Link for the button
-	export let icon; // Icon for the button
-	export let alt; // Alternative text for the icon
-	export let width = 'w-6'; // Default width for the icon
+	export let techButtonProps;
+
+	const link = techButtonProps.link; // Link for the button
+	const icon = techButtonProps.icon; // Icon for the button
+	const alt = techButtonProps.alt; // Alternative text for the icon
+	const width = techButtonProps.width;
 </script>
 
 <a href={link} target="_blank">
