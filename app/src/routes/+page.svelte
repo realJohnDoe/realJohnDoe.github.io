@@ -13,6 +13,7 @@
 	import gitLabIconColored from '$lib/images/gitlab-colored.svg';
 	import gitLabIcon from '$lib/images/gitlab.svg';
 	import Header from '$lib/Header.svelte';
+	import { techButtons } from '$lib/techButtons';
 
 	const colored_icons = true;
 
@@ -240,11 +241,12 @@
 							text: 'GitHub'
 						}
 					]}
+					technologies={[techButtons.obsidian, techButtons.githubActions]}
 				/>
 				<PortfolioCard
 					image={ideaCraftImg}
 					title="IdeaCraft"
-					description="Playing around with Lovable, Windsurf, and Cursor to build some obsidian-like productivity tool."
+					description="Playing around with Lovable, Windsurf, and Cursor to build some Obsidian-like productivity tool."
 					links={[
 						{
 							href: 'https://realjohndoe.github.io/idea-craft/',
@@ -256,6 +258,14 @@
 							icon: usedGitHubIcon,
 							text: 'GitHub'
 						}
+					]}
+					technologies={[
+						techButtons.lovable,
+						techButtons.windsurf,
+						techButtons.cursor,
+						techButtons.markdown,
+						techButtons.react,
+						techButtons.tailwind
 					]}
 				/>
 				<PortfolioCard
@@ -274,6 +284,7 @@
 							text: 'GitHub'
 						}
 					]}
+					technologies={[techButtons.windsurf, techButtons.javascript]}
 				/>
 				<PortfolioCard
 					image={feelbackImg}
@@ -291,6 +302,12 @@
 							text: 'GitLab'
 						}
 					]}
+					technologies={[
+						techButtons.kotlin,
+						techButtons.playstore,
+						techButtons.jetpackCompose,
+						techButtons.material
+					]}
 				/>
 				<PortfolioCard
 					image={prSizeImg}
@@ -303,6 +320,7 @@
 							text: 'GitHub'
 						}
 					]}
+					technologies={[techButtons.githubActions, techButtons.javascript]}
 				/>
 			</div>
 		</div>
