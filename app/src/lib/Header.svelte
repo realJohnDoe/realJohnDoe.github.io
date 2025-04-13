@@ -55,21 +55,27 @@
 				<div class="pt-2">Contact me:</div>
 
 				<div class="flex gap-3">
-					<a href="mailto:johannes.doellinger@gmail.com" target="_blank">
-						<button class="btn btn-square btn-neutral"
-							><img src={usedMailIcon} alt="Mail" class="w-6" />
-						</button>
-					</a>
-					<a href="https://github.com/realJohnDoe" target="_blank">
-						<button class="btn btn-square btn-neutral">
-							<img class="w-6" src={usedGitHubIcon} alt="GitHub" />
-						</button>
-					</a>
-					<a href="https://gitlab.com/jdcoding" target="_blank">
-						<button class="btn btn-square btn-neutral">
-							<img src={usedGitLabIcon} alt="GitLab" class="w-7" />
-						</button>
-					</a>
+					<TechButton
+						tech="Mail"
+						link="mailto:johannes.doellinger@gmail.com"
+						icon={usedMailIcon}
+						alt="Mail"
+						width="w-6"
+					/>
+					<TechButton
+						tech="GitHub"
+						link="https://github.com/realJohnDoe"
+						icon={usedGitHubIcon}
+						alt="GitHub"
+						width="w-6"
+					/>
+					<TechButton
+						tech="GitLab"
+						link="https://gitlab.com/jdcoding"
+						icon={usedGitLabIcon}
+						alt="GitLab"
+						width="w-7"
+					/>
 				</div>
 
 				<div class="pt-2">Technologies I am Mastering:</div>
