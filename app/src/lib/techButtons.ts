@@ -23,6 +23,7 @@ import numpyIcon from '$lib/images/numpy.svg';
 import rosIcon from '$lib/images/ros.svg';
 import cplusplusIcon from '$lib/images/cplusplus.svg';
 import matlabIcon from '$lib/images/matlab.svg';
+import linkedinIcon from '$lib/images/linkedin.svg';
 
 export type TechButtonProps = {
 	link: string;
@@ -36,6 +37,12 @@ export const techButtons = {
 		link: 'mailto:johannes.doellinger@gmail.com',
 		icon: mailIcon,
 		alt: 'Mail',
+		width: 'w-6'
+	},
+	linkedin: {
+		link: 'https://www.linkedin.com/in/johannesdoellinger/',
+		icon: linkedinIcon,
+		alt: 'LinkedIn',
 		width: 'w-6'
 	},
 	github: {

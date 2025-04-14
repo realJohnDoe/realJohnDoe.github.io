@@ -36,7 +36,7 @@
 
 			<div class="pb-3">
 				<p>
-					I'm making <a class="link-primary" href="https://www.bosch.com/research/">
+					I'm making <a class="link-accent" href="https://www.bosch.com/research/">
 						Bosch Research</a
 					>
 					more digital by building developer tools for common developer tasks, coaching my team so everyone
@@ -53,7 +53,7 @@
 			<div class="grid md:grid-cols-2 gap-4">
 				<li class="card bg-base-300 shadow-xl">
 					<div class="card-body">
-						<h3 class="text-lg font-semibold">Solution Architecture</h3>
+						<div class="badge badge-secondary text-lg py-3 rounded-md">Solution Architecture</div>
 
 						<p>
 							Learning from our users how they use our software and how we can improve it. Ensuring
@@ -64,7 +64,7 @@
 
 				<div class="card bg-base-300 shadow-xl">
 					<div class="card-body">
-						<h3 class="text-lg font-semibold">Agile Coaching</h3>
+						<div class="badge badge-secondary text-lg py-3 rounded-md">Agile Coaching</div>
 
 						<p>
 							Figuring out which Agile Methods work well for which team. Making costs of social
@@ -75,7 +75,9 @@
 
 				<div class="card bg-base-300 shadow-xl">
 					<div class="card-body">
-						<h3 class="text-lg font-semibold">Full-Stack Software Engineering</h3>
+						<div class="badge badge-secondary text-lg py-3 rounded-md">
+							Full-Stack Software Engineering
+						</div>
 
 						<p>
 							Modern web development using Python, Clean Code, Clean Architecture, and Continuous
@@ -86,7 +88,7 @@
 
 				<li class="card bg-base-300 shadow-xl">
 					<div class="card-body">
-						<h3 class="text-lg font-semibold">Mentoring</h3>
+						<div class="badge badge-secondary text-lg py-3 rounded-md">Mentoring</div>
 
 						<p>
 							Sharing my software development experience so others don't have to repeat many of my
@@ -200,7 +202,7 @@
 							Predicted pedestrian motion inside buildings using deep learning to improve robot
 							navigation<br />
 							Published of
-							<a class="link-primary" href="https://scholar.google.de/citations?user=qbgZXYIAAAAJ">
+							<a class="link-accent" href="https://scholar.google.de/citations?user=qbgZXYIAAAAJ">
 								two papers
 							</a>
 							at ICRA and RA-L.
@@ -334,8 +336,8 @@
 					]}
 					technologies={[
 						techButtons.kotlin,
-						techButtons.playstore,
 						techButtons.jetpackCompose,
+						techButtons.playstore,
 						techButtons.material
 					]}
 				/>

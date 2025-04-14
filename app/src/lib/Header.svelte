@@ -28,6 +28,7 @@
 
 				<div class="flex gap-3">
 					<TechButton techButtonProps={techButtons.mail} />
+					<TechButton techButtonProps={techButtons.linkedin} />
 					<TechButton techButtonProps={techButtons.github} />
 					<TechButton techButtonProps={techButtons.gitlab} />
 				</div>
