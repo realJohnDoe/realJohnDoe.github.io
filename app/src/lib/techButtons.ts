@@ -17,6 +17,12 @@ import lovableIcon from '$lib/images/lovable.svg';
 import materialIcon from '$lib/images/m3.svg';
 import playstoreIcon from '$lib/images/play-console.svg';
 import jetpackComposeIcon from '$lib/images/jetpackcompose.svg';
+import tensorflowIcon from '$lib/images/tensorflow.svg';
+import pytorchIcon from '$lib/images/pytorch.svg';
+import numpyIcon from '$lib/images/numpy.svg';
+import rosIcon from '$lib/images/ros.svg';
+import cplusplusIcon from '$lib/images/cplusplus.svg';
+import matlabIcon from '$lib/images/matlab.svg';
 
 export type TechButtonProps = {
 	link: string;
@@ -138,6 +144,42 @@ export const techButtons = {
 		link: 'https://developer.android.com/jetpack/compose',
 		icon: jetpackComposeIcon,
 		alt: 'Jetpack Compose',
+		width: 'w-7'
+	},
+	tensorflow: {
+		link: 'https://www.tensorflow.org/',
+		icon: tensorflowIcon,
+		alt: 'TensorFlow',
+		width: 'w-7'
+	},
+	pytoch: {
+		link: 'https://pytorch.org/',
+		icon: pytorchIcon,
+		alt: 'PyTorch',
+		width: 'w-5'
+	},
+	numpy: {
+		link: 'https://numpy.org/doc/stable/',
+		icon: numpyIcon,
+		alt: 'NumPy',
+		width: 'w-7'
+	},
+	ros: {
+		link: 'https://www.ros.org/',
+		icon: rosIcon,
+		alt: 'ROS',
+		width: 'w-9'
+	},
+	cplusplus: {
+		link: 'https://en.cppreference.com/',
+		icon: cplusplusIcon,
+		alt: 'C++',
+		width: 'w-7'
+	},
+	matlab: {
+		link: 'https://www.mathworks.com/products/matlab.html',
+		icon: matlabIcon,
+		alt: 'MATLAB',
 		width: 'w-7'
 	}
 };

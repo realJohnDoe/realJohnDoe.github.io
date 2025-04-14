@@ -14,6 +14,7 @@
 	import gitLabIcon from '$lib/images/gitlab.svg';
 	import Header from '$lib/Header.svelte';
 	import { techButtons } from '$lib/techButtons';
+	import TechButton from '$lib/TechButton.svelte';
 
 	const colored_icons = true;
 
@@ -105,10 +106,19 @@
 						<time class="font-mono italic">2021 — Present</time>
 						<h3 class="text-lg font-semibold">Senior Software Engineer, Bosch Research</h3>
 
-						Building developer tools for researchers of Bosch.<br />
-						Improving internal team collaboration through carefully chosen tools and methods.
-						<br />
-						Mentoring other developers.
+						<p>
+							Building developer tools for researchers of Bosch.<br />
+							Improving internal team collaboration through carefully chosen tools and methods.
+							<br />
+							Mentoring other developers.
+						</p>
+						<div class="flex gap-2 pt-2 md:justify-end">
+							<!-- New section for technologies -->
+							<TechButton techButtonProps={techButtons.python} />
+							<TechButton techButtonProps={techButtons.githubActions} />
+							<TechButton techButtonProps={techButtons.databricks} />
+							<TechButton techButtonProps={techButtons.miro} />
+						</div>
 					</div>
 					<div class="timeline-middle">
 						<svg
@@ -149,11 +159,18 @@
 							Research Engineer, Bosch Center for Artificial Intelligence
 						</h3>
 
-						Applied cutting-edge deep reinvorcement learning methods to highway lane change
-						maneuvers.<br />
-						Integrated of machine learning frameworks and simulation.
-						<br />
-						First statistical evaluation of existing assisted driving functions.
+						<p>
+							Applied cutting-edge deep reinvorcement learning methods to highway lane change
+							maneuvers.<br />
+							Integrated of machine learning frameworks and simulation.
+							<br />
+							First statistical evaluation of existing assisted driving functions.
+						</p>
+						<div class="flex gap-2 pt-2">
+							<TechButton techButtonProps={techButtons.python} />
+							<TechButton techButtonProps={techButtons.numpy} />
+							<TechButton techButtonProps={techButtons.pytoch} />
+						</div>
 					</div>
 					<hr />
 				</li>
@@ -179,13 +196,20 @@
 							PhD Candidate, Bosch Center for Artificial Intelligence
 						</h3>
 
-						Predicted pedestrian motion inside buildings using deep learning to improve robot
-						navigation<br />
-						Published of
-						<a class="link-primary" href="https://scholar.google.de/citations?user=qbgZXYIAAAAJ">
-							two papers
-						</a>
-						at ICRA and RA-L.
+						<p>
+							Predicted pedestrian motion inside buildings using deep learning to improve robot
+							navigation<br />
+							Published of
+							<a class="link-primary" href="https://scholar.google.de/citations?user=qbgZXYIAAAAJ">
+								two papers
+							</a>
+							at ICRA and RA-L.
+						</p>
+						<div class="flex gap-2 pt-2 md:justify-end">
+							<TechButton techButtonProps={techButtons.python} />
+							<TechButton techButtonProps={techButtons.tensorflow} />
+							<TechButton techButtonProps={techButtons.ros} />
+						</div>
 					</div>
 					<hr />
 				</li>
@@ -209,13 +233,19 @@
 						<time class="font-mono italic">2011 — 2016</time>
 						<h3 class="text-lg font-semibold">MSc. Physics, University of Regensburg</h3>
 
-						Elite study course, a fusion of the bachelor's and master's course with advanced
-						lectures, three-week research projects
-						<br />
-						Recipient of the Deutschlandstipendium, a national, ideology-free scholarship for highly
-						talented, motivated students, who are also socially committed <br />
-						Internship as a research scholar at the Columbia University in the City of New York
-						<br />
+						<p>
+							Elite study course, a fusion of the bachelor's and master's course with advanced
+							lectures, three-week research projects
+							<br />
+							Recipient of the Deutschlandstipendium, a national, ideology-free scholarship for highly
+							talented, motivated students, who are also socially committed <br />
+							Internship as a research scholar at the Columbia University in the City of New York
+							<br />
+						</p>
+						<div class="flex gap-2 pt-2">
+							<TechButton techButtonProps={techButtons.matlab} />
+							<TechButton techButtonProps={techButtons.cplusplus} />
+						</div>
 					</div>
 				</li>
 			</div>
