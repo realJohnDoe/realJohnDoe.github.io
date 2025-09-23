@@ -57,8 +57,8 @@
 						<div class="badge badge-secondary text-lg py-3 rounded-md">Solution Architecture</div>
 
 						<p>
-							Learning from our users how they use our software and how we can improve it. Ensuring
-							the software I contribute to is easy and fun to use.
+							Learning from our users about how they use our software and how we can improve it. 
+							Ensuring that the software I contribute to is easy and fun to use.
 						</p>
 					</div>
 				</li>
@@ -68,8 +68,8 @@
 						<div class="badge badge-secondary text-lg py-3 rounded-md">Agile Coaching</div>
 
 						<p>
-							Figuring out which Agile Methods work well for which team. Making costs of social
-							friction transparent so it can be prioritized accordingly.
+							Figuring out which Agile Methods work well for which team. Making the costs of social
+							friction transparent, so resolving it can be prioritized accordingly.
 						</p>
 					</div>
 				</div>
@@ -81,8 +81,8 @@
 						</div>
 
 						<p>
-							Modern web development using Python, Clean Code, Clean Architecture, and Continuous
-							Delivery.
+							Modern web development using Python, Clean Code, Clean Architecture, 
+							and Continuous Delivery.
 						</p>
 					</div>
 				</div>
@@ -163,9 +163,9 @@
 						</h3>
 
 						<p>
-							Applied cutting-edge deep reinvorcement learning methods to highway lane change
+							Applied cutting-edge deep reinforcement learning methods to highway lane change
 							maneuvers.<br />
-							Integrated of machine learning frameworks and simulation.
+							Integration of machine learning frameworks and simulation.
 							<br />
 							First statistical evaluation of existing assisted driving functions.
 						</p>
@@ -237,7 +237,7 @@
 						<h3 class="text-lg font-semibold">MSc. Physics, University of Regensburg</h3>
 
 						<p>
-							Elite study course, a fusion of the bachelor's and master's course with advanced
+							Elite study course, a fusion of the bachelor's and master's courses with advanced
 							lectures, three-week research projects
 							<br />
 							Recipient of the Deutschlandstipendium, a national, ideology-free scholarship for highly
@@ -340,7 +340,7 @@
 				<PortfolioCard
 					image={campfireImg}
 					title="Campfire Game"
-					description="A mini game where you control the smoke of a campfired to test current AI tools."
+					description="A mini game where you control the smoke of a campfire to test current AI tools."
 					links={[
 						{
 							href: 'https://realjohndoe.github.io/campfire-game/',
