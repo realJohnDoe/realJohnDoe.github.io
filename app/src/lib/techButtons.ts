@@ -34,7 +34,7 @@ export type TechButtonProps = {
 
 export const techButtons = {
 	mail: {
-		link: 'mailto:johannes.doellinger@gmail.com',
+		link: 'mailto:jdoellinger@pm.me',
 		icon: mailIcon,
 		alt: 'Mail',
 		width: 'w-6'

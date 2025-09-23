@@ -6,6 +6,7 @@
 	import campfireImg from '$lib/images/campfire-game.jpg';
 	import prSizeImg from '$lib/images/pr-labels.jpg';
 	import ideaCraftImg from '$lib/images/idea-craft.jpg';
+	import timeLineImg from '$lib/images/time-lines-edited.jpg';
 	import openIcon from '$lib/images/open.svg';
 	import openIconColored from '$lib/images/open-colored.svg';
 	import gitHubIcon from '$lib/images/github.svg';
@@ -276,6 +277,42 @@
 					technologies={[techButtons.obsidian, techButtons.githubActions]}
 				/>
 				<PortfolioCard
+					image={feelbackImg}
+					title="Feelback"
+					description="Privacy-friendly Emotion Tracker for Android"
+					links={[
+						{
+							href: 'https://play.google.com/store/apps/details?id=com.johndoe_software.feelback',
+							icon: usedOpenIcon,
+							text: 'Google Play'
+						},
+						{
+							href: 'https://gitlab.com/jdcoding/feelback',
+							icon: usedGitLabIcon,
+							text: 'GitLab'
+						}
+					]}
+					technologies={[
+						techButtons.kotlin,
+						techButtons.jetpackCompose,
+						techButtons.playstore,
+						techButtons.material
+					]}
+				/>
+				<PortfolioCard
+					image={prSizeImg}
+					title="PR Size Labeler"
+					description="A GitHub Action to Label Pull Requests Depending on Their Size"
+					links={[
+						{
+							href: 'https://github.com/boschresearch/pr-size-labeler',
+							icon: usedGitHubIcon,
+							text: 'GitHub'
+						}
+					]}
+					technologies={[techButtons.githubActions, techButtons.javascript]}
+				/>
+				<PortfolioCard
 					image={ideaCraftImg}
 					title="IdeaCraft"
 					description="Playing around with Lovable, Windsurf, and Cursor to build some Obsidian-like productivity tool."
@@ -318,41 +355,24 @@
 					]}
 					technologies={[techButtons.windsurf, techButtons.javascript]}
 				/>
+
 				<PortfolioCard
-					image={feelbackImg}
-					title="Feelback"
-					description="Privacy-friendly Emotion Tracker for Android"
+					image={timeLineImg}
+					title="Time Lines"
+					description="A Small Web App to Visualize Topics on a Timeline from yaml."
 					links={[
 						{
-							href: 'https://play.google.com/store/apps/details?id=com.johndoe_software.feelback',
+							href: 'https://realjohndoe.github.io/time-lines/',
 							icon: usedOpenIcon,
-							text: 'Google Play'
+							text: 'Open'
 						},
 						{
-							href: 'https://gitlab.com/jdcoding/feelback',
-							icon: usedGitLabIcon,
-							text: 'GitLab'
-						}
-					]}
-					technologies={[
-						techButtons.kotlin,
-						techButtons.jetpackCompose,
-						techButtons.playstore,
-						techButtons.material
-					]}
-				/>
-				<PortfolioCard
-					image={prSizeImg}
-					title="PR Size Labeler"
-					description="A GitHub Action to Label Pull Requests Depending on Their Size"
-					links={[
-						{
-							href: 'https://github.com/boschresearch/pr-size-labeler',
+							href: 'https://github.com/realJohnDoe/time-lines',
 							icon: usedGitHubIcon,
 							text: 'GitHub'
 						}
 					]}
-					technologies={[techButtons.githubActions, techButtons.javascript]}
+					technologies={[techButtons.javascript, techButtons.tailwind]}
 				/>
 			</div>
 		</div>
