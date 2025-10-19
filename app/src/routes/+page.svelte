@@ -274,7 +274,12 @@
 							text: 'GitHub'
 						}
 					]}
-					technologies={[techButtons.obsidian, techButtons.githubActions, techButtons.animejs]}
+					technologies={[
+						techButtons.obsidian,
+						techButtons.githubActions,
+						techButtons.animejs,
+						techButtons.svelte
+					]}
 				/>
 				<PortfolioCard
 					image={feelbackImg}

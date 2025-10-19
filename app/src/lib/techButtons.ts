@@ -22,6 +22,7 @@ import pythonIcon from '$lib/images/python-colored.svg';
 import pytorchIcon from '$lib/images/pytorch.svg';
 import reactIcon from '$lib/images/react.svg';
 import rosIcon from '$lib/images/ros.svg';
+import svelteIcon from '$lib/images/svelte.svg'
 import tailwindIcon from '$lib/images/tailwindcss.svg';
 import tensorflowIcon from '$lib/images/tensorflow.svg';
 import windsurfIcon from '$lib/images/windsurf.svg';
@@ -99,6 +100,12 @@ export const techButtons = {
 		icon: markdownIcon,
 		alt: 'Markdown',
 		width: 'w-7'
+	},
+	svelte: {
+		link: 'https://svelte.dev/',
+		icon: svelteIcon,
+		alt: 'Svelte',
+		width: 'w-6'
 	},
 	windsurf: {
 		link: 'https://windsurfai.org/',
