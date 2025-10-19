@@ -13,8 +13,8 @@ export default {
 				'dark-mod': {
 					...require('daisyui/src/theming/themes')['dark'],
 					primary: '#3b82f6',
-					secondary: '#fbbf24',
-					accent: '#37cdbe',
+					secondary: 'oklch(0.79 0.19 79)', // yellow-vineyards-400
+					accent: 'oklch(0.77 0.22 123)',
 					neutral: 'white'
 				}
 			}
