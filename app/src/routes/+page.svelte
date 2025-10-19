@@ -57,7 +57,7 @@
 						<div class="badge badge-secondary text-lg py-3 rounded-md">Solution Architecture</div>
 
 						<p>
-							Learning from our users about how they use our software and how we can improve it. 
+							Learning from our users about how they use our software and how we can improve it.
 							Ensuring that the software I contribute to is easy and fun to use.
 						</p>
 					</div>
@@ -81,8 +81,8 @@
 						</div>
 
 						<p>
-							Modern web development using Python, Clean Code, Clean Architecture, 
-							and Continuous Delivery.
+							Modern web development using Python, Clean Code, Clean Architecture, and Continuous
+							Delivery.
 						</p>
 					</div>
 				</div>
@@ -274,7 +274,7 @@
 							text: 'GitHub'
 						}
 					]}
-					technologies={[techButtons.obsidian, techButtons.githubActions]}
+					technologies={[techButtons.obsidian, techButtons.githubActions, techButtons.animejs]}
 				/>
 				<PortfolioCard
 					image={feelbackImg}

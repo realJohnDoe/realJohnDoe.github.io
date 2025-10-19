@@ -1,3 +1,4 @@
+import animejsIcon from '$lib/images/animejs.png'
 import cplusplusIcon from '$lib/images/cplusplus.svg';
 import cursorIcon from '$lib/images/cursor.png';
 import databricksIcon from '$lib/images/databricks-colored.svg';
@@ -33,6 +34,12 @@ export type TechButtonProps = {
 };
 
 export const techButtons = {
+	animejs: {
+		link: 'https://animejs.com/',
+		icon: animejsIcon,
+		alt: 'Anime.js',
+		width: 'w-8'
+	},
 	mail: {
 		link: 'mailto:jdoellinger@pm.me',
 		icon: mailIcon,
