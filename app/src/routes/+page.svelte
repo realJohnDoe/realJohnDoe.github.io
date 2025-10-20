@@ -31,7 +31,7 @@
 
 <MainLayout>
 	<Header />
-	<div class="card bg-base-200 shadow-xl flex flex-col">
+	<div class="card bg-base-300 shadow-xl flex flex-col">
 		<div class="card-body p-4 lg:p-8">
 			<h1 class="text-2xl">About Me</h1>
 
@@ -49,23 +49,25 @@
 				</p>
 			</div>
 
-			<h2 class="text-xl">What I'm Doing</h2>
+			<h2 class="text-xl pb-2">What I'm Doing</h2>
 
 			<div class="grid md:grid-cols-2 gap-4">
-				<li class="card bg-base-300 shadow-xl">
-					<div class="card-body">
-						<div class="badge badge-secondary text-lg py-3 rounded-md">Solution Architecture</div>
+				<div class="rounded-xl border border-base-100">
+					<div class="p-6">
+						<div class="badge badge-secondary text-lg py-3 mb-2 rounded-md">
+							Solution Architecture
+						</div>
 
 						<p>
 							Learning from our users about how they use our software and how we can improve it.
 							Ensuring that the software I contribute to is easy and fun to use.
 						</p>
 					</div>
-				</li>
+				</div>
 
-				<div class="card bg-base-300 shadow-xl">
-					<div class="card-body">
-						<div class="badge badge-secondary text-lg py-3 rounded-md">Agile Coaching</div>
+				<div class="rounded-xl border border-base-100">
+					<div class="p-6">
+						<div class="badge badge-secondary text-lg py-3 mb-2 rounded-md">Agile Coaching</div>
 
 						<p>
 							Figuring out which Agile Methods work well for which team. Making the costs of social
@@ -74,9 +76,9 @@
 					</div>
 				</div>
 
-				<div class="card bg-base-300 shadow-xl">
-					<div class="card-body">
-						<div class="badge badge-secondary text-lg py-3 rounded-md">
+				<div class="rounded-xl border border-base-100">
+					<div class="p-6">
+						<div class="badge badge-secondary text-lg py-3 mb-2 rounded-md">
 							Full-Stack Software Engineering
 						</div>
 
@@ -87,20 +89,20 @@
 					</div>
 				</div>
 
-				<li class="card bg-base-300 shadow-xl">
-					<div class="card-body">
-						<div class="badge badge-secondary text-lg py-3 rounded-md">Mentoring</div>
+				<div class="rounded-xl border border-base-100">
+					<div class="p-6">
+						<div class="badge badge-secondary text-lg py-3 mb-2 rounded-md">Mentoring</div>
 
 						<p>
 							Sharing my software development experience so others don't have to repeat many of my
 							own mistakes.
 						</p>
 					</div>
-				</li>
+				</div>
 			</div>
 		</div>
 	</div>
-	<div class="card bg-base-200 shadow-xl flex flex-col" id="experience">
+	<div class="card bg-base-300 shadow-xl flex flex-col" id="experience">
 		<div class="card-body p-4 md:p-8">
 			<h1 class="text-2xl">Experience</h1>
 			<div class="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
@@ -138,10 +140,10 @@
 						</svg>
 					</div>
 					<div class="timeline-end"></div>
-					<hr />
+					<hr class="bg-base-100" />
 				</li>
 				<li>
-					<hr />
+					<hr class="bg-base-100" />
 					<div class="timeline-middle">
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
@@ -175,10 +177,10 @@
 							<TechButton techButtonProps={techButtons.pytoch} />
 						</div>
 					</div>
-					<hr />
+					<hr class="bg-base-100" />
 				</li>
 				<li>
-					<hr />
+					<hr class="bg-base-100" />
 					<div class="timeline-middle">
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
@@ -214,10 +216,10 @@
 							<TechButton techButtonProps={techButtons.ros} />
 						</div>
 					</div>
-					<hr />
+					<hr class="bg-base-100" />
 				</li>
 				<li>
-					<hr />
+					<hr class="bg-base-100" />
 					<div class="timeline-middle">
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
@@ -254,7 +256,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="card bg-base-200 shadow-xl flex flex-col" id="projects">
+	<div class="card bg-base-300 shadow-xl flex flex-col" id="projects">
 		<div class="card-body p-4 md:p-8">
 			<h2 class="text-2xl">Side Projects</h2>
 			<div class="grid sm:grid-cols-2 gap-4">

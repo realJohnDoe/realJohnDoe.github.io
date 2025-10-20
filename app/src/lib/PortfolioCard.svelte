@@ -8,11 +8,11 @@
 	export let technologies;
 </script>
 
-<div class="card bg-base-300 shadow-xl">
+<div class="card border border-base-100">
 	<figure class="relative">
 		<img src={image} alt={title} loading="lazy" />
 	</figure>
-	<div class="card-body flex flex-col">
+	<div class="card-body p-6 flex flex-col">
 		<div class="flex justify-between items-end">
 			<!-- Row for title and links -->
 			<h3 class="text-lg font-semibold">{title}</h3>
