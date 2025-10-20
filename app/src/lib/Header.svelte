@@ -11,7 +11,7 @@
 
 	<div class=" md:pt-0 lg:ps-8 grow">
 		<div class="card bg-base-300 shadow-xl h-full">
-			<div class="card-body p-4 px-8 grid grid-cols-1 content-center">
+			<div class="card-body p-4 md:p-6 grid grid-cols-1 content-center">
 				<div class="flex flex-col gap-2">
 					<h2 class="text-2xl">Johannes Döllinger</h2>
 					<div class="badge badge-accent h-6 rounded-md text-xs sm:text-lg">
