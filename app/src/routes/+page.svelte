@@ -33,7 +33,7 @@
 	<Header />
 	<div class="card bg-base-300 shadow-xl flex flex-col">
 		<div class="card-body p-4 md:p-6">
-			<h1 class="text-2xl">About Me</h1>
+			<h1 class="text-2xl pb-2">About Me</h1>
 
 			<div class="pb-3">
 				<p>
@@ -49,7 +49,7 @@
 				</p>
 			</div>
 
-			<h2 class="text-xl pb-2">What I'm Doing</h2>
+			<h2 class="text-xl pb-1">What I'm Doing</h2>
 
 			<div class="grid md:grid-cols-2 gap-4">
 				<div class="rounded-xl border border-primary">
@@ -104,7 +104,7 @@
 	</div>
 	<div class="card bg-base-300 shadow-xl flex flex-col" id="experience">
 		<div class="card-body p-4 md:p-6">
-			<h1 class="text-2xl">Experience</h1>
+			<h1 class="text-2xl pb-2">Experience</h1>
 			<div class="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
 				<li>
 					<div class="timeline-start mb-10 md:text-end">
@@ -258,7 +258,7 @@
 	</div>
 	<div class="card bg-base-300 shadow-xl flex flex-col" id="projects">
 		<div class="card-body p-4 md:p-6">
-			<h2 class="text-2xl">Side Projects</h2>
+			<h2 class="text-2xl pb-2">Side Projects</h2>
 			<div class="grid md:grid-cols-2 gap-4">
 				<PortfolioCard
 					image={kenpoImg}
