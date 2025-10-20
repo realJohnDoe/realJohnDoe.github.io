@@ -1,8 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+@plugin "daisyui";
+@plugin "daisyui/theme" {
+	name: 'dark';
+	default: true;
+	--color-primary: '#3b82f6';
+	--color-secondary: 'oklch(0.79 0.19 79)';
+	--color-secondary-content: oklch(25.33% 0.016 252.42);
+	--color-accent: 'oklch(0.77 0.22 123)';
+	--color-accent-content: oklch(25.33% 0.016 252.42);
+	--color-neutral: 'white';
+}
 
 * {
 	font-family: 'Roboto', sans-serif;

@@ -37,7 +37,7 @@
 					<TechButton techButtonProps={techButtons.gitlab} />
 				</div>
 
-				<div class="pt-2">Technologies I am Mastering:</div>
+				<div class="pt-2">Technologies I am currently mastering:</div>
 
 				<div class="flex gap-3">
 					<TechButton techButtonProps={techButtons.obsidian} />
