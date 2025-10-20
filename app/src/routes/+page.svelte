@@ -52,7 +52,7 @@
 			<h2 class="text-xl pb-2">What I'm Doing</h2>
 
 			<div class="grid md:grid-cols-2 gap-4">
-				<div class="rounded-xl border border-base-100">
+				<div class="rounded-xl border border-primary">
 					<div class="p-4 md:p-6">
 						<div class="badge badge-secondary text-lg py-3 mb-2 rounded-md">
 							Solution Architecture
@@ -65,7 +65,7 @@
 					</div>
 				</div>
 
-				<div class="rounded-xl border border-base-100">
+				<div class="rounded-xl border border-primary">
 					<div class="p-4 md:p-6">
 						<div class="badge badge-secondary text-lg py-3 mb-2 rounded-md">Agile Coaching</div>
 
@@ -76,7 +76,7 @@
 					</div>
 				</div>
 
-				<div class="rounded-xl border border-base-100">
+				<div class="rounded-xl border border-primary">
 					<div class="p-4 md:p-6">
 						<div class="badge badge-secondary text-lg py-3 mb-2 rounded-md">
 							Full-Stack Software Engineering
@@ -89,7 +89,7 @@
 					</div>
 				</div>
 
-				<div class="rounded-xl border border-base-100">
+				<div class="rounded-xl border border-primary">
 					<div class="p-4 md:p-6">
 						<div class="badge badge-secondary text-lg py-3 mb-2 rounded-md">Mentoring</div>
 

@@ -8,7 +8,7 @@
 	export let technologies;
 </script>
 
-<div class="border border-base-100 rounded-xl">
+<div class="border border-primary rounded-xl">
 	<figure class="relative">
 		<img src={image} alt={title} loading="lazy" />
 	</figure>
