@@ -12,7 +12,7 @@
 	<figure class="relative">
 		<img src={image} alt={title} loading="lazy" />
 	</figure>
-	<div class="p-6 flex flex-col">
+	<div class="p-4 md:p-6 flex flex-col">
 		<div class="flex justify-between items-end">
 			<!-- Row for title and links -->
 			<h3 class="text-lg font-semibold">{title}</h3>
@@ -30,8 +30,8 @@
 				{/each}
 			</div>
 		</div>
-		<p class="project-category pt-2">{description}</p>
-		<h2 class="text-md font-semibold">Technologies:</h2>
+		<p class="project-category py-2">{description}</p>
+		<h2 class="text-md font-semibold pb-2">Technologies:</h2>
 		<div class="flex gap-2">
 			{#each technologies as tech}
 				<TechButton techButtonProps={tech} />
