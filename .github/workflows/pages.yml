@@ -14,6 +14,8 @@ jobs:
         with:
           node-version: 24
 
+      - run: npm --version
+
       - name: Install and Build
         working-directory: app
         run: |
@@ -25,4 +27,3 @@ jobs:
         with:
           branch: gh-pages
           folder: app/build
-
