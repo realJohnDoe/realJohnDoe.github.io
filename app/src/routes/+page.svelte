@@ -195,7 +195,7 @@
 							/>
 						</svg>
 					</div>
-					<div class="timeline-start md:text-end">
+					<div class="timeline-start mb-10 md:text-end">
 						<time class="font-mono italic">2016 — 2018</time>
 						<h3 class="text-lg font-semibold">
 							PhD Candidate, Bosch Center for Artificial Intelligence
@@ -339,6 +339,7 @@
 						techButtons.lovable,
 						techButtons.windsurf,
 						techButtons.cursor,
+						techButtons.markdown,
 						techButtons.react,
 						techButtons.tailwind
 					]}
