@@ -263,7 +263,7 @@
 				<PortfolioCard
 					image={kenpoImg}
 					title="Kenpo Notes"
-					description="Structuring my Dojo's Kenpo Content"
+					description="Structuring my Dojo's Kenpo curriculum and animating some Kenpo techniques."
 					links={[
 						{
 							href: 'https://realjohndoe.github.io/kenpo-notes/',
@@ -286,7 +286,7 @@
 				<PortfolioCard
 					image={feelbackImg}
 					title="Feelback"
-					description="Privacy-friendly Emotion Tracker for Android"
+					description="Privacy-friendly emotion tracker for Android."
 					links={[
 						{
 							href: 'https://play.google.com/store/apps/details?id=com.johndoe_software.feelback',
@@ -309,7 +309,7 @@
 				<PortfolioCard
 					image={prSizeImg}
 					title="PR Size Labeler"
-					description="A GitHub Action to Label Pull Requests Depending on Their Size"
+					description="A GitHub Action to label and comment pull requests depending on their size."
 					links={[
 						{
 							href: 'https://github.com/boschresearch/pr-size-labeler',
@@ -365,7 +365,7 @@
 				<PortfolioCard
 					image={timeLineImg}
 					title="Time Lines"
-					description="A Small Web App to Visualize Topics on a Timeline from yaml."
+					description="A small web app to visualize topics from a yaml file on a timeline."
 					links={[
 						{
 							href: 'https://realjohndoe.github.io/time-lines/',
