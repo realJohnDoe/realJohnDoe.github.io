@@ -13,7 +13,7 @@
 		<img src={image} alt={title} loading="lazy" />
 	</figure>
 	<div class="p-4 md:p-6 flex flex-col">
-		<div class="flex justify-between items-end">
+		<div class="flex flex-col sm:flex-row sm:justify-between sm:items-end gap-2">
 			<!-- Row for title and links -->
 			<h3 class="text-lg font-semibold">{title}</h3>
 			<div class="flex gap-2">
@@ -32,7 +32,7 @@
 		</div>
 		<p class="project-category py-2">{description}</p>
 		<h2 class="text-md font-semibold pb-2">Technologies:</h2>
-		<div class="flex gap-2">
+		<div class="flex gap-2 flex-wrap">
 			{#each technologies as tech}
 				<TechButton techButtonProps={tech} />
 			{/each}

@@ -14,14 +14,18 @@
 			<div class="card-body p-4 px-8 grid grid-cols-1 content-center">
 				<div class="flex flex-col gap-2">
 					<h2 class="text-2xl">Johannes Döllinger</h2>
-					<div class="badge badge-accent h-6 rounded-md">Building Bridges and Giving Structure</div>
-					<div class="flex flex-col lg:flex-row gap-2">
-						<div class="badge badge-secondary h-6 rounded-md">Solution Architecture</div>
-						<div class="badge badge-secondary h-6 rounded-md">Full-Stack Software Engineering</div>
+					<div class="badge badge-accent h-6 rounded-md text-xs sm:text-lg">
+						Building Bridges and Giving Structure
 					</div>
 					<div class="flex flex-col lg:flex-row gap-2">
-						<div class="badge badge-secondary h-6 rounded-md">Agile Coaching</div>
-						<div class="badge badge-secondary h-6 rounded-md">Mentoring</div>
+						<div class="badge badge-secondary h-6 rounded-md text-lg">Solution Architecture</div>
+						<div class="badge badge-secondary h-6 rounded-md text-sm sm:text-lg">
+							Full-Stack Software Engineering
+						</div>
+					</div>
+					<div class="flex flex-col lg:flex-row gap-2">
+						<div class="badge badge-secondary h-6 rounded-md text-lg">Agile Coaching</div>
+						<div class="badge badge-secondary h-6 rounded-md text-lg">Mentoring</div>
 					</div>
 				</div>
 				<div class="pt-2">Contact me:</div>
