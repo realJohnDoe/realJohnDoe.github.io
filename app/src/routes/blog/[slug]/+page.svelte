@@ -18,7 +18,7 @@
 	<meta property="article:published_time" content={meta.date.toISOString()} />
 </svelte:head>
 
-<div class="lg:p-2 lg:py-6 flex flex-col gap-4 lg:gap-8 w-full max-w-3xl mx-auto">
+<div class="lg:p-2 lg:py-6 flex flex-col gap-4 lg:gap-8 w-full max-w-2xl mx-auto">
 	<a class="link-accent text-sm self-start" href="{base}/blog/">← All posts</a>
 
 	<article class="card bg-base-300 shadow-xl flex flex-col">
@@ -43,7 +43,7 @@
 				{/if}
 			</header>
 
-			<div class="post-prose prose md:prose-lg max-w-none">
+			<div class="post-prose prose max-w-none">
 				{#if post}
 					<svelte:component this={post.component} />
 				{/if}
