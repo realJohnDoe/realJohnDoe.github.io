@@ -16,6 +16,9 @@
 	import Header from '$lib/Header.svelte';
 	import { techButtons } from '$lib/techButtons';
 	import TechButton from '$lib/TechButton.svelte';
+	import PostCard from '$lib/PostCard.svelte';
+	import { postMetas } from '$lib/posts';
+	import { base } from '$app/paths';
 
 	const colored_icons = true;
 
@@ -26,7 +29,10 @@
 
 <svelte:head>
 	<title>Johannes Döllinger</title>
-	<meta name="description" content="Svelte demo app" />
+	<meta
+		name="description"
+		content="Johannes Döllinger — senior software engineer at Bosch Research. Solution architecture, agile coaching, full-stack engineering, and mentoring."
+	/>
 </svelte:head>
 
 <MainLayout>
@@ -261,6 +267,31 @@
 			<h2 class="text-2xl pb-2">Side Projects</h2>
 			<div class="grid md:grid-cols-2 gap-4">
 				<PortfolioCard
+					image="{base}/blog/images/agenda-view.png"
+					imageFit="contain"
+					title="Meridian"
+					description="A calendar, task manager, and notes app where every entry is a plain Markdown file."
+					links={[
+						{
+							href: 'https://realjohndoe.github.io/meridian/',
+							icon: usedOpenIcon,
+							text: 'Open'
+						},
+						{
+							href: 'https://github.com/realJohnDoe/meridian',
+							icon: usedGitHubIcon,
+							text: 'GitHub'
+						}
+					]}
+					technologies={[
+						techButtons.claude,
+						techButtons.markdown,
+						techButtons.react,
+						techButtons.tailwind,
+						techButtons.githubActions
+					]}
+				/>
+				<PortfolioCard
 					image={kenpoImg}
 					title="Kenpo Notes"
 					description="Structuring my Dojo's Kenpo curriculum and animating some Kenpo techniques."
@@ -384,4 +415,19 @@
 			</div>
 		</div>
 	</div>
+	{#if postMetas.length}
+		<div class="card bg-base-300 shadow-xl flex flex-col" id="writing">
+			<div class="card-body p-4 md:p-6">
+				<h2 class="text-2xl pb-2">Writing</h2>
+
+				<p class="pb-3">Longer-form notes on the things I build and the decisions behind them.</p>
+
+				<div class="grid gap-4">
+					{#each postMetas as post (post.slug)}
+						<PostCard {post} />
+					{/each}
+				</div>
+			</div>
+		</div>
+	{/if}
 </MainLayout>

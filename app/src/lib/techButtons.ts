@@ -1,4 +1,5 @@
-import animejsIcon from '$lib/images/animejs.png'
+import animejsIcon from '$lib/images/animejs.png';
+import claudeIcon from '$lib/images/claude.svg';
 import cplusplusIcon from '$lib/images/cplusplus.svg';
 import cursorIcon from '$lib/images/cursor.png';
 import databricksIcon from '$lib/images/databricks-colored.svg';
@@ -22,7 +23,7 @@ import pythonIcon from '$lib/images/python-colored.svg';
 import pytorchIcon from '$lib/images/pytorch.svg';
 import reactIcon from '$lib/images/react.svg';
 import rosIcon from '$lib/images/ros.svg';
-import svelteIcon from '$lib/images/svelte.svg'
+import svelteIcon from '$lib/images/svelte.svg';
 import tailwindIcon from '$lib/images/tailwindcss.svg';
 import tensorflowIcon from '$lib/images/tensorflow.svg';
 import windsurfIcon from '$lib/images/windsurf.svg';
@@ -124,6 +125,12 @@ export const techButtons = {
 		icon: kotlinIcon,
 		alt: 'Kotlin',
 		width: 'w-7'
+	},
+	claude: {
+		link: 'https://claude.com/product/claude-code',
+		icon: claudeIcon,
+		alt: 'Claude Code',
+		width: 'w-6'
 	},
 	react: {
 		link: 'https://react.dev/',
