@@ -19,7 +19,7 @@
 </svelte:head>
 
 <div class="lg:p-2 lg:py-6 flex flex-col gap-4 lg:gap-8 w-full max-w-2xl mx-auto">
-	<a class="link-accent text-sm self-start" href="{base}/blog/">← All posts</a>
+	<a class="link-accent text-sm self-start" href="{base}/#writing">← Johannes Döllinger</a>
 
 	<article class="card bg-base-300 shadow-xl flex flex-col">
 		<div class="card-body p-4 md:p-6">
@@ -52,7 +52,7 @@
 	</article>
 
 	<div class="flex justify-between gap-4 text-sm">
-		<a class="link-accent" href="{base}/blog/">← All posts</a>
+		<a class="link-accent" href="{base}/#writing">← More writing</a>
 		<a class="link-accent" href="{base}/">Back to the homepage →</a>
 	</div>
 </div>

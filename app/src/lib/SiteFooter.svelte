@@ -10,7 +10,7 @@
 	<span>© {year} Johannes Döllinger</span>
 
 	<div class="flex gap-4">
-		<a class="link-accent" href="{base}/blog/">Blog</a>
+		<a class="link-accent" href="{base}/#writing">Writing</a>
 		<a class="link-accent" href="https://github.com/realJohnDoe" target="_blank" rel="noreferrer">
 			GitHub
 		</a>

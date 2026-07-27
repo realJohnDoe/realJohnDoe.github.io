@@ -1,9 +1,12 @@
 # Adding a blog post
 
 Posts are Markdown files in `app/src/posts/`, compiled to Svelte components by
-[mdsvex](https://mdsvex.pngwn.io/). Everything else — the listing at `/blog`, the
-"Writing" card on the homepage, reading time, and the teaser text — is derived from the
-file, so adding a post means adding one file.
+[mdsvex](https://mdsvex.pngwn.io/). Everything else — the "Writing" card at the bottom of
+the homepage, reading time, and the teaser text — is derived from the file, so adding a
+post means adding one file.
+
+There is no separate blog index page: the "Writing" card lists every post, and each post
+gets its own page.
 
 ## 1. Create the file
 
@@ -69,8 +72,8 @@ To change how images are sized site-wide, edit the `.post-figure` rules in
 npm run dev --prefix app
 ```
 
-The post appears at `/blog/<file-name>`, on `/blog`, and — if it is one of the two newest —
-in the "Writing" card on the homepage.
+The post appears at `/blog/<file-name>/` and in the "Writing" card at the bottom of the
+homepage.
 
 ## Things worth knowing
 

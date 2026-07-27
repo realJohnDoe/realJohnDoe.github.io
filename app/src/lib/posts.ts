@@ -92,10 +92,7 @@ const allPosts: Post[] = Object.entries(modules)
 	})
 	.sort((a, b) => b.meta.date.getTime() - a.meta.date.getTime());
 
-/** Every post, newest first. */
-export const posts: Post[] = allPosts;
-
-/** Metadata only, newest first — enough to render a listing. */
+/** Metadata only, newest first — enough to render the listing on the homepage. */
 export const postMetas: PostMeta[] = allPosts.map((post) => post.meta);
 
 export function getPost(slug: string): Post | undefined {

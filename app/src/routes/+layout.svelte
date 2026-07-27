@@ -1,12 +1,10 @@
 <script>
 	import '../app.css';
 	import SiteFooter from '$lib/SiteFooter.svelte';
-	import SiteNav from '$lib/SiteNav.svelte';
 </script>
 
 <div class="app">
 	<main>
-		<SiteNav />
 		<slot />
 		<SiteFooter />
 	</main>

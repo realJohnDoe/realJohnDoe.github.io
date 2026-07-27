@@ -20,8 +20,6 @@
 	import { postMetas } from '$lib/posts';
 	import { base } from '$app/paths';
 
-	const latestPosts = postMetas.slice(0, 2);
-
 	const colored_icons = true;
 
 	const usedOpenIcon = colored_icons ? openIconColored : openIcon;
@@ -417,18 +415,15 @@
 			</div>
 		</div>
 	</div>
-	{#if latestPosts.length}
+	{#if postMetas.length}
 		<div class="card bg-base-300 shadow-xl flex flex-col" id="writing">
 			<div class="card-body p-4 md:p-6">
-				<div class="flex flex-wrap items-baseline justify-between gap-2 pb-2">
-					<h2 class="text-2xl">Writing</h2>
-					<a class="link-accent" href="{base}/blog/">All posts →</a>
-				</div>
+				<h2 class="text-2xl pb-2">Writing</h2>
 
 				<p class="pb-3">Longer-form notes on the things I build and the decisions behind them.</p>
 
 				<div class="grid gap-4">
-					{#each latestPosts as post (post.slug)}
+					{#each postMetas as post (post.slug)}
 						<PostCard {post} />
 					{/each}
 				</div>

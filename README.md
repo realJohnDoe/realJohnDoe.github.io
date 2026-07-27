@@ -10,7 +10,7 @@ on every push to `main`.
 
 | Path                  | What lives there                                              |
 | --------------------- | ------------------------------------------------------------- |
-| `app/src/routes`      | Pages — the vCard homepage and `/blog`                        |
+| `app/src/routes`      | Pages — the vCard homepage and the individual post pages       |
 | `app/src/lib`         | Shared components (header, nav, cards) and the post index      |
 | `app/src/posts`       | Blog posts, one Markdown file per post                         |
 | `app/static/blog`     | Images referenced by blog posts                                |

@@ -43,11 +43,6 @@
 	--tw-prose-td-borders: var(--color-primary);
 }
 
-/* Leaves room for the sticky nav when jumping to a heading anchor. */
-.post-prose :is(h2, h3) {
-	scroll-margin-top: 5rem;
-}
-
 .post-prose h2 {
 	border-bottom: 1px solid var(--color-primary);
 	padding-bottom: 0.3em;

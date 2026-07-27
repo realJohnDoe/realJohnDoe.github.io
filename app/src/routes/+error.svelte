@@ -14,7 +14,7 @@
 			<p class="pb-3">{$page.error?.message ?? 'Something went wrong.'}</p>
 			<div class="flex gap-4">
 				<a class="link-accent" href="{base}/">Back to the homepage</a>
-				<a class="link-accent" href="{base}/blog/">Read the blog</a>
+				<a class="link-accent" href="{base}/#writing">Read what I've written</a>
 			</div>
 		</div>
 	</div>
