@@ -2,3 +2,6 @@
 package-lock.json
 pnpm-lock.yaml
 yarn.lock
+
+# Blog posts — prose is hand-wrapped, leave the line breaks alone
+src/posts
