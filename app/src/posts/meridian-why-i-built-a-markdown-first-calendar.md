@@ -1,6 +1,5 @@
 ---
 title: "Meridian: Why I built a Markdown-first calendar"
-tags: [product, philosophy, architecture, features]
 date: 2026-07-23
 ---
 
@@ -175,11 +174,6 @@ sentence: **every entry is a list**.
 | **Tag**     | —                                             | everything tagged with it   |
 | **Note**    | no special properties                         | related entries             |
 
-<figure class="post-figure post-figure--phone">
-  <img src="/blog/images/entry-editor-listed-on.png" loading="lazy" width="736" height="1395" alt="An entry open in Meridian's editor, with a listed-on row near the top and an items section at the bottom." />
-  <figcaption>An entry in the editor: the <strong>listed on</strong> row shows the lists it appears on; the <strong>items</strong> section at the bottom shows what it lists.</figcaption>
-</figure>
-
 A project is a task whose items are tasks. A tag is simply a list of everything filed
 under it. A backlink is just "the lists this appears on" — a phrase that needs no
 explanation, because everyone has used a list.
@@ -187,6 +181,11 @@ explanation, because everyone has used a list.
 I do find that elegant, but elegance isn't the main point. The main point is that you
 never have to answer "is this a task, a subtask, or a project?" The only question left is
 _do I want to track whether this is done?_ — which is a question you can actually answer.
+
+<figure class="post-figure post-figure--phone">
+  <img src="/blog/images/entry-editor-listed-on.png" loading="lazy" width="736" height="1395" alt="An entry open in Meridian's editor, with a listed-on row near the top and an items section at the bottom." />
+  <figcaption>An entry in the editor: the <strong>listed on</strong> row shows the lists it appears on; the <strong>items</strong> section at the bottom shows what it lists.</figcaption>
+</figure>
 
 An entry can also sit on several lists at once, and that makes possible something I use
 constantly. We keep a list called **This Week** for things we want to finish this week
