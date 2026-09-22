@@ -289,8 +289,7 @@
 						techButtons.claude,
 						techButtons.markdown,
 						techButtons.react,
-						techButtons.tailwind,
-						techButtons.githubActions
+						techButtons.tailwind
 					]}
 				/>
 				<PortfolioCard
