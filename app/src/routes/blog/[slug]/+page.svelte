@@ -36,7 +36,7 @@
 
 				{#if meta.tags.length}
 					<div class="flex gap-2 flex-wrap pt-3">
-						{#each meta.tags as tag}
+						{#each meta.tags as tag (tag)}
 							<span class="badge badge-secondary rounded-md">{tag}</span>
 						{/each}
 					</div>
