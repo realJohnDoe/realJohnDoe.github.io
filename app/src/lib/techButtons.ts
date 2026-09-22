@@ -26,6 +26,7 @@ import rosIcon from '$lib/images/ros.svg';
 import svelteIcon from '$lib/images/svelte.svg';
 import tailwindIcon from '$lib/images/tailwindcss.svg';
 import tensorflowIcon from '$lib/images/tensorflow.svg';
+import typescriptIcon from '$lib/images/typescript.svg';
 import windsurfIcon from '$lib/images/windsurf.svg';
 
 export type TechButtonProps = {
@@ -208,6 +209,12 @@ export const techButtons = {
 		link: 'https://www.mathworks.com/products/matlab.html',
 		icon: matlabIcon,
 		alt: 'MATLAB',
+		width: 'w-7'
+	},
+	typescript: {
+		link: 'https://www.typescriptlang.org/',
+		icon: typescriptIcon,
+		alt: 'TypeScript',
 		width: 'w-7'
 	}
 };

@@ -7,6 +7,10 @@
 	import prSizeImg from '$lib/images/pr-labels.jpg';
 	import ideaCraftImg from '$lib/images/idea-craft.jpg';
 	import timeLineImg from '$lib/images/time-lines-edited.jpg';
+	import meridianAgendaImg from '$lib/images/meridian-agenda.jpg';
+	import meridianCalendarImg from '$lib/images/meridian-calendar.jpg';
+	import meridianEntryImg from '$lib/images/meridian-entry.jpg';
+	import rentenlueckeImg from '$lib/images/rentenluecke.jpg';
 	import openIcon from '$lib/images/open.svg';
 	import openIconColored from '$lib/images/open-colored.svg';
 	import gitHubIcon from '$lib/images/github.svg';
@@ -18,7 +22,6 @@
 	import TechButton from '$lib/TechButton.svelte';
 	import PostCard from '$lib/PostCard.svelte';
 	import { postMetas } from '$lib/posts';
-	import { base } from '$app/paths';
 
 	const colored_icons = true;
 
@@ -267,8 +270,7 @@
 			<h2 class="text-2xl pb-2">Side Projects</h2>
 			<div class="grid md:grid-cols-2 gap-4">
 				<PortfolioCard
-					image="{base}/blog/images/agenda-view.png"
-					imageFit="contain"
+					images={[meridianAgendaImg, meridianCalendarImg, meridianEntryImg]}
 					title="Meridian"
 					description="A calendar, task manager, and notes app where every entry is a plain Markdown file."
 					links={[
@@ -289,6 +291,29 @@
 						techButtons.react,
 						techButtons.tailwind,
 						techButtons.githubActions
+					]}
+				/>
+				<PortfolioCard
+					image={rentenlueckeImg}
+					title="Rentenlücke"
+					description="A calculator for the gap between your desired retirement income and what your pensions and savings will actually pay out."
+					links={[
+						{
+							href: 'https://realjohndoe.github.io/rentenluecke/',
+							icon: usedOpenIcon,
+							text: 'Open'
+						},
+						{
+							href: 'https://github.com/realJohnDoe/rentenluecke',
+							icon: usedGitHubIcon,
+							text: 'GitHub'
+						}
+					]}
+					technologies={[
+						techButtons.claude,
+						techButtons.typescript,
+						techButtons.react,
+						techButtons.tailwind
 					]}
 				/>
 				<PortfolioCard
