@@ -344,11 +344,6 @@
 					description="Privacy-friendly emotion tracker for Android."
 					links={[
 						{
-							href: 'https://play.google.com/store/apps/details?id=com.johndoe_software.feelback',
-							icon: usedOpenIcon,
-							text: 'Google Play'
-						},
-						{
 							href: 'https://gitlab.com/jdcoding/feelback',
 							icon: usedGitLabIcon,
 							text: 'GitLab'
