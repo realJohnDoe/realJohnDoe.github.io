@@ -1,7 +1,10 @@
 <script>
 	import TechButton from './TechButton.svelte';
 
-	export let image;
+	export let image = undefined;
+	// A row of portrait phone screenshots, shown instead of the single `image`.
+	/** @type {string[] | undefined} */
+	export let images = undefined;
 	export let title;
 	export let description;
 	export let links;
@@ -15,18 +18,28 @@
 </script>
 
 <div class="border border-primary rounded-xl flex flex-col">
-	<figure
-		class="relative flex-shrink-0 aspect-[3/2] {imageFit === 'contain'
-			? 'bg-base-100 rounded-t-xl p-3'
-			: ''}"
-	>
-		<img
-			src={image}
-			alt={title}
-			loading="lazy"
-			class="w-full h-full {imageFit === 'contain' ? 'object-contain' : 'object-cover'}"
-		/>
-	</figure>
+	{#if images}
+		<figure class="relative flex-shrink-0 aspect-[3/2] bg-base-100 rounded-t-xl p-3">
+			<div class="grid grid-cols-3 gap-2 h-full">
+				{#each images as img}
+					<img src={img} alt={title} loading="lazy" class="w-full h-full object-contain rounded-md" />
+				{/each}
+			</div>
+		</figure>
+	{:else}
+		<figure
+			class="relative flex-shrink-0 aspect-[3/2] {imageFit === 'contain'
+				? 'bg-base-100 rounded-t-xl p-3'
+				: ''}"
+		>
+			<img
+				src={image}
+				alt={title}
+				loading="lazy"
+				class="w-full h-full {imageFit === 'contain' ? 'object-contain' : 'object-cover'}"
+			/>
+		</figure>
+	{/if}
 	<div class="p-4 md:p-6 flex flex-col h-full justify-between">
 		<div>
 			<div class="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2">
