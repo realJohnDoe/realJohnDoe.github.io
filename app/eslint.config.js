@@ -17,6 +17,13 @@ export default [
 				...globals.browser,
 				...globals.node
 			}
+		},
+		rules: {
+			// Requires SvelteKit's resolve() for every href, including plain external
+			// and mailto: links. Adopting it is a real migration (see techButtons.ts,
+			// where the same href prop is reused for both app routes and outside
+			// links), not something to fold into an eslint version bump.
+			'svelte/no-navigation-without-resolve': 'off'
 		}
 	},
 	{

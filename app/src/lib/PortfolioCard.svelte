@@ -21,7 +21,7 @@
 	{#if images}
 		<figure class="relative flex-shrink-0 aspect-[3/2] bg-base-100 rounded-t-xl p-3">
 			<div class="grid grid-cols-3 gap-2 h-full">
-				{#each images as img}
+				{#each images as img (img)}
 					<img
 						src={img}
 						alt={title}
@@ -52,7 +52,7 @@
 				<h3 class="text-lg font-semibold">{title}</h3>
 				<div class="flex gap-2">
 					<!-- Section for links -->
-					{#each links as link}
+					{#each links as link (link.href)}
 						<a href={link.href} target="_blank">
 							<button
 								class="btn btn-square btn-neutral shadow-2xl hover:shadow-xl transition-shadow duration-200"
@@ -69,7 +69,7 @@
 		<div>
 			<h2 class="text-md font-semibold pb-2">Technologies:</h2>
 			<div class="flex gap-2 flex-wrap">
-				{#each technologies as tech}
+				{#each technologies as tech (tech.link)}
 					<TechButton techButtonProps={tech} />
 				{/each}
 			</div>

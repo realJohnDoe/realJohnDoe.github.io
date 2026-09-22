@@ -28,7 +28,7 @@
 
 	{#if post.tags.length}
 		<div class="flex gap-2 flex-wrap">
-			{#each post.tags as tag}
+			{#each post.tags as tag (tag)}
 				<span class="badge badge-secondary rounded-md">{tag}</span>
 			{/each}
 		</div>
