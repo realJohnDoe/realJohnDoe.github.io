@@ -16,11 +16,19 @@ jobs:
 
       - run: npm --version
 
-      - name: Install and Build
+      - name: Install
+        working-directory: app
+        run: npm install
+
+      - name: Lint and check
         working-directory: app
         run: |
-          npm install
-          npm run build
+          npm run lint
+          npm run check
+
+      - name: Build
+        working-directory: app
+        run: npm run build
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4

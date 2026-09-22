@@ -22,7 +22,12 @@
 		<figure class="relative flex-shrink-0 aspect-[3/2] bg-base-100 rounded-t-xl p-3">
 			<div class="grid grid-cols-3 gap-2 h-full">
 				{#each images as img}
-					<img src={img} alt={title} loading="lazy" class="w-full h-full object-contain rounded-md" />
+					<img
+						src={img}
+						alt={title}
+						loading="lazy"
+						class="w-full h-full object-contain rounded-md"
+					/>
 				{/each}
 			</div>
 		</figure>
