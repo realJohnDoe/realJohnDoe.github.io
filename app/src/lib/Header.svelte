@@ -21,7 +21,9 @@
 						<div class="badge badge-secondary h-6 rounded-md text-sm sm:text-lg">
 							Full-Stack Software Engineering
 						</div>
-						<div class="badge badge-secondary h-6 rounded-md text-sm sm:text-lg">Agile Coaching</div>
+						<div class="badge badge-secondary h-6 rounded-md text-sm sm:text-lg">
+							Agile Coaching
+						</div>
 					</div>
 					<div class="flex flex-col lg:flex-row gap-2">
 						<div class="badge badge-secondary h-6 rounded-md text-sm sm:text-lg">
