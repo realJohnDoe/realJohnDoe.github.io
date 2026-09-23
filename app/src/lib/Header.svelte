@@ -14,7 +14,7 @@
 			<div class="card-body p-4 md:p-6 lg:ps-8 grid grid-cols-1 content-center">
 				<div class="flex flex-col gap-2">
 					<h2 class="text-2xl">Johannes Döllinger</h2>
-					<div class="badge badge-accent h-6 rounded-md text-xs sm:text-lg">
+					<div class="badge badge-accent h-6 rounded-md text-sm sm:text-lg">
 						Connecting Software and People
 					</div>
 					<div class="flex flex-col lg:flex-row gap-2">
