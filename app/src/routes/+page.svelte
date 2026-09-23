@@ -132,6 +132,7 @@
 							<TechButton techButtonProps={techButtons.githubActions} />
 							<TechButton techButtonProps={techButtons.databricks} />
 							<TechButton techButtonProps={techButtons.miro} />
+							<TechButton techButtonProps={techButtons.claude} />
 						</div>
 					</div>
 					<div class="timeline-middle">

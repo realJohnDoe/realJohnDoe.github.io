@@ -42,6 +42,7 @@
 					<TechButton techButtonProps={techButtons.obsidian} />
 					<TechButton techButtonProps={techButtons.python} />
 					<TechButton techButtonProps={techButtons.githubActions} />
+					<TechButton techButtonProps={techButtons.claude} />
 				</div>
 			</div>
 		</div>
