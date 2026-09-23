@@ -1,11 +1,14 @@
 <script>
 	import '../app.css';
 	import SiteFooter from '$lib/SiteFooter.svelte';
+
+	/** @type {{children: import('svelte').Snippet}} */
+	let { children } = $props();
 </script>
 
 <div class="app">
 	<main>
-		<slot />
+		{@render children()}
 		<SiteFooter />
 	</main>
 </div>

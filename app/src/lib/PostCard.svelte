@@ -2,8 +2,8 @@
 	import { base } from '$app/paths';
 	import { formatDate } from './posts';
 
-	/** @type {import('./posts').PostMeta} */
-	export let post;
+	/** @type {{post: import('./posts').PostMeta}} */
+	let { post } = $props();
 </script>
 
 <a

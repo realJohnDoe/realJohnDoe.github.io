@@ -2,11 +2,11 @@
 	import { base } from '$app/paths';
 	import { formatDate, getPost } from '$lib/posts';
 
-	/** @type {import('./$types').PageData} */
-	export let data;
+	/** @type {{data: import('./$types').PageData}} */
+	let { data } = $props();
 
-	$: meta = data.meta;
-	$: post = getPost(meta.slug);
+	let meta = $derived(data.meta);
+	let post = $derived(getPost(meta.slug));
 </script>
 
 <svelte:head>
@@ -45,7 +45,7 @@
 
 			<div class="post-prose prose max-w-none">
 				{#if post}
-					<svelte:component this={post.component} />
+					<post.component />
 				{/if}
 			</div>
 		</div>

@@ -1,10 +1,11 @@
 <script>
-	export let techButtonProps;
+	/** @type {{techButtonProps: import('./techButtons').TechButtonProps}} */
+	let { techButtonProps } = $props();
 
-	const link = techButtonProps.link; // Link for the button
-	const icon = techButtonProps.icon; // Icon for the button
-	const alt = techButtonProps.alt; // Alternative text for the icon
-	const width = techButtonProps.width;
+	let link = $derived(techButtonProps.link);
+	let icon = $derived(techButtonProps.icon);
+	let alt = $derived(techButtonProps.alt);
+	let width = $derived(techButtonProps.width);
 </script>
 
 <a href={link} target="_blank">
