@@ -3,6 +3,8 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [main, try-node-v22]
+  pull_request:
+    branches: [main, try-node-v22]
 
 jobs:
   build:
@@ -31,6 +33,7 @@ jobs:
         run: npm run build
 
       - name: Deploy to GitHub Pages
+        if: github.event_name == 'push'
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
