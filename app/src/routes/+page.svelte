@@ -64,12 +64,12 @@
 				<div class="rounded-xl border border-primary">
 					<div class="p-4 md:p-6">
 						<div class="badge badge-secondary text-lg py-3 mb-2 rounded-md">
-							Solution Architecture
+							Full-Stack Software Engineering
 						</div>
 
 						<p>
-							Learning from our users about how they use our software and how we can improve it.
-							Ensuring that the software I contribute to is easy and fun to use.
+							Modern web development using Python, Clean Code, Clean Architecture, and Continuous
+							Delivery.
 						</p>
 					</div>
 				</div>
@@ -88,12 +88,12 @@
 				<div class="rounded-xl border border-primary">
 					<div class="p-4 md:p-6">
 						<div class="badge badge-secondary text-lg py-3 mb-2 rounded-md">
-							Full-Stack Software Engineering
+							Solution Architecture
 						</div>
 
 						<p>
-							Modern web development using Python, Clean Code, Clean Architecture, and Continuous
-							Delivery.
+							Learning from our users about how they use our software and how we can improve it.
+							Ensuring that the software I contribute to is easy and fun to use.
 						</p>
 					</div>
 				</div>

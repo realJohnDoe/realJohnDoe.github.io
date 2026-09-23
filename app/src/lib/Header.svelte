@@ -15,17 +15,19 @@
 				<div class="flex flex-col gap-2">
 					<h2 class="text-2xl">Johannes Döllinger</h2>
 					<div class="badge badge-accent h-6 rounded-md text-xs sm:text-lg">
-						Building Bridges and Giving Structure
+						Connecting Software and People
 					</div>
 					<div class="flex flex-col lg:flex-row gap-2">
-						<div class="badge badge-secondary h-6 rounded-md text-lg">Solution Architecture</div>
 						<div class="badge badge-secondary h-6 rounded-md text-sm sm:text-lg">
 							Full-Stack Software Engineering
 						</div>
+						<div class="badge badge-secondary h-6 rounded-md text-sm sm:text-lg">Agile Coaching</div>
 					</div>
 					<div class="flex flex-col lg:flex-row gap-2">
-						<div class="badge badge-secondary h-6 rounded-md text-lg">Agile Coaching</div>
-						<div class="badge badge-secondary h-6 rounded-md text-lg">Mentoring</div>
+						<div class="badge badge-secondary h-6 rounded-md text-sm sm:text-lg">
+							Solution Architecture
+						</div>
+						<div class="badge badge-secondary h-6 rounded-md text-sm sm:text-lg">Mentoring</div>
 					</div>
 				</div>
 				<div class="pt-2">Contact me:</div>
