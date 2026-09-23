@@ -34,7 +34,6 @@
 					<TechButton techButtonProps={techButtons.mail} />
 					<TechButton techButtonProps={techButtons.linkedin} />
 					<TechButton techButtonProps={techButtons.github} />
-					<TechButton techButtonProps={techButtons.gitlab} />
 				</div>
 
 				<div class="pt-2">Technologies I am currently mastering:</div>
@@ -43,8 +42,7 @@
 					<TechButton techButtonProps={techButtons.obsidian} />
 					<TechButton techButtonProps={techButtons.python} />
 					<TechButton techButtonProps={techButtons.githubActions} />
-					<TechButton techButtonProps={techButtons.databricks} />
-					<TechButton techButtonProps={techButtons.miro} />
+					<TechButton techButtonProps={techButtons.claude} />
 				</div>
 			</div>
 		</div>
