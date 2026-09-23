@@ -130,7 +130,8 @@
 							<!-- New section for technologies -->
 							<TechButton techButtonProps={techButtons.python} />
 							<TechButton techButtonProps={techButtons.githubActions} />
-							<TechButton techButtonProps={techButtons.claude} />
+							<TechButton techButtonProps={techButtons.databricks} />
+							<TechButton techButtonProps={techButtons.miro} />
 						</div>
 					</div>
 					<div class="timeline-middle">
