@@ -1,0 +1,1 @@
+import{C as o,F as m,m as v,E as y,G as f,H as l,I as p,J as i,K as T,M as A}from"./F-D7e44U.js";import{B as E}from"./DTLulDyf.js";function F(d,_,e){var s;o&&(s=A,m());var r=new E(d);v(()=>{var a=_()??null;if(o){var h=f(s),c=h===T,u=a!==null;if(c!==u){var t=l();p(t),r.anchor=t,i(!1),r.ensure(a,a&&(n=>e(n,a))),i(!0);return}}r.ensure(a,a&&(n=>e(n,a)))},y)}export{F as c};
