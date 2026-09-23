@@ -1,4 +1,4 @@
-import type { ComponentType } from 'svelte';
+import type { Component } from 'svelte';
 
 /** Frontmatter a post file may declare. */
 interface Frontmatter {
@@ -20,11 +20,11 @@ export interface PostMeta {
 
 export interface Post {
 	meta: PostMeta;
-	component: ComponentType;
+	component: Component;
 }
 
 interface PostModule {
-	default: ComponentType;
+	default: Component;
 	metadata: Frontmatter;
 }
 

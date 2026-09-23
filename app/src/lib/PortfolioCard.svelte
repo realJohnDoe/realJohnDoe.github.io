@@ -1,20 +1,29 @@
 <script>
 	import TechButton from './TechButton.svelte';
 
-	export let image = undefined;
-	// A row of portrait phone screenshots, shown instead of the single `image`.
-	/** @type {string[] | undefined} */
-	export let images = undefined;
-	export let title;
-	export let description;
-	export let links;
-	export let technologies;
+	/**
+	 * @typedef {Object} Props
+	 * @property {string} [image]
+	 * @property {string[]} [images] - A row of portrait phone screenshots, shown instead of the single `image`.
+	 * @property {string} title
+	 * @property {string} description
+	 * @property {{href: string, icon: string, text: string}[]} links
+	 * @property {import('./techButtons').TechButtonProps[]} technologies
+	 * @property {'cover' | 'contain'} [imageFit] - Every card shows a 3:2 frame so the grid rows line up. Landscape
+	 *   shots are already that shape and fill it; 'contain' fits a portrait screenshot inside it instead of cropping
+	 *   the phone in half.
+	 */
 
-	// Every card shows a 3:2 frame so the grid rows line up. Landscape shots are
-	// already that shape and fill it; 'contain' fits a portrait screenshot inside
-	// it instead of cropping the phone in half.
-	/** @type {'cover' | 'contain'} */
-	export let imageFit = 'cover';
+	/** @type {Props} */
+	let {
+		image = undefined,
+		images = undefined,
+		title,
+		description,
+		links,
+		technologies,
+		imageFit = 'cover'
+	} = $props();
 </script>
 
 <div class="border border-primary rounded-xl flex flex-col">
