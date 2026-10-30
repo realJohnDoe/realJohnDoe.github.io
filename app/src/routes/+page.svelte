@@ -297,7 +297,6 @@
 				/>
 				<PortfolioCard
 					image={tracemapImg}
-					imageFit="contain"
 					title="Trace Map"
 					description="Draws a trace as a directory tree with a highlighted line through it, to show which files a piece of behaviour touches and in what order. Web app, CLI, and an agent skill for PR descriptions."
 					links={[
