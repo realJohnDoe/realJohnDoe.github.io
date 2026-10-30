@@ -1,5 +1,5 @@
 <script>
-	import profilePhoto from '$lib/images/profile.jpg';
+	import profilePhoto from '#lib/images/profile.jpg';
 	import TechButton from './TechButton.svelte';
 	import { techButtons } from './techButtons';
 </script>
