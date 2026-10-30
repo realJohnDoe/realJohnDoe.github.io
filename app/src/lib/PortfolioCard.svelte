@@ -6,6 +6,7 @@
 	 * @property {string} [image]
 	 * @property {string[]} [images] - A row of portrait phone screenshots, shown instead of the single `image`.
 	 * @property {string} title
+	 * @property {boolean} [archived] - Marks a project that is no longer maintained.
 	 * @property {string} description
 	 * @property {{href: string, icon: string, text: string}[]} links
 	 * @property {import('./techButtons').TechButtonProps[]} technologies
@@ -19,6 +20,7 @@
 		image = undefined,
 		images = undefined,
 		title,
+		archived = false,
 		description,
 		links,
 		technologies,
@@ -58,7 +60,12 @@
 		<div>
 			<div class="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2">
 				<!-- Row for title and links -->
-				<h3 class="text-lg font-semibold">{title}</h3>
+				<h3 class="text-lg font-semibold flex items-center gap-2">
+					{title}
+					{#if archived}
+						<span class="badge badge-ghost">Archived</span>
+					{/if}
+				</h3>
 				<div class="flex gap-2">
 					<!-- Section for links -->
 					{#each links as link (link.href)}
