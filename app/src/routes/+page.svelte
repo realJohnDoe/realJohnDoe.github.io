@@ -365,24 +365,6 @@
 					]}
 				/>
 				<PortfolioCard
-					image={feelbackImg}
-					title="Feelback"
-					description="Privacy-friendly emotion tracker for Android."
-					links={[
-						{
-							href: 'https://gitlab.com/jdcoding/feelback',
-							icon: usedGitLabIcon,
-							text: 'GitLab'
-						}
-					]}
-					technologies={[
-						techButtons.kotlin,
-						techButtons.jetpackCompose,
-						techButtons.playstore,
-						techButtons.material
-					]}
-				/>
-				<PortfolioCard
 					image={prSizeImg}
 					title="PR Size Labeler"
 					description="A GitHub Action to label and comment pull requests depending on their size."
@@ -394,31 +376,6 @@
 						}
 					]}
 					technologies={[techButtons.githubActions, techButtons.javascript]}
-				/>
-				<PortfolioCard
-					image={ideaCraftImg}
-					title="IdeaCraft"
-					description="Playing around with Lovable, Windsurf, and Cursor to build some Obsidian-like productivity tool."
-					links={[
-						{
-							href: 'https://realjohndoe.github.io/idea-craft/',
-							icon: usedOpenIcon,
-							text: 'Open'
-						},
-						{
-							href: 'https://github.com/realJohnDoe/idea-craft',
-							icon: usedGitHubIcon,
-							text: 'GitHub'
-						}
-					]}
-					technologies={[
-						techButtons.lovable,
-						techButtons.windsurf,
-						techButtons.cursor,
-						techButtons.markdown,
-						techButtons.react,
-						techButtons.tailwind
-					]}
 				/>
 				<PortfolioCard
 					image={campfireImg}
@@ -456,6 +413,52 @@
 						}
 					]}
 					technologies={[techButtons.javascript, techButtons.tailwind]}
+				/>
+
+				<PortfolioCard
+					image={feelbackImg}
+					title="Feelback"
+					archived
+					description="Privacy-friendly emotion tracker for Android."
+					links={[
+						{
+							href: 'https://gitlab.com/jdcoding/feelback',
+							icon: usedGitLabIcon,
+							text: 'GitLab'
+						}
+					]}
+					technologies={[
+						techButtons.kotlin,
+						techButtons.jetpackCompose,
+						techButtons.playstore,
+						techButtons.material
+					]}
+				/>
+				<PortfolioCard
+					image={ideaCraftImg}
+					title="IdeaCraft"
+					archived
+					description="Playing around with Lovable, Windsurf, and Cursor to build some Obsidian-like productivity tool."
+					links={[
+						{
+							href: 'https://realjohndoe.github.io/idea-craft/',
+							icon: usedOpenIcon,
+							text: 'Open'
+						},
+						{
+							href: 'https://github.com/realJohnDoe/idea-craft',
+							icon: usedGitHubIcon,
+							text: 'GitHub'
+						}
+					]}
+					technologies={[
+						techButtons.lovable,
+						techButtons.windsurf,
+						techButtons.cursor,
+						techButtons.markdown,
+						techButtons.react,
+						techButtons.tailwind
+					]}
 				/>
 			</div>
 		</div>
