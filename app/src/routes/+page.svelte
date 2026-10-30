@@ -11,6 +11,7 @@
 	import meridianCalendarImg from '$lib/images/meridian-calendar.jpg';
 	import meridianEntryImg from '$lib/images/meridian-entry.jpg';
 	import rentenlueckeImg from '$lib/images/rentenluecke.jpg';
+	import tracemapImg from '$lib/images/tracemap.jpg';
 	import openIcon from '$lib/images/open.svg';
 	import openIconColored from '$lib/images/open-colored.svg';
 	import gitHubIcon from '$lib/images/github.svg';
@@ -290,6 +291,30 @@
 						techButtons.claude,
 						techButtons.typescript,
 						techButtons.markdown,
+						techButtons.react,
+						techButtons.tailwind
+					]}
+				/>
+				<PortfolioCard
+					image={tracemapImg}
+					imageFit="contain"
+					title="Trace Map"
+					description="Draws a trace as a directory tree with a highlighted line through it, to show which files a piece of behaviour touches and in what order. Web app, CLI, and an agent skill for PR descriptions."
+					links={[
+						{
+							href: 'https://realjohndoe.github.io/tracemap/',
+							icon: usedOpenIcon,
+							text: 'Open'
+						},
+						{
+							href: 'https://github.com/realJohnDoe/tracemap',
+							icon: usedGitHubIcon,
+							text: 'GitHub'
+						}
+					]}
+					technologies={[
+						techButtons.claude,
+						techButtons.typescript,
 						techButtons.react,
 						techButtons.tailwind
 					]}
