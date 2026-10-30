@@ -63,7 +63,9 @@
 				<h3 class="text-lg font-semibold flex items-center gap-2">
 					{title}
 					{#if archived}
-						<span class="badge badge-ghost">Archived</span>
+						<span class="badge badge-outline rounded-md border-base-content/50 text-base-content/70"
+							>Archived</span
+						>
 					{/if}
 				</h3>
 				<div class="flex gap-2">
