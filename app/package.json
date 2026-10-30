@@ -12,9 +12,9 @@
 	},
 	"devDependencies": {
 		"@eslint/js": "^10.0.1",
-		"@sveltejs/adapter-static": "^3.0.4",
-		"@sveltejs/kit": "^2.70.3",
-		"@sveltejs/vite-plugin-svelte": "^4.0.4",
+		"@sveltejs/adapter-static": "^4.0.1",
+		"@sveltejs/kit": "^3.1.1",
+		"@sveltejs/vite-plugin-svelte": "^7.3.1",
 		"@tailwindcss/typography": "^0.5.20",
 		"@tailwindcss/vite": "^4.3.3",
 		"daisyui": "^5.7.50",
@@ -28,9 +28,12 @@
 		"svelte": "^5.57.3",
 		"svelte-check": "^4.7.7",
 		"tailwindcss": "^4.3.3",
-		"typescript": "^5.0.0",
+		"typescript": "^6.0.0",
 		"typescript-eslint": "^8.72.1",
-		"vite": "^5.0.3"
+		"vite": "^8.3.5"
 	},
-	"type": "module"
+	"type": "module",
+	"imports": {
+		"#lib/*": "./src/lib/*"
+	}
 }

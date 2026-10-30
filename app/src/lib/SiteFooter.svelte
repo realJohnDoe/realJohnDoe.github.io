@@ -1,5 +1,5 @@
 <script>
-	import { base } from '$app/paths';
+	import { resolve } from '$app/paths';
 
 	const year = new Date().getFullYear();
 </script>
@@ -10,7 +10,7 @@
 	<span>© {year} Johannes Döllinger</span>
 
 	<div class="flex gap-4">
-		<a class="link-accent" href="{base}/#writing">Writing</a>
+		<a class="link-accent" href="{resolve('/')}#writing">Writing</a>
 		<a class="link-accent" href="https://github.com/realJohnDoe" target="_blank" rel="noreferrer">
 			GitHub
 		</a>

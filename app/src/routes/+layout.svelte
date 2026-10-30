@@ -1,6 +1,6 @@
 <script>
 	import '../app.css';
-	import SiteFooter from '$lib/SiteFooter.svelte';
+	import SiteFooter from '#lib/SiteFooter.svelte';
 
 	/** @type {{children: import('svelte').Snippet}} */
 	let { children } = $props();

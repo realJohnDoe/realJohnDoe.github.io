@@ -1,5 +1,5 @@
 <script>
-	import { base } from '$app/paths';
+	import { resolve } from '$app/paths';
 	import { formatDate } from './posts';
 
 	/** @type {{post: import('./posts').PostMeta}} */
@@ -7,7 +7,7 @@
 </script>
 
 <a
-	href="{base}/blog/{post.slug}/"
+	href="{resolve('/blog/[slug]', { slug: post.slug })}/"
 	class="group border border-primary hover:border-accent focus-visible:border-accent rounded-xl flex flex-col gap-3 p-4 md:p-6 transition-colors duration-200 focus-visible:outline-none"
 >
 	<div class="flex flex-wrap items-baseline gap-x-3 gap-y-1 text-sm opacity-70">

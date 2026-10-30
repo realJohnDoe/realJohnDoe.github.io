@@ -1,5 +1,5 @@
 import { error } from '@sveltejs/kit';
-import { getPost, postMetas } from '$lib/posts';
+import { getPost, postMetas } from '#lib/posts.js';
 import type { EntryGenerator, PageLoad } from './$types';
 
 /** Tells the static adapter which slugs exist, so each post is written to disk. */
