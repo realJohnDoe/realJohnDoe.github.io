@@ -1,0 +1,29 @@
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: /app
+    schedule:
+      interval: weekly
+    # Matches the rentenluecke/tracemap shape; 1-day cooldown keeps fresh releases from landing before they settle.
+    cooldown:
+      default-days: 1
+    groups:
+      npm-minor-patch:
+        update-types: [minor, patch]
+      npm-major:
+        update-types: [major]
+    ignore:
+      # Kit's peer range is typescript ^6.0.0 (re-checked 2026-11-15 on @sveltejs/kit@3.2.0); see #19.
+      - dependency-name: typescript
+        versions: [">=7"]
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+    cooldown:
+      default-days: 1
+    groups:
+      actions-minor-patch:
+        update-types: [minor, patch]
+      actions-major:
+        update-types: [major]
