@@ -71,7 +71,7 @@
 				<div class="flex gap-2">
 					<!-- Section for links -->
 					{#each links as link (link.href)}
-						<a href={link.href} target="_blank">
+						<a href={link.href} target="_blank" rel="external">
 							<button
 								class="btn btn-square btn-neutral shadow-2xl hover:shadow-xl transition-shadow duration-200"
 							>
