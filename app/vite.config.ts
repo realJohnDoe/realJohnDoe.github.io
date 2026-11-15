@@ -14,6 +14,8 @@ export default defineConfig({
 
 			// See https://svelte.dev/docs/kit/adapters for more information about adapters.
 			adapter: adapter(),
+			// Empty in production; PR previews are served under /pr-preview/pr-<N> (no trailing slash).
+			paths: { base: (process.env.BASE_PATH ?? '') as '' | `/${string}` },
 			appDir: 'app' // Required as the default is _app and GitHub Pages is incompatible with underscores
 		}),
 		tailwindcss()
