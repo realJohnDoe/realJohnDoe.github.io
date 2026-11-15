@@ -36,8 +36,9 @@ only `<h1>`, and a second one would be a duplicate.
 
 ## 2. Add images
 
-Put image files in `app/static/blog/images/` and reference them with an absolute path
-starting at `/blog/images/`. They are copied to the site as-is, so the name you use is the
+Put image files in `app/static/blog/images/` and reference them with SvelteKit's
+`asset()`, so the PR preview's base path is applied (add
+`<script>import { asset } from '$app/paths';</script>` under the front matter). They are copied to the site as-is, so the name you use is the
 name that ships.
 
 Wrap each one in a `figure` so it picks up the site's caption and sizing styles:
@@ -45,7 +46,7 @@ Wrap each one in a `figure` so it picks up the site's caption and sizing styles:
 ```html
 <figure class="post-figure post-figure--phone">
   <img
-    src="/blog/images/agenda-view.png"
+    src="{asset('/blog/images/agenda-view.png')}"
     width="732"
     height="1411"
     loading="lazy"
@@ -83,6 +84,3 @@ homepage.
 - **Raw HTML is passed straight through**, which is why the `figure` blocks above work.
 - **Prettier ignores `app/src/posts`** (see `app/.prettierignore`) so it will not rewrap
   hand-wrapped prose.
-- **Image paths assume the site is served from the domain root**, which it is today
-  (`realjohndoe.github.io`). If the site ever moves under a sub-path, `/blog/images/...`
-  would need SvelteKit's `base` prefix.

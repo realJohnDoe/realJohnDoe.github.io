@@ -3,6 +3,10 @@ title: "Meridian: Why I built a Markdown-first calendar"
 date: 2026-07-23
 ---
 
+<script>
+  import { asset } from '$app/paths';
+</script>
+
 Until a few months ago, my notes, tasks, and appointments were spread across five apps.
 Notes lived in [Obsidian](https://obsidian.md). My own tasks lived in the
 [TaskNotes](https://tasknotes.dev/) plugin inside Obsidian. Tasks I share with my wife
@@ -27,7 +31,7 @@ So I built [Meridian](https://realjohndoe.github.io/meridian/): a calendar, task
 and notes app where every entry is a plain Markdown file.
 
 <figure class="post-figure post-figure--phone">
-  <img src="/blog/images/agenda-view.png" width="732" height="1411" alt="Meridian's agenda view on a phone, showing scheduled tasks and events grouped by day." />
+  <img src="{asset('/blog/images/agenda-view.png')}" width="732" height="1411" alt="Meridian's agenda view on a phone, showing scheduled tasks and events grouped by day." />
   <figcaption>The agenda view: scheduled tasks and events on a single timeline.</figcaption>
 </figure>
 
@@ -92,7 +96,7 @@ app — and that a single generated file, growing with every change, wasn't a fo
 could keep building on.
 
 <figure class="post-figure post-figure--phone">
-  <img src="/blog/images/plaintext-os-prototype.png" loading="lazy" width="655" height="1391" alt="An early mobile prototype of the app — an agenda list of standups and tasks in a dark theme." />
+  <img src="{asset('/blog/images/plaintext-os-prototype.png')}" loading="lazy" width="655" height="1391" alt="An early mobile prototype of the app — an agenda list of standups and tasks in a dark theme." />
   <figcaption>An early version from that chat, by then already called Meridian — one of about a hundred iterations built on my phone.</figcaption>
 </figure>
 
@@ -119,7 +123,7 @@ useful for about a week, while I chased the worst of the recurrence bugs; afterw
 half-considered deleting it again.
 
 <figure class="post-figure post-figure--wide">
-  <img src="/blog/images/inheritance-debugger.webp" loading="lazy" width="2000" height="954" alt="The inheritance debugger — source YAML on the left, the effective tree in the middle, and the expanded list of occurrences on the right." />
+  <img src="{asset('/blog/images/inheritance-debugger.webp')}" loading="lazy" width="2000" height="954" alt="The inheritance debugger — source YAML on the left, the effective tree in the middle, and the expanded list of occurrences on the right." />
   <figcaption>The recurrence debugger: source YAML on the left, its expanded occurrences on the right. Cheap to build, and it turned opaque expansion bugs into something I could just look at.</figcaption>
 </figure>
 
@@ -183,7 +187,7 @@ never have to answer "is this a task, a subtask, or a project?" The only questio
 _do I want to track whether this is done?_ — which is a question you can actually answer.
 
 <figure class="post-figure post-figure--phone">
-  <img src="/blog/images/entry-editor-listed-on.png" loading="lazy" width="736" height="1395" alt="An entry open in Meridian's editor, with a listed-on row near the top and an items section at the bottom." />
+  <img src="{asset('/blog/images/entry-editor-listed-on.png')}" loading="lazy" width="736" height="1395" alt="An entry open in Meridian's editor, with a listed-on row near the top and an items section at the bottom." />
   <figcaption>An entry in the editor: the <strong>listed on</strong> row shows the lists it appears on; the <strong>items</strong> section at the bottom shows what it lists.</figcaption>
 </figure>
 
