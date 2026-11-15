@@ -20,7 +20,7 @@ jobs:
 
       - name: Install
         working-directory: app
-        run: npm install
+        run: npm ci
 
       - name: Lint and check
         working-directory: app
