@@ -1,4 +1,4 @@
-import{t as e}from"./DK3Fl9T5.js";import{F as t,N as n,tt as r}from"./nxoCYCsA.js";import"./DYkJCBsL.js";var i=e({default:()=>l,metadata:()=>a}),a={title:`Meridian: Why I built a Markdown-first calendar`,date:`2026-07-23T00:00:00.000Z`},{title:o,date:s}=a,c=t(`<p>Until a few months ago, my notes, tasks, and appointments were spread across five apps.
+import{t as e}from"./DK3Fl9T5.js";import{B as t,C as n,Q as r,R as i,T as a,X as o,Y as s,it as c,ot as l,q as u,rt as d,st as f,t as p}from"./DhxpLybd.js";import"./KjkNnsrg.js";var m=e({default:()=>y,metadata:()=>h}),h={title:`Meridian: Why I built a Markdown-first calendar`,date:`2026-07-23T00:00:00.000Z`},{title:g,date:_}=h,v=t(`<p>Until a few months ago, my notes, tasks, and appointments were spread across five apps.
 Notes lived in <a href="https://obsidian.md" rel="nofollow">Obsidian</a>. My own tasks lived in the <a href="https://tasknotes.dev/" rel="nofollow">TaskNotes</a> plugin inside Obsidian. Tasks I share with my wife
 lived in <a href="https://todoist.com" rel="nofollow">Todoist</a>. Appointments lived in <a href="https://calendar.proton.me/" rel="nofollow">Proton Calendar</a>. Shopping lists lived in <a href="https://keep.google.com" rel="nofollow">Google Keep</a>.</p> <p>None of these apps are bad. What bothered me was the seams between them — and two things
 I couldn’t fix by switching to a different combination.</p> <p>The first: I want to keep track of our child’s calendar, but she doesn’t need a Proton
@@ -8,7 +8,7 @@ writes on it, everyone reads it, nobody owns it. The corporate version of the sa
 problem shows up at work regularly — a colleague creates a recurring meeting, goes on
 vacation, and now nobody can move it.</p> <p>The second: I wanted tags to be real things. In Obsidian a tag is a label. I wanted a tag
 that can have its own description and its own tags.</p> <p>So I built <a href="https://realjohndoe.github.io/meridian/" rel="nofollow">Meridian</a>: a calendar, task manager,
-and notes app where every entry is a plain Markdown file.</p> <figure class="post-figure post-figure--phone"><img src="/blog/images/agenda-view.png" width="732" height="1411" alt="Meridian's agenda view on a phone, showing scheduled tasks and events grouped by day."/> <figcaption>The agenda view: scheduled tasks and events on a single timeline.</figcaption></figure> <p>What follows is roughly how that went, from those first ideas to the app I use today.</p> <h2>What I knew before I wrote any code</h2> <p>A handful of things, and I’d been turning them over for a while. I wanted a Markdown-based
+and notes app where every entry is a plain Markdown file.</p> <figure class="post-figure post-figure--phone"><img width="732" height="1411" alt="Meridian's agenda view on a phone, showing scheduled tasks and events grouped by day."/> <figcaption>The agenda view: scheduled tasks and events on a single timeline.</figcaption></figure> <p>What follows is roughly how that went, from those first ideas to the app I use today.</p> <h2>What I knew before I wrote any code</h2> <p>A handful of things, and I’d been turning them over for a while. I wanted a Markdown-based
 app for notes, tasks, and calendar events, where every entry is a Markdown file with YAML
 frontmatter. The important part was a negative: I did <em>not</em> want to model the entity types
 explicitly. A thing would be a task because it had a <code>done</code> field, an event because it had
@@ -35,7 +35,7 @@ web prototypes that I could design by using, not just by sketching. I built one 
 question, what the frontmatter should actually look like, and the rest on making it
 usable. Somewhere in the middle it got the name Meridian.</p> <p>It worked. That was the problem. It worked well enough to show me the real version of the
 app — and that a single generated file, growing with every change, wasn’t a foundation I
-could keep building on.</p> <figure class="post-figure post-figure--phone"><img src="/blog/images/plaintext-os-prototype.png" loading="lazy" width="655" height="1391" alt="An early mobile prototype of the app — an agenda list of standups and tasks in a dark theme."/> <figcaption>An early version from that chat, by then already called Meridian — one of about a hundred iterations built on my phone.</figcaption></figure> <p>On <strong>2026-05-22</strong> I moved to a desktop, set the prototype aside, and started a proper
+could keep building on.</p> <figure class="post-figure post-figure--phone"><img loading="lazy" width="655" height="1391" alt="An early mobile prototype of the app — an agenda list of standups and tasks in a dark theme."/> <figcaption>An early version from that chat, by then already called Meridian — one of about a hundred iterations built on my phone.</figcaption></figure> <p>On <strong>2026-05-22</strong> I moved to a desktop, set the prototype aside, and started a proper
 repository: React, TypeScript, Tailwind, shadcn/ui, Vite. The first day’s commits
 scaffold the app, wire up GitHub Pages, and <a href="https://github.com/realJohnDoe/meridian/commit/a23d5ab" rel="nofollow">turn it into a PWA</a> — a
 progressive web app rather than native ones: I need to support both iOS and Android, and a
@@ -45,7 +45,7 @@ cheap to make. So four days in, I had Claude build a <a href="https://github.com
 shows how a YAML file becomes repeat patterns, how those patterns expand into
 occurrences, and what happens to the file when you cancel or move one. It was genuinely
 useful for about a week, while I chased the worst of the recurrence bugs; afterwards I
-half-considered deleting it again.</p> <figure class="post-figure post-figure--wide"><img src="/blog/images/inheritance-debugger.webp" loading="lazy" width="2000" height="954" alt="The inheritance debugger — source YAML on the left, the effective tree in the middle, and the expanded list of occurrences on the right."/> <figcaption>The recurrence debugger: source YAML on the left, its expanded occurrences on the right. Cheap to build, and it turned opaque expansion bugs into something I could just look at.</figcaption></figure> <p>On <strong>2026-06-03</strong> entries gained <a href="https://github.com/realJohnDoe/meridian/commit/48506fb" rel="nofollow">participants</a> — you tag people
+half-considered deleting it again.</p> <figure class="post-figure post-figure--wide"><img loading="lazy" width="2000" height="954" alt="The inheritance debugger — source YAML on the left, the effective tree in the middle, and the expanded list of occurrences on the right."/> <figcaption>The recurrence debugger: source YAML on the left, its expanded occurrences on the right. Cheap to build, and it turned opaque expansion bugs into something I could just look at.</figcaption></figure> <p>On <strong>2026-06-03</strong> entries gained <a href="https://github.com/realJohnDoe/meridian/commit/48506fb" rel="nofollow">participants</a> — you tag people
 on an entry, and later you can filter the whole calendar down to one person. This is the
 shared-family-calendar idea from the very beginning finally showing up in the app:
 everyone on the same kitchen calendar, no accounts required.</p> <p>On <strong>2026-06-11</strong> entries stopped living only on my laptop: <a href="https://github.com/realJohnDoe/meridian/commit/0057d2a" rel="nofollow">GitHub became a storage backend</a>,
@@ -67,7 +67,7 @@ point <em>down</em> to the entries beneath it. So an entry now simply shows its 
 sentence: <strong>every entry is a list</strong>.</p> <table><thead><tr><th>Entry</th><th>Is a list with…</th><th>Its items are usually…</th></tr></thead><tbody><tr><td><strong>Task</strong></td><td>a <code>done</code> property</td><td>subtasks</td></tr><tr><td><strong>Project</strong></td><td>a <code>done</code> property</td><td>tasks</td></tr><tr><td><strong>Event</strong></td><td>a <code>date</code>, plus optional <code>time</code> and <code>duration</code></td><td>agenda points or follow-ups</td></tr><tr><td><strong>Tag</strong></td><td>—</td><td>everything tagged with it</td></tr><tr><td><strong>Note</strong></td><td>no special properties</td><td>related entries</td></tr></tbody></table> <p>A project is a task whose items are tasks. A tag is simply a list of everything filed
 under it. A backlink is just “the lists this appears on” — a phrase that needs no
 explanation, because everyone has used a list.</p> <p>I do find that elegant, but elegance isn’t the main point. The main point is that you
-never have to answer “is this a task, a subtask, or a project?” The only question left is <em>do I want to track whether this is done?</em> — which is a question you can actually answer.</p> <figure class="post-figure post-figure--phone"><img src="/blog/images/entry-editor-listed-on.png" loading="lazy" width="736" height="1395" alt="An entry open in Meridian's editor, with a listed-on row near the top and an items section at the bottom."/> <figcaption>An entry in the editor: the <strong>listed on</strong> row shows the lists it appears on; the <strong>items</strong> section at the bottom shows what it lists.</figcaption></figure> <p>An entry can also sit on several lists at once, and that makes possible something I use
+never have to answer “is this a task, a subtask, or a project?” The only question left is <em>do I want to track whether this is done?</em> — which is a question you can actually answer.</p> <figure class="post-figure post-figure--phone"><img loading="lazy" width="736" height="1395" alt="An entry open in Meridian's editor, with a listed-on row near the top and an items section at the bottom."/> <figcaption>An entry in the editor: the <strong>listed on</strong> row shows the lists it appears on; the <strong>items</strong> section at the bottom shows what it lists.</figcaption></figure> <p>An entry can also sit on several lists at once, and that makes possible something I use
 constantly. We keep a list called <strong>This Week</strong> for things we want to finish this week
 but don’t want to pin to a day yet. “Pizza” sits on <em>This Week</em> and on <em>Cooking</em> at the
 same time. A strict hierarchy can’t do that — Pizza would have to live in one place. Tags
@@ -112,10 +112,14 @@ Same word, different project — this Meridian is the calendar app.</p> <p>If an
 the whole app runs in your browser, with nothing to install and no account. The built-in <a href="https://realjohndoe.github.io/meridian/" rel="nofollow">example vault</a> needs nothing at all; to keep
 your own data, you point Meridian at a GitHub repository, or at a local folder in a
 Chromium browser (Chrome or Edge on the desktop). Tell me what works and what
-doesn’t — the best place for that is a <a href="https://github.com/realJohnDoe/meridian/issues" rel="nofollow">GitHub issue</a> — and the code lives in the <a href="https://github.com/realJohnDoe/meridian" rel="nofollow">same repository</a>.</p>`,1);function l(e){var t=c();r(102),n(e,t)}var u=`---
+doesn’t — the best place for that is a <a href="https://github.com/realJohnDoe/meridian/issues" rel="nofollow">GitHub issue</a> — and the code lives in the <a href="https://github.com/realJohnDoe/meridian" rel="nofollow">same repository</a>.</p>`,1);function y(e,t){c(t,!1),n();var m=v(),h=r(o(m),10),g=s(h);l(2),f(h);var _=r(h,30),y=s(_);l(2),f(_);var b=r(_,12),x=s(b);l(2),f(b);var S=r(b,26),C=s(S);l(2),f(S),l(24),u((e,t,n,r)=>{a(g,`src`,e),a(y,`src`,t),a(x,`src`,n),a(C,`src`,r)},[()=>p(`/blog/images/agenda-view.png`),()=>p(`/blog/images/plaintext-os-prototype.png`),()=>p(`/blog/images/inheritance-debugger.webp`),()=>p(`/blog/images/entry-editor-listed-on.png`)]),i(e,m),d()}var b=`---
 title: "Meridian: Why I built a Markdown-first calendar"
 date: 2026-07-23
 ---
+
+<script>
+  import { asset } from '$app/paths';
+<\/script>
 
 Until a few months ago, my notes, tasks, and appointments were spread across five apps.
 Notes lived in [Obsidian](https://obsidian.md). My own tasks lived in the
@@ -141,7 +145,7 @@ So I built [Meridian](https://realjohndoe.github.io/meridian/): a calendar, task
 and notes app where every entry is a plain Markdown file.
 
 <figure class="post-figure post-figure--phone">
-  <img src="/blog/images/agenda-view.png" width="732" height="1411" alt="Meridian's agenda view on a phone, showing scheduled tasks and events grouped by day." />
+  <img src="{asset('/blog/images/agenda-view.png')}" width="732" height="1411" alt="Meridian's agenda view on a phone, showing scheduled tasks and events grouped by day." />
   <figcaption>The agenda view: scheduled tasks and events on a single timeline.</figcaption>
 </figure>
 
@@ -206,7 +210,7 @@ app — and that a single generated file, growing with every change, wasn't a fo
 could keep building on.
 
 <figure class="post-figure post-figure--phone">
-  <img src="/blog/images/plaintext-os-prototype.png" loading="lazy" width="655" height="1391" alt="An early mobile prototype of the app — an agenda list of standups and tasks in a dark theme." />
+  <img src="{asset('/blog/images/plaintext-os-prototype.png')}" loading="lazy" width="655" height="1391" alt="An early mobile prototype of the app — an agenda list of standups and tasks in a dark theme." />
   <figcaption>An early version from that chat, by then already called Meridian — one of about a hundred iterations built on my phone.</figcaption>
 </figure>
 
@@ -233,7 +237,7 @@ useful for about a week, while I chased the worst of the recurrence bugs; afterw
 half-considered deleting it again.
 
 <figure class="post-figure post-figure--wide">
-  <img src="/blog/images/inheritance-debugger.webp" loading="lazy" width="2000" height="954" alt="The inheritance debugger — source YAML on the left, the effective tree in the middle, and the expanded list of occurrences on the right." />
+  <img src="{asset('/blog/images/inheritance-debugger.webp')}" loading="lazy" width="2000" height="954" alt="The inheritance debugger — source YAML on the left, the effective tree in the middle, and the expanded list of occurrences on the right." />
   <figcaption>The recurrence debugger: source YAML on the left, its expanded occurrences on the right. Cheap to build, and it turned opaque expansion bugs into something I could just look at.</figcaption>
 </figure>
 
@@ -297,7 +301,7 @@ never have to answer "is this a task, a subtask, or a project?" The only questio
 _do I want to track whether this is done?_ — which is a question you can actually answer.
 
 <figure class="post-figure post-figure--phone">
-  <img src="/blog/images/entry-editor-listed-on.png" loading="lazy" width="736" height="1395" alt="An entry open in Meridian's editor, with a listed-on row near the top and an items section at the bottom." />
+  <img src="{asset('/blog/images/entry-editor-listed-on.png')}" loading="lazy" width="736" height="1395" alt="An entry open in Meridian's editor, with a listed-on row near the top and an items section at the bottom." />
   <figcaption>An entry in the editor: the <strong>listed on</strong> row shows the lists it appears on; the <strong>items</strong> section at the bottom shows what it lists.</figcaption>
 </figure>
 
@@ -374,4 +378,4 @@ Chromium browser (Chrome or Edge on the desktop). Tell me what works and what
 doesn't — the best place for that is a
 [GitHub issue](https://github.com/realJohnDoe/meridian/issues) — and the code lives in the
 [same repository](https://github.com/realJohnDoe/meridian).
-`,d=Object.assign({"/src/posts/meridian-why-i-built-a-markdown-first-calendar.md":i}),f=Object.assign({"/src/posts/meridian-why-i-built-a-markdown-first-calendar.md":u}),p=200;function m(e){return e.replace(/^---\r?\n[\s\S]*?\r?\n---\r?\n/,``).replace(/```[\s\S]*?```/g,``).replace(/<[^>]+>/g,``).replace(/!\[[^\]]*\]\([^)]*\)/g,``).replace(/\[([^\]]+)\]\([^)]*\)/g,`$1`).replace(/^[|>#\s-]*$/gm,``).replace(/[*_`]/g,``).trim()}function h(e,t=220){let n=e.split(/\r?\n\s*\r?\n/).map(e=>e.replace(/\s+/g,` `).trim()).find(e=>e.length>60&&!e.startsWith(`#`));return n?n.length<=t?n:n.slice(0,n.lastIndexOf(` `,t)).replace(/[\s,;:.–—-]+$/,``)+`…`:``}function g(e){return e.split(`/`).pop().replace(/\.md$/,``)}var _=Object.entries(d).map(([e,t])=>{let n=m(f[e]??``),r=n.split(/\s+/).filter(Boolean).length;return{component:t.default,meta:{slug:g(e),title:t.metadata.title,date:new Date(t.metadata.date),tags:t.metadata.tags??[],description:t.metadata.description??h(n),readingMinutes:Math.max(1,Math.round(r/p))}}}).sort((e,t)=>t.meta.date.getTime()-e.meta.date.getTime()),v=_.map(e=>e.meta);function y(e){return _.find(t=>t.meta.slug===e)}function b(e){return e.toLocaleDateString(`en-GB`,{day:`numeric`,month:`long`,year:`numeric`,timeZone:`UTC`})}export{y as n,v as r,b as t};
+`,x=Object.assign({"/src/posts/meridian-why-i-built-a-markdown-first-calendar.md":m}),S=Object.assign({"/src/posts/meridian-why-i-built-a-markdown-first-calendar.md":b}),C=200;function w(e){return e.replace(/^---\r?\n[\s\S]*?\r?\n---\r?\n/,``).replace(/```[\s\S]*?```/g,``).replace(/<[^>]+>/g,``).replace(/!\[[^\]]*\]\([^)]*\)/g,``).replace(/\[([^\]]+)\]\([^)]*\)/g,`$1`).replace(/^[|>#\s-]*$/gm,``).replace(/[*_`]/g,``).trim()}function T(e,t=220){let n=e.split(/\r?\n\s*\r?\n/).map(e=>e.replace(/\s+/g,` `).trim()).find(e=>e.length>60&&!e.startsWith(`#`));return n?n.length<=t?n:n.slice(0,n.lastIndexOf(` `,t)).replace(/[\s,;:.–—-]+$/,``)+`…`:``}function E(e){return e.split(`/`).pop().replace(/\.md$/,``)}var D=Object.entries(x).map(([e,t])=>{let n=w(S[e]??``),r=n.split(/\s+/).filter(Boolean).length;return{component:t.default,meta:{slug:E(e),title:t.metadata.title,date:new Date(t.metadata.date),tags:t.metadata.tags??[],description:t.metadata.description??T(n),readingMinutes:Math.max(1,Math.round(r/C))}}}).sort((e,t)=>t.meta.date.getTime()-e.meta.date.getTime()),O=D.map(e=>e.meta);function k(e){return D.find(t=>t.meta.slug===e)}function A(e){return e.toLocaleDateString(`en-GB`,{day:`numeric`,month:`long`,year:`numeric`,timeZone:`UTC`})}export{k as n,O as r,A as t};
