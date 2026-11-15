@@ -13,7 +13,12 @@ updates:
       npm-major:
         update-types: [major]
     ignore:
-      # Kit's peer range is typescript ^6.0.0 (re-checked 2026-11-15 on @sveltejs/kit@3.2.0); see #19.
+      # Held below TypeScript 7: @sveltejs/kit's peer range is typescript ^6.0.0
+      # (re-checked 2026-11-15 on @sveltejs/kit@3.2.0). Drop this ignore once
+      # `npm view @sveltejs/kit peerDependencies` allows ^7 and svelte-check and
+      # typescript-eslint support TS 7 (both use the TypeScript API, which
+      # changed in 7); then bump typescript in app/package.json and run
+      # `npm run lint`, `npm run check` and `npm run build`.
       - dependency-name: typescript
         versions: [">=7"]
   - package-ecosystem: github-actions
