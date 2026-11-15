@@ -8,7 +8,7 @@
 	let width = $derived(techButtonProps.width);
 </script>
 
-<a href={link} target="_blank">
+<a href={link} target="_blank" rel="external">
 	<button class="btn btn-square btn-neutral">
 		<img class={width} src={icon} {alt} />
 	</button>
