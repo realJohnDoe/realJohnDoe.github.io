@@ -2,9 +2,9 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [main, try-node-v22]
+    branches: [main]
   pull_request:
-    branches: [main, try-node-v22]
+    branches: [main]
 
 jobs:
   build:
@@ -14,7 +14,7 @@ jobs:
 
       - uses: actions/setup-node@v6
         with:
-          node-version: 24
+          node-version: 26
 
       - run: npm --version
 
