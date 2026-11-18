@@ -58,13 +58,13 @@
 				<div class="flex gap-2">
 					<!-- Section for links -->
 					{#each links as link (link.href)}
-						<a href={link.href} target="_blank" rel="external">
-							<button
-								class="btn btn-square btn-neutral shadow-2xl hover:shadow-xl transition-shadow duration-200"
-							>
-								<!-- Updated shadow classes -->
-								<img class="w-6" src={link.icon} alt={link.text} />
-							</button>
+						<a
+							href={link.href}
+							target="_blank"
+							rel="external"
+							class="btn btn-square btn-neutral shadow-2xl hover:shadow-xl transition-shadow duration-200"
+						>
+							<img class="w-6" src={link.icon} alt={link.text} />
 						</a>
 					{/each}
 				</div>
@@ -72,7 +72,7 @@
 			<p class="project-category pb-2 pt-4">{description}</p>
 		</div>
 		<div>
-			<h2 class="text-md font-semibold pb-2">Technologies:</h2>
+			<p class="text-md font-semibold pb-2">Technologies:</p>
 			<div class="flex gap-2 flex-wrap">
 				{#each technologies as tech (tech.link)}
 					<TechButton techButtonProps={tech} />
