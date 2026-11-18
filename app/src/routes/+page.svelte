@@ -12,23 +12,14 @@
 	import meridianEntryImg from '#lib/images/meridian-entry.jpg';
 	import rentenlueckeImg from '#lib/images/rentenluecke.jpg';
 	import tracemapImg from '#lib/images/tracemap.jpg';
-	import openIcon from '#lib/images/open.svg';
 	import openIconColored from '#lib/images/open-colored.svg';
-	import gitHubIcon from '#lib/images/github.svg';
 	import githubIconColored from '#lib/images/github-colored.svg';
 	import gitLabIconColored from '#lib/images/gitlab-colored.svg';
-	import gitLabIcon from '#lib/images/gitlab.svg';
 	import Header from '#lib/Header.svelte';
 	import { techButtons } from '#lib/techButtons.js';
 	import TechButton from '#lib/TechButton.svelte';
 	import PostCard from '#lib/PostCard.svelte';
 	import { postMetas } from '#lib/posts.js';
-
-	const colored_icons = true;
-
-	const usedOpenIcon = colored_icons ? openIconColored : openIcon;
-	const usedGitHubIcon = colored_icons ? githubIconColored : gitHubIcon;
-	const usedGitLabIcon = colored_icons ? gitLabIconColored : gitLabIcon;
 </script>
 
 <svelte:head>
@@ -278,12 +269,12 @@
 					links={[
 						{
 							href: 'https://realjohndoe.github.io/meridian/',
-							icon: usedOpenIcon,
+							icon: openIconColored,
 							text: 'Open'
 						},
 						{
 							href: 'https://github.com/realJohnDoe/meridian',
-							icon: usedGitHubIcon,
+							icon: githubIconColored,
 							text: 'GitHub'
 						}
 					]}
@@ -302,12 +293,12 @@
 					links={[
 						{
 							href: 'https://realjohndoe.github.io/tracemap/',
-							icon: usedOpenIcon,
+							icon: openIconColored,
 							text: 'Open'
 						},
 						{
 							href: 'https://github.com/realJohnDoe/tracemap',
-							icon: usedGitHubIcon,
+							icon: githubIconColored,
 							text: 'GitHub'
 						}
 					]}
@@ -325,12 +316,12 @@
 					links={[
 						{
 							href: 'https://realjohndoe.github.io/rentenluecke/',
-							icon: usedOpenIcon,
+							icon: openIconColored,
 							text: 'Open'
 						},
 						{
 							href: 'https://github.com/realJohnDoe/rentenluecke',
-							icon: usedGitHubIcon,
+							icon: githubIconColored,
 							text: 'GitHub'
 						}
 					]}
@@ -348,12 +339,12 @@
 					links={[
 						{
 							href: 'https://realjohndoe.github.io/kenpo-notes/',
-							icon: usedOpenIcon,
+							icon: openIconColored,
 							text: 'Open'
 						},
 						{
 							href: 'https://github.com/realJohnDoe/kenpo-notes',
-							icon: usedGitHubIcon,
+							icon: githubIconColored,
 							text: 'GitHub'
 						}
 					]}
@@ -371,7 +362,7 @@
 					links={[
 						{
 							href: 'https://github.com/boschresearch/pr-size-labeler',
-							icon: usedGitHubIcon,
+							icon: githubIconColored,
 							text: 'GitHub'
 						}
 					]}
@@ -384,12 +375,12 @@
 					links={[
 						{
 							href: 'https://realjohndoe.github.io/campfire-game/',
-							icon: usedOpenIcon,
+							icon: openIconColored,
 							text: 'Open'
 						},
 						{
 							href: 'https://github.com/realJohnDoe/campfire-game',
-							icon: usedGitHubIcon,
+							icon: githubIconColored,
 							text: 'GitHub'
 						}
 					]}
@@ -403,12 +394,12 @@
 					links={[
 						{
 							href: 'https://realjohndoe.github.io/time-lines/',
-							icon: usedOpenIcon,
+							icon: openIconColored,
 							text: 'Open'
 						},
 						{
 							href: 'https://github.com/realJohnDoe/time-lines',
-							icon: usedGitHubIcon,
+							icon: githubIconColored,
 							text: 'GitHub'
 						}
 					]}
@@ -423,7 +414,7 @@
 					links={[
 						{
 							href: 'https://gitlab.com/jdcoding/feelback',
-							icon: usedGitLabIcon,
+							icon: gitLabIconColored,
 							text: 'GitLab'
 						}
 					]}
@@ -442,12 +433,12 @@
 					links={[
 						{
 							href: 'https://realjohndoe.github.io/idea-craft/',
-							icon: usedOpenIcon,
+							icon: openIconColored,
 							text: 'Open'
 						},
 						{
 							href: 'https://github.com/realJohnDoe/idea-craft',
-							icon: usedGitHubIcon,
+							icon: githubIconColored,
 							text: 'GitHub'
 						}
 					]}
