@@ -352,7 +352,7 @@
 							text: 'Open'
 						},
 						{
-							href: 'https://github.com/realJohnDoe/kenpo-quartz',
+							href: 'https://github.com/realJohnDoe/kenpo-notes',
 							icon: usedGitHubIcon,
 							text: 'GitHub'
 						}
