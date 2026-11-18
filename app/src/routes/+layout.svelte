@@ -1,4 +1,6 @@
 <script>
+	import '@fontsource/roboto/400.css';
+	import '@fontsource/roboto/600.css';
 	import '../app.css';
 	import SiteFooter from '#lib/SiteFooter.svelte';
 
