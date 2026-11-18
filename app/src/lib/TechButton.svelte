@@ -10,6 +10,6 @@
 
 <a href={link} target="_blank" rel="external">
 	<button class="btn btn-square btn-neutral">
-		<img class={width} src={icon} {alt} />
+		<img class={width} src={icon} {alt} loading="lazy" />
 	</button>
 </a>
