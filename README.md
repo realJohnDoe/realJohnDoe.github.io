@@ -11,7 +11,7 @@ on every push to `main`.
 | Path                  | What lives there                                              |
 | --------------------- | ------------------------------------------------------------- |
 | `app/src/routes`      | Pages — the vCard homepage and the individual post pages       |
-| `app/src/lib`         | Shared components (header, nav, cards) and the post index      |
+| `app/src/lib`         | Shared components (header, cards) and the post index           |
 | `app/src/posts`       | Blog posts, one Markdown file per post                         |
 | `app/static/blog`     | Images referenced by blog posts                                |
 | `notes/`              | Working material that is not published (interview notes, …)    |
@@ -23,7 +23,7 @@ See [Adding a blog post](notes/adding-a-blog-post.md).
 ## Developing
 
 ```bash
-npm install --prefix app
+npm ci --prefix app
 ```
 
 ```bash
