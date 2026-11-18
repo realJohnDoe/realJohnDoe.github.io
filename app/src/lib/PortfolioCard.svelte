@@ -10,9 +10,6 @@
 	 * @property {string} description
 	 * @property {{href: string, icon: string, text: string}[]} links
 	 * @property {import('./techButtons').TechButtonProps[]} technologies
-	 * @property {'cover' | 'contain'} [imageFit] - Every card shows a 3:2 frame so the grid rows line up. Landscape
-	 *   shots are already that shape and fill it; 'contain' fits a portrait screenshot inside it instead of cropping
-	 *   the phone in half.
 	 */
 
 	/** @type {Props} */
@@ -23,8 +20,7 @@
 		archived = false,
 		description,
 		links,
-		technologies,
-		imageFit = 'cover'
+		technologies
 	} = $props();
 </script>
 
@@ -43,17 +39,8 @@
 			</div>
 		</figure>
 	{:else}
-		<figure
-			class="relative flex-shrink-0 aspect-[3/2] {imageFit === 'contain'
-				? 'bg-base-100 rounded-t-xl p-3'
-				: ''}"
-		>
-			<img
-				src={image}
-				alt={title}
-				loading="lazy"
-				class="w-full h-full {imageFit === 'contain' ? 'object-contain' : 'object-cover'}"
-			/>
+		<figure class="relative flex-shrink-0 aspect-[3/2]">
+			<img src={image} alt={title} loading="lazy" class="w-full h-full object-cover" />
 		</figure>
 	{/if}
 	<div class="p-4 md:p-6 flex flex-col h-full justify-between">
