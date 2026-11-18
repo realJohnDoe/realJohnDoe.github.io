@@ -34,7 +34,7 @@
 	<Header />
 	<div class="card bg-base-300 shadow-xl flex flex-col">
 		<div class="card-body p-4 md:p-6">
-			<h1 class="text-2xl pb-2">About Me</h1>
+			<h2 class="text-2xl pb-2">About Me</h2>
 
 			<div class="pb-3">
 				<p>
@@ -105,8 +105,8 @@
 	</div>
 	<div class="card bg-base-300 shadow-xl flex flex-col" id="experience">
 		<div class="card-body p-4 md:p-6">
-			<h1 class="text-2xl pb-2">Experience</h1>
-			<div class="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
+			<h2 class="text-2xl pb-2">Experience</h2>
+			<ul class="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
 				<li>
 					<div class="timeline-start mb-10 md:text-end">
 						<time class="font-mono italic">2021 — Present</time>
@@ -255,7 +255,7 @@
 						</div>
 					</div>
 				</li>
-			</div>
+			</ul>
 		</div>
 	</div>
 	<div class="card bg-base-300 shadow-xl flex flex-col" id="projects">
