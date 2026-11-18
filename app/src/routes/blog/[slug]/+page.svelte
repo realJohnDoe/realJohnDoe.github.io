@@ -1,5 +1,6 @@
 <script>
 	import { resolve } from '$app/paths';
+	import MainLayout from '#lib/MainLayout.svelte';
 	import { formatDate, getPost } from '#lib/posts.js';
 
 	/** @type {{data: import('./$types').PageData}} */
@@ -18,7 +19,7 @@
 	<meta property="article:published_time" content={meta.date.toISOString()} />
 </svelte:head>
 
-<div class="lg:p-2 lg:py-6 flex flex-col gap-4 lg:gap-8 w-full max-w-2xl mx-auto">
+<MainLayout class="w-full max-w-2xl mx-auto">
 	<a class="link-accent text-sm self-start" href="{resolve('/')}#writing">← Johannes Döllinger</a>
 
 	<article class="card bg-base-300 shadow-xl flex flex-col">
@@ -55,4 +56,4 @@
 		<a class="link-accent" href="{resolve('/')}#writing">← More writing</a>
 		<a class="link-accent" href={resolve('/')}>Back to the homepage →</a>
 	</div>
-</div>
+</MainLayout>

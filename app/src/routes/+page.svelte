@@ -20,6 +20,192 @@
 	import TechButton from '#lib/TechButton.svelte';
 	import PostCard from '#lib/PostCard.svelte';
 	import { postMetas } from '#lib/posts.js';
+
+	const doing = [
+		{
+			title: 'Full-Stack Software Engineering',
+			text: 'Modern web development using Python, Clean Code, Clean Architecture, and Continuous Delivery.'
+		},
+		{
+			title: 'Agile Coaching',
+			text: 'Figuring out which Agile Methods work well for which team. Making the costs of social friction transparent, so resolving it can be prioritized accordingly.'
+		},
+		{
+			title: 'Solution Architecture',
+			text: 'Learning from our users about how they use our software and how we can improve it. Ensuring that the software I contribute to is easy and fun to use.'
+		},
+		{
+			title: 'Mentoring',
+			text: "Sharing my software development experience so others don't have to repeat many of my own mistakes."
+		}
+	];
+
+	/** @param {string} repo @param {string} [site] */
+	const links = (repo, site) => [
+		...(site ? [{ href: site, icon: openIconColored, text: 'Open' }] : []),
+		{ href: repo, icon: githubIconColored, text: 'GitHub' }
+	];
+
+	/** @param {string} name Repository name under realJohnDoe; the site lives at the same name on GitHub Pages. */
+	const own = (name) =>
+		links(`https://github.com/realJohnDoe/${name}`, `https://realjohndoe.github.io/${name}/`);
+
+	const projects = [
+		{
+			images: [meridianAgendaImg, meridianCalendarImg, meridianEntryImg],
+			title: 'Meridian',
+			description:
+				'A calendar, task manager, and notes app where every entry is a plain Markdown file.',
+			links: own('meridian'),
+			technologies: [
+				techButtons.claude,
+				techButtons.typescript,
+				techButtons.markdown,
+				techButtons.react,
+				techButtons.tailwind
+			]
+		},
+		{
+			image: tracemapImg,
+			title: 'Trace Map',
+			description:
+				'Draws a trace as a directory tree with a highlighted line through it, to show which files a piece of behaviour touches and in what order. Web app, CLI, and an agent skill for PR descriptions.',
+			links: own('tracemap'),
+			technologies: [
+				techButtons.claude,
+				techButtons.typescript,
+				techButtons.react,
+				techButtons.tailwind
+			]
+		},
+		{
+			image: rentenlueckeImg,
+			title: 'Rentenlücke',
+			description:
+				'A calculator for the gap between your desired retirement income and what your pensions and savings will actually pay out.',
+			links: own('rentenluecke'),
+			technologies: [
+				techButtons.claude,
+				techButtons.typescript,
+				techButtons.react,
+				techButtons.tailwind
+			]
+		},
+		{
+			image: kenpoImg,
+			title: 'Kenpo Notes',
+			description: "Structuring my Dojo's Kenpo curriculum and animating some Kenpo techniques.",
+			links: own('kenpo-notes'),
+			technologies: [
+				techButtons.obsidian,
+				techButtons.githubActions,
+				techButtons.animejs,
+				techButtons.svelte
+			]
+		},
+		{
+			image: prSizeImg,
+			title: 'PR Size Labeler',
+			description: 'A GitHub Action to label and comment pull requests depending on their size.',
+			links: links('https://github.com/boschresearch/pr-size-labeler'),
+			technologies: [techButtons.githubActions, techButtons.javascript]
+		},
+		{
+			image: campfireImg,
+			title: 'Campfire Game',
+			description:
+				'A mini game where you control the smoke of a campfire to test current AI tools.',
+			links: own('campfire-game'),
+			technologies: [techButtons.windsurf, techButtons.javascript]
+		},
+		{
+			image: timeLineImg,
+			title: 'Time Lines',
+			description: 'A small web app to visualize topics from a yaml file on a timeline.',
+			links: own('time-lines'),
+			technologies: [techButtons.javascript, techButtons.tailwind]
+		},
+		{
+			image: feelbackImg,
+			title: 'Feelback',
+			archived: true,
+			description: 'Privacy-friendly emotion tracker for Android.',
+			links: [
+				{ href: 'https://gitlab.com/jdcoding/feelback', icon: gitLabIconColored, text: 'GitLab' }
+			],
+			technologies: [
+				techButtons.kotlin,
+				techButtons.jetpackCompose,
+				techButtons.playstore,
+				techButtons.material
+			]
+		},
+		{
+			image: ideaCraftImg,
+			title: 'IdeaCraft',
+			archived: true,
+			description:
+				'Playing around with Lovable, Windsurf, and Cursor to build some Obsidian-like productivity tool.',
+			links: own('idea-craft'),
+			technologies: [
+				techButtons.lovable,
+				techButtons.windsurf,
+				techButtons.cursor,
+				techButtons.markdown,
+				techButtons.react,
+				techButtons.tailwind
+			]
+		}
+	];
+
+	// Each line of `lines` is a string or a snippet; lines are separated by <br />.
+	const experience = [
+		{
+			period: '2021 — Present',
+			title: 'Senior Software Engineer, Bosch Research',
+			lines: [
+				'Building developer tools for researchers of Bosch.',
+				'Improving internal team collaboration through carefully chosen tools and methods.',
+				'Mentoring other developers.'
+			],
+			tech: [
+				techButtons.python,
+				techButtons.githubActions,
+				techButtons.databricks,
+				techButtons.miro,
+				techButtons.claude
+			]
+		},
+		{
+			period: '2018 — 2021',
+			title: 'Research Engineer, Bosch Center for Artificial Intelligence',
+			lines: [
+				'Applied cutting-edge deep reinforcement learning methods to highway lane change maneuvers.',
+				'Integration of machine learning frameworks and simulation.',
+				'First statistical evaluation of existing assisted driving functions.'
+			],
+			tech: [techButtons.python, techButtons.numpy, techButtons.pytoch]
+		},
+		{
+			period: '2016 — 2018',
+			title: 'PhD Candidate, Bosch Center for Artificial Intelligence',
+			lines: [
+				'Predicted pedestrian motion inside buildings using deep learning to improve robot navigation',
+				papers
+			],
+			tech: [techButtons.python, techButtons.tensorflow, techButtons.ros]
+		},
+		{
+			period: '2011 — 2016',
+			title: 'MSc. Physics, University of Regensburg',
+			lines: [
+				"Elite study course, a fusion of the bachelor's and master's courses with advanced lectures, three-week research projects",
+				'Recipient of the Deutschlandstipendium, a national, ideology-free scholarship for highly talented, motivated students, who are also socially committed',
+				'Internship as a research scholar at the Columbia University in the City of New York'
+			],
+			tech: [techButtons.matlab, techButtons.cplusplus]
+		}
+	];
 </script>
 
 <svelte:head>
@@ -29,6 +215,24 @@
 		content="Johannes Döllinger — senior software engineer at Bosch Research. Solution architecture, agile coaching, full-stack engineering, and mentoring."
 	/>
 </svelte:head>
+
+{#snippet icon()}
+	<div class="timeline-middle">
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5">
+			<path
+				fill-rule="evenodd"
+				d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+				clip-rule="evenodd"
+			/>
+		</svg>
+	</div>
+{/snippet}
+
+{#snippet papers()}
+	Published of
+	<a class="link-accent" href="https://scholar.google.de/citations?user=qbgZXYIAAAAJ">two papers</a>
+	at ICRA and RA-L.
+{/snippet}
 
 <MainLayout>
 	<Header />
@@ -53,53 +257,15 @@
 			<h2 class="text-xl pb-1">What I'm Doing</h2>
 
 			<div class="grid md:grid-cols-2 gap-4">
-				<div class="rounded-xl border border-primary">
-					<div class="p-4 md:p-6">
-						<div class="badge badge-secondary text-lg py-3 mb-2 rounded-md">
-							Full-Stack Software Engineering
+				{#each doing as item (item.title)}
+					<div class="rounded-xl border border-primary">
+						<div class="p-4 md:p-6">
+							<div class="badge badge-secondary text-lg py-3 mb-2 rounded-md">{item.title}</div>
+
+							<p>{item.text}</p>
 						</div>
-
-						<p>
-							Modern web development using Python, Clean Code, Clean Architecture, and Continuous
-							Delivery.
-						</p>
 					</div>
-				</div>
-
-				<div class="rounded-xl border border-primary">
-					<div class="p-4 md:p-6">
-						<div class="badge badge-secondary text-lg py-3 mb-2 rounded-md">Agile Coaching</div>
-
-						<p>
-							Figuring out which Agile Methods work well for which team. Making the costs of social
-							friction transparent, so resolving it can be prioritized accordingly.
-						</p>
-					</div>
-				</div>
-
-				<div class="rounded-xl border border-primary">
-					<div class="p-4 md:p-6">
-						<div class="badge badge-secondary text-lg py-3 mb-2 rounded-md">
-							Solution Architecture
-						</div>
-
-						<p>
-							Learning from our users about how they use our software and how we can improve it.
-							Ensuring that the software I contribute to is easy and fun to use.
-						</p>
-					</div>
-				</div>
-
-				<div class="rounded-xl border border-primary">
-					<div class="p-4 md:p-6">
-						<div class="badge badge-secondary text-lg py-3 mb-2 rounded-md">Mentoring</div>
-
-						<p>
-							Sharing my software development experience so others don't have to repeat many of my
-							own mistakes.
-						</p>
-					</div>
-				</div>
+				{/each}
 			</div>
 		</div>
 	</div>
@@ -107,154 +273,37 @@
 		<div class="card-body p-4 md:p-6">
 			<h2 class="text-2xl pb-2">Experience</h2>
 			<ul class="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
-				<li>
-					<div class="timeline-start mb-10 md:text-end">
-						<time class="font-mono italic">2021 — Present</time>
-						<h3 class="text-lg font-semibold">Senior Software Engineer, Bosch Research</h3>
-
-						<p>
-							Building developer tools for researchers of Bosch.<br />
-							Improving internal team collaboration through carefully chosen tools and methods.
-							<br />
-							Mentoring other developers.
-						</p>
-						<div class="flex gap-2 pt-2 md:justify-end">
-							<!-- New section for technologies -->
-							<TechButton techButtonProps={techButtons.python} />
-							<TechButton techButtonProps={techButtons.githubActions} />
-							<TechButton techButtonProps={techButtons.databricks} />
-							<TechButton techButtonProps={techButtons.miro} />
-							<TechButton techButtonProps={techButtons.claude} />
-						</div>
-					</div>
-					<div class="timeline-middle">
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							viewBox="0 0 20 20"
-							fill="currentColor"
-							class="h-5 w-5"
+				{#each experience as job, i (job.period)}
+					{@const first = i === 0}
+					{@const last = i === experience.length - 1}
+					{@const start = i % 2 === 0}
+					<li>
+						{#if !first}<hr class="bg-base-100" />{/if}
+						{@render icon()}
+						<div
+							class={start
+								? 'timeline-start mb-10 md:text-end'
+								: ['timeline-end', !last && 'mb-10']}
 						>
-							<path
-								fill-rule="evenodd"
-								d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-								clip-rule="evenodd"
-							/>
-						</svg>
-					</div>
-					<div class="timeline-end"></div>
-					<hr class="bg-base-100" />
-				</li>
-				<li>
-					<hr class="bg-base-100" />
-					<div class="timeline-middle">
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							viewBox="0 0 20 20"
-							fill="currentColor"
-							class="h-5 w-5"
-						>
-							<path
-								fill-rule="evenodd"
-								d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-								clip-rule="evenodd"
-							/>
-						</svg>
-					</div>
-					<div class="timeline-end mb-10">
-						<time class="font-mono italic">2018 — 2021</time>
-						<h3 class="text-lg font-semibold">
-							Research Engineer, Bosch Center for Artificial Intelligence
-						</h3>
+							<time class="font-mono italic">{job.period}</time>
+							<h3 class="text-lg font-semibold">{job.title}</h3>
 
-						<p>
-							Applied cutting-edge deep reinforcement learning methods to highway lane change
-							maneuvers.<br />
-							Integration of machine learning frameworks and simulation.
-							<br />
-							First statistical evaluation of existing assisted driving functions.
-						</p>
-						<div class="flex gap-2 pt-2">
-							<TechButton techButtonProps={techButtons.python} />
-							<TechButton techButtonProps={techButtons.numpy} />
-							<TechButton techButtonProps={techButtons.pytoch} />
+							<p>
+								{#each job.lines as line, j (j)}
+									{#if j > 0}<br />{/if}
+									{#if typeof line === 'string'}{line}{:else}{@render line()}{/if}
+								{/each}
+							</p>
+							<div class={['flex gap-2 pt-2', start && 'md:justify-end']}>
+								{#each job.tech as tech (tech)}
+									<TechButton techButtonProps={tech} />
+								{/each}
+							</div>
 						</div>
-					</div>
-					<hr class="bg-base-100" />
-				</li>
-				<li>
-					<hr class="bg-base-100" />
-					<div class="timeline-middle">
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							viewBox="0 0 20 20"
-							fill="currentColor"
-							class="h-5 w-5"
-						>
-							<path
-								fill-rule="evenodd"
-								d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-								clip-rule="evenodd"
-							/>
-						</svg>
-					</div>
-					<div class="timeline-start mb-10 md:text-end">
-						<time class="font-mono italic">2016 — 2018</time>
-						<h3 class="text-lg font-semibold">
-							PhD Candidate, Bosch Center for Artificial Intelligence
-						</h3>
-
-						<p>
-							Predicted pedestrian motion inside buildings using deep learning to improve robot
-							navigation<br />
-							Published of
-							<a class="link-accent" href="https://scholar.google.de/citations?user=qbgZXYIAAAAJ">
-								two papers
-							</a>
-							at ICRA and RA-L.
-						</p>
-						<div class="flex gap-2 pt-2 md:justify-end">
-							<TechButton techButtonProps={techButtons.python} />
-							<TechButton techButtonProps={techButtons.tensorflow} />
-							<TechButton techButtonProps={techButtons.ros} />
-						</div>
-					</div>
-					<hr class="bg-base-100" />
-				</li>
-				<li>
-					<hr class="bg-base-100" />
-					<div class="timeline-middle">
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							viewBox="0 0 20 20"
-							fill="currentColor"
-							class="h-5 w-5"
-						>
-							<path
-								fill-rule="evenodd"
-								d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-								clip-rule="evenodd"
-							/>
-						</svg>
-					</div>
-					<div class="timeline-end">
-						<time class="font-mono italic">2011 — 2016</time>
-						<h3 class="text-lg font-semibold">MSc. Physics, University of Regensburg</h3>
-
-						<p>
-							Elite study course, a fusion of the bachelor's and master's courses with advanced
-							lectures, three-week research projects
-							<br />
-							Recipient of the Deutschlandstipendium, a national, ideology-free scholarship for highly
-							talented, motivated students, who are also socially committed <br />
-							Internship as a research scholar at the Columbia University in the City of New York
-							<br />
-						</p>
-						<div class="flex gap-2 pt-2">
-							<TechButton techButtonProps={techButtons.matlab} />
-							<TechButton techButtonProps={techButtons.cplusplus} />
-						</div>
-					</div>
-				</li>
+						{#if first}<div class="timeline-end"></div>{/if}
+						{#if !last}<hr class="bg-base-100" />{/if}
+					</li>
+				{/each}
 			</ul>
 		</div>
 	</div>
@@ -262,195 +311,9 @@
 		<div class="card-body p-4 md:p-6">
 			<h2 class="text-2xl pb-2">Side Projects</h2>
 			<div class="grid md:grid-cols-2 gap-4">
-				<PortfolioCard
-					images={[meridianAgendaImg, meridianCalendarImg, meridianEntryImg]}
-					title="Meridian"
-					description="A calendar, task manager, and notes app where every entry is a plain Markdown file."
-					links={[
-						{
-							href: 'https://realjohndoe.github.io/meridian/',
-							icon: openIconColored,
-							text: 'Open'
-						},
-						{
-							href: 'https://github.com/realJohnDoe/meridian',
-							icon: githubIconColored,
-							text: 'GitHub'
-						}
-					]}
-					technologies={[
-						techButtons.claude,
-						techButtons.typescript,
-						techButtons.markdown,
-						techButtons.react,
-						techButtons.tailwind
-					]}
-				/>
-				<PortfolioCard
-					image={tracemapImg}
-					title="Trace Map"
-					description="Draws a trace as a directory tree with a highlighted line through it, to show which files a piece of behaviour touches and in what order. Web app, CLI, and an agent skill for PR descriptions."
-					links={[
-						{
-							href: 'https://realjohndoe.github.io/tracemap/',
-							icon: openIconColored,
-							text: 'Open'
-						},
-						{
-							href: 'https://github.com/realJohnDoe/tracemap',
-							icon: githubIconColored,
-							text: 'GitHub'
-						}
-					]}
-					technologies={[
-						techButtons.claude,
-						techButtons.typescript,
-						techButtons.react,
-						techButtons.tailwind
-					]}
-				/>
-				<PortfolioCard
-					image={rentenlueckeImg}
-					title="Rentenlücke"
-					description="A calculator for the gap between your desired retirement income and what your pensions and savings will actually pay out."
-					links={[
-						{
-							href: 'https://realjohndoe.github.io/rentenluecke/',
-							icon: openIconColored,
-							text: 'Open'
-						},
-						{
-							href: 'https://github.com/realJohnDoe/rentenluecke',
-							icon: githubIconColored,
-							text: 'GitHub'
-						}
-					]}
-					technologies={[
-						techButtons.claude,
-						techButtons.typescript,
-						techButtons.react,
-						techButtons.tailwind
-					]}
-				/>
-				<PortfolioCard
-					image={kenpoImg}
-					title="Kenpo Notes"
-					description="Structuring my Dojo's Kenpo curriculum and animating some Kenpo techniques."
-					links={[
-						{
-							href: 'https://realjohndoe.github.io/kenpo-notes/',
-							icon: openIconColored,
-							text: 'Open'
-						},
-						{
-							href: 'https://github.com/realJohnDoe/kenpo-notes',
-							icon: githubIconColored,
-							text: 'GitHub'
-						}
-					]}
-					technologies={[
-						techButtons.obsidian,
-						techButtons.githubActions,
-						techButtons.animejs,
-						techButtons.svelte
-					]}
-				/>
-				<PortfolioCard
-					image={prSizeImg}
-					title="PR Size Labeler"
-					description="A GitHub Action to label and comment pull requests depending on their size."
-					links={[
-						{
-							href: 'https://github.com/boschresearch/pr-size-labeler',
-							icon: githubIconColored,
-							text: 'GitHub'
-						}
-					]}
-					technologies={[techButtons.githubActions, techButtons.javascript]}
-				/>
-				<PortfolioCard
-					image={campfireImg}
-					title="Campfire Game"
-					description="A mini game where you control the smoke of a campfire to test current AI tools."
-					links={[
-						{
-							href: 'https://realjohndoe.github.io/campfire-game/',
-							icon: openIconColored,
-							text: 'Open'
-						},
-						{
-							href: 'https://github.com/realJohnDoe/campfire-game',
-							icon: githubIconColored,
-							text: 'GitHub'
-						}
-					]}
-					technologies={[techButtons.windsurf, techButtons.javascript]}
-				/>
-
-				<PortfolioCard
-					image={timeLineImg}
-					title="Time Lines"
-					description="A small web app to visualize topics from a yaml file on a timeline."
-					links={[
-						{
-							href: 'https://realjohndoe.github.io/time-lines/',
-							icon: openIconColored,
-							text: 'Open'
-						},
-						{
-							href: 'https://github.com/realJohnDoe/time-lines',
-							icon: githubIconColored,
-							text: 'GitHub'
-						}
-					]}
-					technologies={[techButtons.javascript, techButtons.tailwind]}
-				/>
-
-				<PortfolioCard
-					image={feelbackImg}
-					title="Feelback"
-					archived
-					description="Privacy-friendly emotion tracker for Android."
-					links={[
-						{
-							href: 'https://gitlab.com/jdcoding/feelback',
-							icon: gitLabIconColored,
-							text: 'GitLab'
-						}
-					]}
-					technologies={[
-						techButtons.kotlin,
-						techButtons.jetpackCompose,
-						techButtons.playstore,
-						techButtons.material
-					]}
-				/>
-				<PortfolioCard
-					image={ideaCraftImg}
-					title="IdeaCraft"
-					archived
-					description="Playing around with Lovable, Windsurf, and Cursor to build some Obsidian-like productivity tool."
-					links={[
-						{
-							href: 'https://realjohndoe.github.io/idea-craft/',
-							icon: openIconColored,
-							text: 'Open'
-						},
-						{
-							href: 'https://github.com/realJohnDoe/idea-craft',
-							icon: githubIconColored,
-							text: 'GitHub'
-						}
-					]}
-					technologies={[
-						techButtons.lovable,
-						techButtons.windsurf,
-						techButtons.cursor,
-						techButtons.markdown,
-						techButtons.react,
-						techButtons.tailwind
-					]}
-				/>
+				{#each projects as project (project.title)}
+					<PortfolioCard {...project} />
+				{/each}
 			</div>
 		</div>
 	</div>
