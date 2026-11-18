@@ -75,6 +75,11 @@ function slugOf(path: string): string {
 
 const allPosts: Post[] = Object.entries(modules)
 	.map(([path, module]) => {
+		const { title, date } = module.metadata;
+		const parsedDate = new Date(date);
+		if (typeof title !== 'string' || !title.trim() || Number.isNaN(parsedDate.getTime())) {
+			throw new Error(`${path}: frontmatter needs a string title and a YYYY-MM-DD date`);
+		}
 		const plain = toPlainText(sources[path] ?? '');
 		const words = plain.split(/\s+/).filter(Boolean).length;
 
@@ -82,8 +87,8 @@ const allPosts: Post[] = Object.entries(modules)
 			component: module.default,
 			meta: {
 				slug: slugOf(path),
-				title: module.metadata.title,
-				date: new Date(module.metadata.date),
+				title,
+				date: parsedDate,
 				tags: module.metadata.tags ?? [],
 				description: module.metadata.description ?? firstParagraph(plain),
 				readingMinutes: Math.max(1, Math.round(words / WORDS_PER_MINUTE))
