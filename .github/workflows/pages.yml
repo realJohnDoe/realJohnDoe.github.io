@@ -6,61 +6,55 @@ on:
   pull_request:
     branches: [main]
     types: [opened, reopened, synchronize, closed]
+  workflow_dispatch:
 
 permissions:
-  contents: write
-  pull-requests: write
-
-# Production deploys and each PR's preview push to gh-pages, so they must not race.
-concurrency:
-  group: ${{ github.event_name == 'push' && 'pages' || format('preview-{0}', github.event.number) }}
-  cancel-in-progress: false
+  contents: read
 
 jobs:
   build:
-    # A closed PR only needs the preview cleanup; fork PRs get no preview (read-only token).
-    if: github.event.action != 'closed' || github.event.pull_request.head.repo.full_name == github.repository
+    # A closed PR only needs the preview removal, which the shared workflow does.
+    if: github.event.action != 'closed'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
 
       - uses: actions/setup-node@v7
-        if: github.event.action != 'closed'
         with:
           node-version: 26
 
       - run: npm --version
-        if: github.event.action != 'closed'
 
       - name: Install
-        if: github.event.action != 'closed'
         working-directory: app
         run: npm ci
 
       - name: Lint and check
-        if: github.event.action != 'closed'
         working-directory: app
         run: |
           npm run lint
           npm run check
 
       - name: Build
-        if: github.event.action != 'closed'
         working-directory: app
         env:
           BASE_PATH: ${{ github.event_name == 'pull_request' && format('/pr-preview/pr-{0}', github.event.number) || '' }}
         run: npm run build
 
-      - name: Deploy to GitHub Pages
-        if: github.event_name == 'push'
-        uses: JamesIves/github-pages-deploy-action@fa24774553152dd7873cd16ebd8d959b010c5445 # v4.9.0
+      - uses: actions/upload-artifact@v7
         with:
-          branch: gh-pages
-          folder: app/build
-          clean-exclude: pr-preview/
+          name: site
+          path: app/build
+          include-hidden-files: true
 
-      - name: Deploy PR preview
-        if: github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository
-        uses: rossjrw/pr-preview-action@873417d2df72380da1f3978378fb58560bcde976 # v1.8.2
-        with:
-          source-dir: app/build
+  pages:
+    needs: build
+    # `skipped` lets `closed` reach the removal.
+    if: ${{ !cancelled() && (needs.build.result == 'success' || needs.build.result == 'skipped') }}
+    uses: realJohnDoe/agent-skills/.github/workflows/pages.yml@main
+    with:
+      artifact: site
+      previews: all
+    permissions:
+      contents: write
+      pull-requests: write
