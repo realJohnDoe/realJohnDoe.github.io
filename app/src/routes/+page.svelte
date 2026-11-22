@@ -111,8 +111,8 @@
 			description:
 				'A Claude Code plugin that runs my side projects on a schedule: it hands tier-labelled issues to agent sessions, follows up on their PRs and merges them, surveys code health, and shows what waits on me on one board.',
 			links: links(
-				'https://github.com/realJohnDoe/agent-skills',
-				'https://realjohndoe.github.io/agent-skills/'
+				'https://github.com/realJohnDoe/joes-workshop',
+				'https://realjohndoe.github.io/joes-workshop/'
 			),
 			technologies: [techButtons.claude, techButtons.typescript, techButtons.githubActions]
 		},
