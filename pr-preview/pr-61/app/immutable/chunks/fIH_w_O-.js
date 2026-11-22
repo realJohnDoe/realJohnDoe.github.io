@@ -1,0 +1,1 @@
+import{A as e,G as t,Q as n,R as r,T as i,U as a,et as o,ft as s,j as c}from"./N9fGRSfc.js";var l=t(`<div><!></div>`);function u(t,u){let d=i(u,`class`,3,``);var f=l(),p=o(f);r(p,()=>u.children),s(f),n(()=>e(f,1,c([`lg:p-2 lg:py-6 flex flex-col gap-4 lg:gap-8`,d()]))),a(t,f)}export{u as t};
