@@ -12,6 +12,8 @@
 	import meridianEntryImg from '#lib/images/meridian-entry.jpg';
 	import rentenlueckeImg from '#lib/images/rentenluecke.jpg';
 	import tracemapImg from '#lib/images/tracemap.jpg';
+	import structraImg from '#lib/images/structra.jpg';
+	import workshopImg from '#lib/images/workshop-board.jpg';
 	import openIconColored from '#lib/images/open-colored.svg';
 	import githubIconColored from '#lib/images/github-colored.svg';
 	import gitLabIconColored from '#lib/images/gitlab-colored.svg';
@@ -77,6 +79,30 @@
 				techButtons.react,
 				techButtons.tailwind
 			]
+		},
+		{
+			image: structraImg,
+			title: 'Structra',
+			description:
+				"Reads a repository's file-to-file imports and finds the hierarchy that keeps them inside their groups, ignoring the folders, so you can hold it up against the structure you have. Drag the balance slider to go from flat to deep.",
+			links: own('structra'),
+			technologies: [
+				techButtons.claude,
+				techButtons.typescript,
+				techButtons.python,
+				techButtons.react
+			]
+		},
+		{
+			image: workshopImg,
+			title: "Joe's Workshop",
+			description:
+				'A Claude Code plugin that runs my side projects on a schedule: it hands tier-labelled issues to agent sessions, follows up on their PRs and merges them, surveys code health, and shows what waits on me on one board.',
+			links: links(
+				'https://github.com/realJohnDoe/agent-skills',
+				'https://realjohndoe.github.io/agent-skills/'
+			),
+			technologies: [techButtons.claude, techButtons.typescript, techButtons.githubActions]
 		},
 		{
 			image: rentenlueckeImg,
