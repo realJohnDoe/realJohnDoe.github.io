@@ -68,6 +68,18 @@
 			]
 		},
 		{
+			image: kenpoImg,
+			title: 'Kenpo Notes',
+			description: "Structuring my Dojo's Kenpo curriculum and animating some Kenpo techniques.",
+			links: own('kenpo-notes'),
+			technologies: [
+				techButtons.obsidian,
+				techButtons.githubActions,
+				techButtons.animejs,
+				techButtons.svelte
+			]
+		},
+		{
 			image: tracemapImg,
 			title: 'Trace Map',
 			description:
@@ -118,18 +130,6 @@
 			]
 		},
 		{
-			image: kenpoImg,
-			title: 'Kenpo Notes',
-			description: "Structuring my Dojo's Kenpo curriculum and animating some Kenpo techniques.",
-			links: own('kenpo-notes'),
-			technologies: [
-				techButtons.obsidian,
-				techButtons.githubActions,
-				techButtons.animejs,
-				techButtons.svelte
-			]
-		},
-		{
 			image: prSizeImg,
 			title: 'PR Size Labeler',
 			description: 'A GitHub Action to label and comment pull requests depending on their size.',
@@ -137,19 +137,20 @@
 			technologies: [techButtons.githubActions, techButtons.javascript]
 		},
 		{
-			image: campfireImg,
-			title: 'Campfire Game',
-			description:
-				'A mini game where you control the smoke of a campfire to test current AI tools.',
-			links: own('campfire-game'),
-			technologies: [techButtons.windsurf, techButtons.javascript]
-		},
-		{
 			image: timeLineImg,
 			title: 'Time Lines',
 			description: 'A small web app to visualize topics from a yaml file on a timeline.',
 			links: own('time-lines'),
 			technologies: [techButtons.javascript, techButtons.tailwind]
+		},
+		{
+			image: campfireImg,
+			title: 'Campfire Game',
+			archived: true,
+			description:
+				'A mini game where you control the smoke of a campfire to test current AI tools.',
+			links: own('campfire-game'),
+			technologies: [techButtons.windsurf, techButtons.javascript]
 		},
 		{
 			image: feelbackImg,
